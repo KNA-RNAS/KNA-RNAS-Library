@@ -1,9 +1,5 @@
-Template for the Read the Docs tutorial
-=======================================
+Read the Docs for the KNA-RNAS Library
+======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+This should be read via read-the-docs.
+https://kna-rnas-library.readthedocs.io/en/latest/

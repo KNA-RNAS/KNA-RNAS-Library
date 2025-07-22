@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'KNA-RNAS Library'
+copyright = '2025-present Koninklijke Nederlandse Astronomenclub'
+author = 'Noel-Storr, and secretaries'
 
 release = '0.1'
 version = '0.1.0'

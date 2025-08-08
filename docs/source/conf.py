@@ -33,3 +33,13 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+extensions.append("sphinx.ext.todo")
+todo_include_todos = True
+
+# -- Custom style file
+html_static_path = ["_static"]
+
+html_css_files = [
+    "style.css",
+]

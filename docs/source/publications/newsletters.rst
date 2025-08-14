@@ -1,13 +1,14 @@
-Title: Newsletters of the KNA-RNAS Library
-===========================================
+Newsletters of the KNA-RNAS
+============================
 
-This file contains newsletters published by the KNA-RNAS. 
+Newsletter of the KNA-RNAS. 
 
 .. toctree::
    :maxdepth: 1
 
-   newsletter-2023-01
-   newsletter-2023-02
-   newsletter-2023-03
+   newsletter-2025-01
+   newsletter-2024-03
+   newsletter-2024-02
+   newsletter-2024-01
 
 For more information, please contact librarian@kna-rnas.nl.

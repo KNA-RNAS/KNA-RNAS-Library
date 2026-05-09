@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-09 13:53+0200\n"
+"POT-Creation-Date: 2026-05-09 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "uitnodiging voor de AVA 2026 en voorgestelde agenda"
 
 #: ../../source/communication/2026_AGM_Agenda.rst:9
 #, fuzzy
-msgid "**Archived DOI**: Draft Deposition ID: 20096202"
+msgid "**Archived DOI**: Draft Deposition ID: 20096281"
 msgstr "**Gearchiveerd DOI**: Concept Depositienummer: 20095995"
 
 #: ../../source/communication/2026_AGM_Agenda.rst:10
@@ -184,13 +184,26 @@ msgstr "dr. J. Noel-Storr, secretaris/secretaris"
 msgid "​On behalf of the board.​"
 msgstr "namens het bestuur"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:93
+#: ../../source/communication/2026_AGM_Agenda.rst:94
 #, fuzzy
 msgid ""
-"​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​ ​KvK: 40047819​ "
-"​www.kna-rnas.nl​"
+"​Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-"
+"Storr (Secretary), Steven Rieder (Treasurer)​"
 msgstr ""
 "peter Barthel (voormalig voorzitter), Ralph Wijers (co-penningmeester)"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:97
+msgid "​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​"
+msgstr ""
+"peter Barthel (voormalig voorzitter), Ralph Wijers (co-penningmeester)"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:100
+msgid "​KvK: 40047819​"
+msgstr "kvK: 40047819"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:103
+msgid "​www.kna-rnas.nl​"
+msgstr "www.kna-rnas.nl"
 
 #~ msgid "​Royal Netherlands Astronomical Society​"
 #~ msgstr "koninklijk Nederlands Astronomisch Genootschap"

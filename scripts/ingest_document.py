@@ -15,12 +15,17 @@ SOCIETY_STRINGS = [
     "Office of the Secretary",
     "Het Kantoor van de Secretaris",
     "Executive Committee of the Board",
+    "Marijke Haverkorn",
+    "Jake Noel-Storr",
+    "Steven Rieder",
+    "Peter Barthel",
+    "Ralph Wijers",
     "KvK: 40047819",
     "www.kna-rnas.nl"
 ]
 
 def is_list_item(text):
-    """Detect if a line looks like a list item (e.g., 1., a., i., *)."""
+    """Detect if a line looks like a list item."""
     patterns = [
         r'^\d+\.',         # 1.
         r'^[a-z]\.',       # a.
@@ -48,21 +53,19 @@ def format_as_rst(blocks, page_height):
         if not text:
             continue
             
-        # Detect if this block is a header (larger font or bold)
-        # For simplicity, we'll check if it's short and uppercase or bold-ish
-        # PyMuPDF span['size'] and span['flags'] can be used for more precision
-        
+        # Detect if this block is a header
         is_header = False
-        font_size = b['lines'][0]['spans'][0]['size']
-        if font_size > 12: # Standard body is usually 10-11
+        spans = [s for l in b['lines'] for s in l['spans']]
+        if not spans: continue
+        
+        font_size = spans[0]['size']
+        if font_size > 11.5: 
             is_header = True
 
-        if is_header:
+        if is_header and len(text) < 100:
             if current_paragraph:
                 rst_lines.append(" ".join(current_paragraph))
                 current_paragraph = []
-            
-            # RST Header
             rst_lines.append("\n" + text)
             if font_size > 14:
                 rst_lines.append("-" * len(text))
@@ -70,7 +73,10 @@ def format_as_rst(blocks, page_height):
                 rst_lines.append("~" * len(text))
             continue
 
-        if is_list_item(text):
+        # Detect footer-like strings to keep them separate
+        is_society_branding = any(s in text for s in SOCIETY_STRINGS)
+
+        if is_list_item(text) or is_society_branding:
             if current_paragraph:
                 rst_lines.append(" ".join(current_paragraph))
                 current_paragraph = []
@@ -78,16 +84,14 @@ def format_as_rst(blocks, page_height):
             continue
 
         # Merge with current paragraph if y-distance is small
-        if i > 0:
+        if current_paragraph:
             prev_b = blocks[i-1]
             dist = b['bbox'][1] - prev_b['bbox'][3]
-            if dist < 10 and not is_list_item(text):
+            if dist < 12 and not is_list_item(text):
                 current_paragraph.append(text)
             else:
-                if current_paragraph:
-                    rst_lines.append(" ".join(current_paragraph))
-                    current_paragraph = []
-                current_paragraph.append(text)
+                rst_lines.append(" ".join(current_paragraph))
+                current_paragraph = [text]
         else:
             current_paragraph.append(text)
 
@@ -109,9 +113,9 @@ def extract_premium_text(pdf_path):
         
         page_height = page.rect.height
         
-        # Header/Footer Margins
-        HEADER_MARGIN = 85
-        FOOTER_MARGIN = 75
+        # Aggressive Header/Footer Margins
+        HEADER_MARGIN = 110
+        FOOTER_MARGIN = 100
 
         for b in blocks_data:
             if b['type'] != 0: # 0 is text
@@ -121,15 +125,20 @@ def extract_premium_text(pdf_path):
             y1 = b['bbox'][3]
             
             # Geometry-based Stripping
-            if i > 0 and y1 < HEADER_MARGIN:
-                continue
-            if i < num_pages - 1 and y0 > (page_height - FOOTER_MARGIN):
-                continue
+            if i == 0:
+                if y0 > (page_height - FOOTER_MARGIN):
+                    continue
+            elif i == num_pages - 1:
+                if y1 < HEADER_MARGIN:
+                    continue
+            else:
+                if y1 < HEADER_MARGIN or y0 > (page_height - FOOTER_MARGIN):
+                    continue
             
-            # Content-based backup stripping (for stubborn repeating strings)
+            # Content-based backup stripping
             block_text = "".join(["".join([s['text'] for s in l['spans']]) for l in b['lines']])
-            if any(s in block_text for s in SOCIETY_STRINGS) and len(block_text) < 150:
-                # Keep on page 1 header / last page footer
+            if any(s in block_text for s in SOCIETY_STRINGS) and len(block_text) < 250:
+                # Keep on page 1 header / last page footer ONLY if in margins
                 if i == 0 and y1 < HEADER_MARGIN:
                     pass
                 elif i == num_pages -1 and y0 > (page_height - FOOTER_MARGIN):
@@ -141,7 +150,6 @@ def extract_premium_text(pdf_path):
         
         full_rst.append(format_as_rst(clean_blocks, page_height))
         
-        # Add a gold separator between pages in the web view
         if i < num_pages - 1:
             full_rst.append("\n.. raw:: html\n\n   <hr class=\"gold-line\">\n")
     
@@ -165,7 +173,7 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
     rst_path = target_dir / f"{file_stem}.rst"
 
     # 1. Extract Text
-    print(f"Extracting structured text from {pdf_path}...")
+    print(f"Extracting premium text from {pdf_path}...")
     text = extract_premium_text(pdf_path)
 
     # 2. Upload to Zenodo
@@ -223,8 +231,6 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
         f.write(rst_content)
     
     print(f"Created RST file at {rst_path}")
-    print(f"\n--- ACTION REQUIRED ---")
-    print(f"Please review and polish the formatting at: {rst_path}")
 
     # 5. Run Translation
     print("\nRunning translation update...")

@@ -1,16 +1,25 @@
 {% extends "!breadcrumbs.html" %}
 
 {% block breadcrumbs_aside %}
-  <div class="language-toggle-container" style="float: right;">
+  <div class="language-toggle-container" style="float: right; margin-bottom: 10px;">
     {% if language == 'en' %}
-      <a href="{{ pathto('../nl/' + pagename + '.html', 1) }}" class="btn btn-neutral language-toggle-btn nl-toggle">
+      {# On RTD, we go up from /en/latest/ to the root, then down to /nl/latest/ #}
+      <a href="{{ pathto('', 1) }}../../nl/latest/{{ pagename }}.html" class="btn btn-neutral language-toggle-btn nl-toggle">
         <i class="fa fa-language"></i> Bekijk in het Nederlands
       </a>
     {% elif language == 'nl' %}
-      <a href="{{ pathto('../en/' + pagename + '.html', 1) }}" class="btn btn-neutral language-toggle-btn en-toggle">
+      <a href="{{ pathto('', 1) }}../../en/latest/{{ pagename }}.html" class="btn btn-neutral language-toggle-btn en-toggle">
         <i class="fa fa-language"></i> View in English
       </a>
     {% endif %}
   </div>
   {{ super() }}
+{% endblock %}
+{% block breadcrumbs %}
+  {{ super() }}
+  <style>
+    .language-toggle-container {
+        margin-top: -5px;
+    }
+  </style>
 {% endblock %}

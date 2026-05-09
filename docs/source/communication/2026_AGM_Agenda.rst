@@ -6,7 +6,7 @@
 
 .. note::
 
-   - **Archived DOI**: Draft Deposition ID: 20096202
+   - **Archived DOI**: Draft Deposition ID: 20096281
    - **Original Document**: :download:`Download PDF <../_static/downloads/2026_AGM_Agenda.pdf>`
 
 .. raw:: html
@@ -90,7 +90,17 @@
 
 ​On behalf of the board.​
 
-​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​ ​KvK: 40047819​ ​www.kna-rnas.nl​
+
+​Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr (Secretary), Steven Rieder (Treasurer)​
+
+
+​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​
+
+
+​KvK: 40047819​
+
+
+​www.kna-rnas.nl​
 
 .. raw:: html
 

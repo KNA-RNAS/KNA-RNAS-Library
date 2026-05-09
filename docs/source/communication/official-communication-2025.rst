@@ -1,7 +1,7 @@
 Official Communiqués 2025
 =============================
 
-This document contains the official communications for the KNA-RNAS Library for the year 2024. It includes announcements, updates, and important information relevant to the library's operations and activities throughout the year.
+This document contains the official communications for the KNA-RNAS Society for the year 2025. It includes announcements, updates, and important information relevant to the society's operations and activities throughout the year.
 
 .. contents:: Table of Contents
    :depth: 2

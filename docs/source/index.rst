@@ -63,6 +63,7 @@ Bibliotheek KNA-RNAS Library
       Public announcements and official correspondence records.
       
       +++
+      - :doc:`2026 Communications <communication/official-communication-2026>`
       - :doc:`2025 Communications <communication/official-communication-2025>`
       - :doc:`2024 Communications <communication/official-communication-2024>`
 
@@ -102,6 +103,7 @@ Bibliotheek KNA-RNAS Library
    :hidden:
    :caption: Official Communication
 
+   communication/official-communication-2026
    communication/official-communication-2025
    communication/official-communication-2024
    api

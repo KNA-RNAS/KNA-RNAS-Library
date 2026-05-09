@@ -6,7 +6,7 @@
 
 .. note::
 
-   **Archived DOI**: Draft ID: 20097163
+   **Archived DOI**: :doi:`10.5281/zenodo.20097163`
 
    .. button-link:: ../_static/archive/2026_AGM_Agenda.pdf
       :color: primary

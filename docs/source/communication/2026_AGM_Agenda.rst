@@ -8,7 +8,7 @@
 
    **Archived DOI**: Draft ID: 20097163
 
-   .. button-link:: ../_static/downloads/2026_AGM_Agenda.pdf
+   .. button-link:: ../_static/archive/2026_AGM_Agenda.pdf
       :color: primary
       :outline:
       :shadow:

@@ -222,12 +222,12 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
     
     doi_display = f":doi:`{doi_or_id}`" if publish and not isinstance(doi_or_id, int) else f"Draft ID: {doi_or_id}"
 
-    downloads_dir = Path("docs/source/_static/downloads")
+    downloads_dir = Path("docs/source/_static/archive")
     downloads_dir.mkdir(parents=True, exist_ok=True)
-    target_pdf_abs = Path("docs/source/_static/downloads") / pdf_path.name
+    target_pdf_abs = Path("docs/source/_static/archive") / pdf_path.name
     shutil.copy(pdf_path, target_pdf_abs)
 
-    rel_path_to_static = "../" * len(category.split('/')) + "_static/downloads/" + pdf_path.name
+    rel_path_to_static = "../" * len(category.split('/')) + "_static/archive/" + pdf_path.name
 
     rst_content = f"""{title}
 {"=" * len(title)}

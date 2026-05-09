@@ -1,0 +1,16 @@
+{% extends "!breadcrumbs.html" %}
+
+{% block breadcrumbs_aside %}
+  <div class="language-toggle-container" style="float: right;">
+    {% if language == 'en' %}
+      <a href="{{ pathto('../nl/' + pagename + '.html', 1) }}" class="btn btn-neutral language-toggle-btn nl-toggle">
+        <i class="fa fa-language"></i> Bekijk in het Nederlands
+      </a>
+    {% elif language == 'nl' %}
+      <a href="{{ pathto('../en/' + pagename + '.html', 1) }}" class="btn btn-neutral language-toggle-btn en-toggle">
+        <i class="fa fa-language"></i> View in English
+      </a>
+    {% endif %}
+  </div>
+  {{ super() }}
+{% endblock %}

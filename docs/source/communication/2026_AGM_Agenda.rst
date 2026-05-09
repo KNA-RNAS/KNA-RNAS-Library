@@ -6,139 +6,95 @@
 
 .. note::
 
-   - **Archived DOI**: Draft Deposition ID: 20095995
+   - **Archived DOI**: Draft Deposition ID: 20096202
    - **Original Document**: :download:`Download PDF <../_static/downloads/2026_AGM_Agenda.pdf>`
 
-​Royal Netherlands Astronomical Society​
+.. raw:: html
 
-​Koninklijke Nederlandse Astronomenclub​
-
-​Office of the Secretary​
-
-​Het Kantoor van de Secretaris​
+   <hr class="gold-line">
 
 ​29 April 2026, Groningen, Netherlands​
 
-​Members of the society are respectfully invited to attend the Annual General Meeting of the​
+​Members of the society are respectfully invited to attend the Annual General Meeting of the​ ​Society, to be held at 09:00 Central European Standard Time, on the 13th day of May,​ ​2026, in the Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, the Netherlands.​
 
-​Society, to be held at 09:00 Central European Standard Time, on the 13th day of May,​
+​The meeting is held in conjunction with the 81st Netherlands Astronomy Conference, all​ ​members are invited to attend regardless of registration for the conference as a whole. To​ ​ensure access to the venue, please contact the secretary if you plan to attend without​ ​meeting registration at least one hour in advance of the meeting.​
 
-​2026, in the Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, the Netherlands.​
+​Please submit apologies for absence; proposed business items; or, in case you will not be​ ​present, comments, opinion, or votes on agenda items, or other matters, to be included in​ ​the record; to the secretary at least 24 hours before the announced meeting time.​
 
-​The meeting is held in conjunction with the 81st Netherlands Astronomy Conference, all​
+​Relevant documents will be provided to members at least 48 hours prior to the meeting, or​ ​during the meeting, as appropriate.​
 
-​members are invited to attend regardless of registration for the conference as a whole. To​
-
-​ensure access to the venue, please contact the secretary if you plan to attend without​
-
-​meeting registration at least one hour in advance of the meeting.​
-
-​Please submit apologies for absence; proposed business items; or, in case you will not be​
-
-​present, comments, opinion, or votes on agenda items, or other matters, to be included in​
-
-​the record; to the secretary at least 24 hours before the announced meeting time.​
-
-​Relevant documents will be provided to members at least 48 hours prior to the meeting, or​
-
-​during the meeting, as appropriate.​
 
 ​Agenda​​(as proposed)​
 
+-----------------------
+
+
 ​Annual General Meeting 13 May 2026, 09:00 CEST​
 
-​1.​
-​Opening of the meeting​
+------------------------------------------------
 
-​2.​
-​Adoption of the Agenda​
 
-​3.​
-​Board Announcements​
+​1.​​Opening of the meeting​
 
-​a.​ ​Board Membership and approval of new board members​
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-​b.​ ​Board Meetings​
 
-​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​
+​2.​​Adoption of the Agenda​
 
-​c.​ ​Other Announcements of the Board​
-​4.​
-​Approval of Minutes​
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-​a.​ ​AGM 2025 (27 May 2025, Berg en Dal, Netherlands)​
-​5.​
-​2025 Annual Report of the Secretary​
 
-​a.​ ​Secretary’s Report​
+​3.​​Board Announcements​
 
-​i.​
-​Report and membership data​
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-​ii.​
-​Report from the EAS​
+​a.​ ​Board Membership and approval of new board members​ ​b.​ ​Board Meetings​
 
-​iii.​
-​Report from (or on behalf of) the Archives​
 
-​iv.​
-​Process for termination of membership​
+.. raw:: html
 
-​b.​ ​Executive Office Report​
+   <hr class="gold-line">
 
-​i.​
-​Report on servers, apps, and other services​
-​6.​
-​2025 Treasury Reports and Actions​
 
-​a.​ ​Financial Statement 2025​
+​c.​ ​Other Announcements of the Board​​4.​​Approval of Minutes​ ​a.​ ​AGM 2025 (27 May 2025, Berg en Dal, Netherlands)​​5.​​2025 Annual Report of the Secretary​ ​a.​ ​Secretary’s Report​ ​i.​​Report and membership data​ ​ii.​​Report from the EAS​ ​iii.​​Report from (or on behalf of) the Archives​ ​iv.​​Process for termination of membership​ ​b.​ ​Executive Office Report​ ​i.​​Report on servers, apps, and other services​​6.​​2025 Treasury Reports and Actions​ ​a.​ ​Financial Statement 2025​ ​i.​​Treasurer’s report​ ​ii.​​Report of the Financial Audit Committee​ ​b.​ ​RNAS Grants and Awards Policies and Plans​ ​i.​​Motion for spending on Grants and Awards, per the membership,​ ​board, or executive committee​ ​c.​ ​Proposed Budget 2026 and 2027​ ​i.​​Motion of change in budget cycle to approve new annual budgets in​ ​the prior year (thus 2027 budget here), subject to mid-budget​ ​amendment in the current year.​ ​d.​ ​Election of the 2026 Financial Audit Committee​
 
-​i.​
-​Treasurer’s report​
 
-​ii.​
-​Report of the Financial Audit Committee​
+.. raw:: html
 
-​b.​ ​RNAS Grants and Awards Policies and Plans​
+   <hr class="gold-line">
 
-​i.​
-​Motion for spending on Grants and Awards, per the membership,​
 
-​board, or executive committee​
 
-​c.​ ​Proposed Budget 2026 and 2027​
+​7.​​2025 Annual Report of the Chair​
 
-​i.​
-​Motion of change in budget cycle to approve new annual budgets in​
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-​the prior year (thus 2027 budget here), subject to mid-budget​
 
-​amendment in the current year.​
+​8.​​Any Other Business (Rondvraag)​
 
-​d.​ ​Election of the 2026 Financial Audit Committee​
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​
 
-​7.​
-​2025 Annual Report of the Chair​
+​9.​​Announcements​
 
-​8.​
-​Any Other Business (Rondvraag)​
+~~~~~~~~~~~~~~~~~~~
 
-​9.​
-​Announcements​
 
 ​10.​ ​Closing of the Meeting​
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ​Respectfully submitted / Hoogachtend,,​
 
-​Dr. J. Noel-Storr, Secretary/Secretaris​
-
-​secretary@kna-rnas.nl​
+​Dr. J. Noel-Storr, Secretary/Secretaris​ ​secretary@kna-rnas.nl​
 
 ​On behalf of the board.​
 
-​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​
+​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​ ​KvK: 40047819​ ​www.kna-rnas.nl​
+
+.. raw:: html
+
+   <hr class="gold-line">
 
 .. document-status::
    :approved: true

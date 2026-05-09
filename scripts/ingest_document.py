@@ -6,8 +6,9 @@ import fitz  # PyMuPDF
 from archive_to_zenodo import archive_document
 import subprocess
 import shutil
+import re
 
-# Common Society Headers/Footers to potentially strip
+# Common Society Strings to identify headers/footers
 SOCIETY_STRINGS = [
     "Royal Netherlands Astronomical Society",
     "Koninklijke Nederlandse Astronomenclub",
@@ -18,54 +19,133 @@ SOCIETY_STRINGS = [
     "www.kna-rnas.nl"
 ]
 
-def clean_text_block(text):
-    """Basic cleaning of text blocks."""
-    lines = text.split('\n')
-    cleaned_lines = []
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-        # Strip common society headers if they appear alone
-        if any(s in line for s in SOCIETY_STRINGS) and len(line) < 100:
-            continue
-        cleaned_lines.append(line)
-    return "\n".join(cleaned_lines)
+def is_list_item(text):
+    """Detect if a line looks like a list item (e.g., 1., a., i., *)."""
+    patterns = [
+        r'^\d+\.',         # 1.
+        r'^[a-z]\.',       # a.
+        r'^[ivx]+\.',      # i., ii.
+        r'^[\*\-\+]\s',    # * , - 
+    ]
+    return any(re.match(p, text.strip().lower()) for p in patterns)
 
-def extract_structured_text(pdf_path):
-    """Extract text using PyMuPDF with header/footer stripping."""
+def format_as_rst(blocks, page_height):
+    """Convert extracted blocks into well-formatted RST."""
+    rst_lines = []
+    
+    # Sort blocks by y-coordinate then x-coordinate
+    blocks.sort(key=lambda b: (round(b['bbox'][1]), round(b['bbox'][0])))
+    
+    current_paragraph = []
+    
+    for i, b in enumerate(blocks):
+        text = ""
+        for line in b['lines']:
+            for span in line['spans']:
+                text += span['text']
+        
+        text = text.strip()
+        if not text:
+            continue
+            
+        # Detect if this block is a header (larger font or bold)
+        # For simplicity, we'll check if it's short and uppercase or bold-ish
+        # PyMuPDF span['size'] and span['flags'] can be used for more precision
+        
+        is_header = False
+        font_size = b['lines'][0]['spans'][0]['size']
+        if font_size > 12: # Standard body is usually 10-11
+            is_header = True
+
+        if is_header:
+            if current_paragraph:
+                rst_lines.append(" ".join(current_paragraph))
+                current_paragraph = []
+            
+            # RST Header
+            rst_lines.append("\n" + text)
+            if font_size > 14:
+                rst_lines.append("-" * len(text))
+            else:
+                rst_lines.append("~" * len(text))
+            continue
+
+        if is_list_item(text):
+            if current_paragraph:
+                rst_lines.append(" ".join(current_paragraph))
+                current_paragraph = []
+            rst_lines.append("\n" + text)
+            continue
+
+        # Merge with current paragraph if y-distance is small
+        if i > 0:
+            prev_b = blocks[i-1]
+            dist = b['bbox'][1] - prev_b['bbox'][3]
+            if dist < 10 and not is_list_item(text):
+                current_paragraph.append(text)
+            else:
+                if current_paragraph:
+                    rst_lines.append(" ".join(current_paragraph))
+                    current_paragraph = []
+                current_paragraph.append(text)
+        else:
+            current_paragraph.append(text)
+
+    if current_paragraph:
+        rst_lines.append(" ".join(current_paragraph))
+
+    return "\n\n".join(rst_lines)
+
+def extract_premium_text(pdf_path):
+    """Extract text with geometric header/footer stripping and layout reconstruction."""
     doc = fitz.open(pdf_path)
-    full_text = []
+    full_rst = []
     num_pages = len(doc)
 
     for i, page in enumerate(doc):
-        # Extract blocks to maintain some structure
-        blocks = page.get_text("blocks")
-        page_text = []
+        # Extract blocks with detail
+        blocks_data = page.get_text("dict")["blocks"]
+        clean_blocks = []
         
-        for b in blocks:
-            block_text = b[4].strip()
-            if not block_text:
+        page_height = page.rect.height
+        
+        # Header/Footer Margins
+        HEADER_MARGIN = 85
+        FOOTER_MARGIN = 75
+
+        for b in blocks_data:
+            if b['type'] != 0: # 0 is text
                 continue
             
-            # Header Stripping: Strip society strings from all pages except the first
-            if i > 0:
-                if any(s in block_text for s in SOCIETY_STRINGS) and len(block_text) < 200:
-                    continue
+            y0 = b['bbox'][1]
+            y1 = b['bbox'][3]
             
-            # Footer Stripping: Strip society strings from all pages except the last
-            if i < num_pages - 1:
-                # Often footers are at the bottom of the page (check block y-coordinate)
-                # block b is (x0, y0, x1, y1, text, block_no, block_type)
-                if b[1] > page.rect.height * 0.8:
-                     if any(s in block_text for s in SOCIETY_STRINGS):
-                         continue
+            # Geometry-based Stripping
+            if i > 0 and y1 < HEADER_MARGIN:
+                continue
+            if i < num_pages - 1 and y0 > (page_height - FOOTER_MARGIN):
+                continue
+            
+            # Content-based backup stripping (for stubborn repeating strings)
+            block_text = "".join(["".join([s['text'] for s in l['spans']]) for l in b['lines']])
+            if any(s in block_text for s in SOCIETY_STRINGS) and len(block_text) < 150:
+                # Keep on page 1 header / last page footer
+                if i == 0 and y1 < HEADER_MARGIN:
+                    pass
+                elif i == num_pages -1 and y0 > (page_height - FOOTER_MARGIN):
+                    pass
+                else:
+                    continue
 
-            page_text.append(block_text)
+            clean_blocks.append(b)
         
-        full_text.append("\n\n".join(page_text))
+        full_rst.append(format_as_rst(clean_blocks, page_height))
+        
+        # Add a gold separator between pages in the web view
+        if i < num_pages - 1:
+            full_rst.append("\n.. raw:: html\n\n   <hr class=\"gold-line\">\n")
     
-    return "\n\n".join(full_text)
+    return "\n\n".join(full_rst)
 
 def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=None, publish=False):
     """
@@ -80,14 +160,13 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
         title = pdf_path.stem.replace("-", " ").replace("_", " ").title()
     
     file_stem = pdf_path.stem
-    # Use category/filename structure
     target_dir = Path(f"docs/source/{category}")
     target_dir.mkdir(parents=True, exist_ok=True)
     rst_path = target_dir / f"{file_stem}.rst"
 
     # 1. Extract Text
     print(f"Extracting structured text from {pdf_path}...")
-    text = extract_structured_text(pdf_path)
+    text = extract_premium_text(pdf_path)
 
     # 2. Upload to Zenodo
     print(f"Archiving to Zenodo (Publish={publish})...")
@@ -95,8 +174,6 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
         description = f"Official {category} document: {title}"
     
     creators = [{'name': 'KNA-RNAS Society', 'affiliation': 'KNA-RNAS'}]
-    
-    # archive_document now handles the publish flag
     doi_or_id = archive_document(str(pdf_path), title, description, creators, publish=publish)
     
     doi_display = "PENDING (Draft Mode)"
@@ -114,8 +191,6 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
     shutil.copy(pdf_path, target_pdf_abs)
 
     # 4. Create RST Content
-    # We use a path relative to the RST file for the download link
-    # Since rst is in docs/source/{category}/, we need to go up one level to reach _static
     rel_path_to_static = "../" * len(category.split('/')) + "_static/downloads/" + pdf_path.name
 
     rst_content = f"""{title}
@@ -129,7 +204,15 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
    - **Archived DOI**: {doi_display}
    - **Original Document**: :download:`Download PDF <{rel_path_to_static}>`
 
+.. raw:: html
+
+   <hr class="gold-line">
+
 {text}
+
+.. raw:: html
+
+   <hr class="gold-line">
 
 .. document-status::
    :approved: true
@@ -140,13 +223,10 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
         f.write(rst_content)
     
     print(f"Created RST file at {rst_path}")
-
-    # 5. Open for Manual Polish (Optional but recommended)
     print(f"\n--- ACTION REQUIRED ---")
     print(f"Please review and polish the formatting at: {rst_path}")
-    print(f"Once you are happy, commit the changes.")
 
-    # 6. Run Translation
+    # 5. Run Translation
     print("\nRunning translation update...")
     try:
         subprocess.run(["make", "gettext"], cwd="docs", check=True)

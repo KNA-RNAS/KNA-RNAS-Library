@@ -102,3 +102,42 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 8px;
 }
+
+/* Premium Language Toggle */
+.language-toggle-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 6px 15px !important;
+    border-radius: 20px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: none !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.language-toggle-btn.nl-toggle {
+    background-color: #d4a96a !important;
+    color: white !important;
+}
+
+.language-toggle-btn.en-toggle {
+    background-color: #1a2a6b !important;
+    color: white !important;
+}
+
+.language-toggle-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    opacity: 0.9;
+}
+
+/* Gold Separator Line */
+hr.gold-line {
+    border: none;
+    border-top: 2px solid #d4a96a;
+    margin: 25px 0;
+    opacity: 0.6;
+}

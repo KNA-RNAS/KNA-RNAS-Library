@@ -159,9 +159,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Gold Separator Line */
-hr.gold-line {
-    border: none;
-    border-top: 2px solid #d4a96a;
-    margin: 25px 0;
-    opacity: 0.6;
+hr {
+    border: none !important;
+    border-top: 2px solid #d4a96a !important;
+    margin: 25px 0 !important;
+    opacity: 0.8 !important;
 }

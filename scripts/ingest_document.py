@@ -24,20 +24,22 @@ SOCIETY_STRINGS = [
     "www.kna-rnas.nl"
 ]
 
-# Patterns for list items
-LIST_PATTERNS = [
-    r'^\d+\.',         # 1.
-    r'^[a-z]\.',       # a.
-    r'^[ivx]+\.',      # i., ii.
-    r'^[\*\-\+]\s',    # * , - 
-]
+def get_list_indent(text):
+    """Return the correct indentation string for a list item."""
+    text_lower = text.strip().lower()
+    if re.match(r'^\d+\.', text_lower):
+        return ""
+    if re.match(r'^[ivx]+\.', text_lower):
+        return "      "
+    if re.match(r'^[a-z]\.', text_lower):
+        return "   "
+    return None
 
 def is_list_item(text):
-    """Detect if a line looks like a list item."""
-    return any(re.match(p, text.strip().lower()) for p in LIST_PATTERNS)
+    return get_list_indent(text) is not None
 
-def format_as_rst(blocks):
-    """Convert extracted blocks into well-formatted RST."""
+def format_as_rst(blocks, is_footer=False, is_header_area=False):
+    """Convert extracted blocks into well-formatted RST using Line Blocks and Nested Lists."""
     rst_lines = []
     
     # Sort blocks by y-coordinate then x-coordinate
@@ -48,7 +50,7 @@ def format_as_rst(blocks):
     for i, b in enumerate(blocks):
         text_parts = []
         for line in b['lines']:
-            line_text = "".join([span['text'] for span in line['spans']]).strip()
+            line_text = "".join([span['text'] for span in line['spans']]).replace('\u200b', '').strip()
             if line_text:
                 text_parts.append(line_text)
         
@@ -56,61 +58,73 @@ def format_as_rst(blocks):
         if not block_text:
             continue
             
-        # Detect if this block is a header
         spans = [s for l in b['lines'] for s in l['spans']]
         font_size = spans[0]['size'] if spans else 10
-        is_bold = any(s['flags'] & 2 for s in spans) # flag 2 is bold in MuPDF
+        is_bold = any(s['flags'] & 2 for s in spans)
         
-        # High-priority header keywords
+        # Header Detection
         header_keywords = ["Agenda", "Meeting", "Minutes", "Report"]
-        is_keyword_header = any(k in block_text for k in header_keywords) and len(block_text) < 50
+        is_keyword_header = any(k in block_text for k in header_keywords) and len(block_text) < 60
         
-        is_header = (font_size > 11.8) or (is_bold and len(block_text) < 60) or is_keyword_header
-
-        if is_header:
+        if (font_size > 14 or (is_keyword_header and font_size > 11)) and not is_footer and not is_header_area:
             if current_paragraph:
                 rst_lines.append(" ".join(current_paragraph))
                 current_paragraph = []
             
             rst_lines.append("\n" + block_text)
             if font_size > 14:
-                rst_lines.append("-" * len(block_text))
+                rst_lines.append("=" * len(block_text))
             else:
-                rst_lines.append("~" * len(block_text))
+                rst_lines.append("-" * len(block_text))
             continue
 
         # Split block if it contains multiple list items
-        # Sometimes PDF extraction puts "a. Item 1 b. Item 2" in one block
-        sub_items = re.split(r'(\s[a-z]\.\s|\s\d+\.\s)', " " + block_text)
+        # Now \u200b is removed, the regex should work perfectly
+        sub_items = re.split(r'(\s[a-z]\.\s|\s\d+\.\s|\s[ivx]+\.\s)', " " + block_text)
         if len(sub_items) > 1:
             if current_paragraph:
                 rst_lines.append(" ".join(current_paragraph))
                 current_paragraph = []
             
-            # Reconstruct items
             current_item = sub_items[0].strip()
             for j in range(1, len(sub_items), 2):
-                if current_item: rst_lines.append(current_item)
+                if current_item:
+                    indent = get_list_indent(current_item) or ""
+                    rst_lines.append(f"{indent}{current_item}")
                 current_item = (sub_items[j] + sub_items[j+1]).strip()
-            if current_item: rst_lines.append(current_item)
+            
+            if current_item:
+                indent = get_list_indent(current_item) or ""
+                rst_lines.append(f"{indent}{current_item}")
             continue
 
-        if is_list_item(block_text):
+        # Nested List Logic
+        indent = get_list_indent(block_text)
+        if indent is not None:
             if current_paragraph:
                 rst_lines.append(" ".join(current_paragraph))
                 current_paragraph = []
-            rst_lines.append(block_text)
+            rst_lines.append(f"\n{indent}{block_text}")
             continue
 
-        # Merge logic: Only merge if the previous line doesn't end with a terminal punctuation
+        # Line Block Logic (Short lines in header/footer)
+        if is_footer or is_header_area:
+            if current_paragraph:
+                rst_lines.append(" ".join(current_paragraph))
+                current_paragraph = []
+            rst_lines.append(f"| {block_text}")
+            continue
+
+        # Regular Paragraph Merging
+        # We rely mostly on PyMuPDF's block grouping. If blocks are separate, we assume they are separate paragraphs unless they look very suspiciously like continuations.
         if current_paragraph:
             prev_text = current_paragraph[-1]
-            if prev_text.endswith(('.', ':', '!', '?')) or is_list_item(block_text) or block_text[0].isupper():
-                # Potential new paragraph
+            # Simple check: If previous text didn't end with punctuation and current starts with lowercase, merge.
+            if not prev_text.endswith(('.', ':', '!', '?')) and block_text[0].islower():
+                current_paragraph.append(block_text)
+            else:
                 rst_lines.append(" ".join(current_paragraph))
                 current_paragraph = [block_text]
-            else:
-                current_paragraph.append(block_text)
         else:
             current_paragraph.append(block_text)
 
@@ -120,7 +134,6 @@ def format_as_rst(blocks):
     return "\n\n".join(rst_lines)
 
 def extract_premium_text(pdf_path):
-    """Extract text with geometric header/footer stripping and layout reconstruction."""
     doc = fitz.open(pdf_path)
     full_rst = []
     num_pages = len(doc)
@@ -129,6 +142,7 @@ def extract_premium_text(pdf_path):
         blocks_data = page.get_text("dict")["blocks"]
         content_blocks = []
         footer_blocks = []
+        header_blocks = []
         
         page_height = page.rect.height
         HEADER_MARGIN = 110
@@ -140,36 +154,40 @@ def extract_premium_text(pdf_path):
             y0, y1 = b['bbox'][1], b['bbox'][3]
             block_text = " ".join([" ".join([s['text'] for s in l['spans']]) for l in b['lines']]).strip()
             
-            # Page 1: Keep header, strip footer
             if i == 0:
                 if y0 > (page_height - FOOTER_MARGIN): continue
-                content_blocks.append(b)
-            # Last Page: Strip header, identify footer separately
+                if y1 < HEADER_MARGIN:
+                    header_blocks.append(b)
+                else:
+                    content_blocks.append(b)
             elif i == num_pages - 1:
                 if y1 < HEADER_MARGIN: continue
                 if y0 > (page_height - FOOTER_MARGIN) or any(s in block_text for s in SOCIETY_STRINGS):
                     footer_blocks.append(b)
                 else:
                     content_blocks.append(b)
-            # Middle Pages: Strip both
             else:
                 if y1 < HEADER_MARGIN or y0 > (page_height - FOOTER_MARGIN): continue
-                # Also strip if content matches society strings
                 if any(s in block_text for s in SOCIETY_STRINGS) and len(block_text) < 200: continue
                 content_blocks.append(b)
         
-        # Format the main content
+        if i == 0 and header_blocks:
+            full_rst.append(format_as_rst(header_blocks, is_header_area=True))
+            full_rst.append("\n----\n")
+            
         page_rst = format_as_rst(content_blocks)
+        # Clean up excessive newlines caused by line blocks
+        page_rst = re.sub(r'\|\s+([^\n]+)\n\n\|\s+([^\n]+)', r'| \1\n| \2', page_rst)
         full_rst.append(page_rst)
         
-        # Page separator
         if i < num_pages - 1:
-            full_rst.append("\n.. raw:: html\n\n   <hr class=\"gold-line\">\n")
+            full_rst.append("\n----\n")
         else:
-            # Last page: Add gold line BEFORE footer
             if footer_blocks:
-                full_rst.append("\n.. raw:: html\n\n   <hr class=\"gold-line\">\n")
-                full_rst.append(format_as_rst(footer_blocks))
+                full_rst.append("\n----\n")
+                footer_rst = format_as_rst(footer_blocks, is_footer=True)
+                footer_rst = re.sub(r'\|\s+([^\n]+)\n\n\|\s+([^\n]+)', r'| \1\n| \2', footer_rst)
+                full_rst.append(footer_rst)
     
     return "\n\n".join(full_rst)
 
@@ -193,7 +211,6 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
     
     doi_display = f":doi:`{doi_or_id}`" if publish and not isinstance(doi_or_id, int) else f"Draft ID: {doi_or_id}"
 
-    # Handle PDF Download
     downloads_dir = Path("docs/source/_static/downloads")
     downloads_dir.mkdir(parents=True, exist_ok=True)
     target_pdf_abs = Path("docs/source/_static/downloads") / pdf_path.name
@@ -212,10 +229,6 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
    - **Archived DOI**: {doi_display}
    - **Original Document**: :download:`Download PDF <{rel_path_to_static}>`
 
-.. raw:: html
-
-   <hr class="gold-line">
-
 {text}
 
 .. document-status::
@@ -226,7 +239,6 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
     with open(rst_path, "w") as f: f.write(rst_content)
     print(f"Created RST file at {rst_path}")
 
-    # Run Translation
     print("\nRunning translation update...")
     try:
         subprocess.run(["make", "gettext"], cwd="docs", check=True)

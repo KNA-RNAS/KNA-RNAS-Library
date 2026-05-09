@@ -82,13 +82,21 @@ class DocumentOfRecordDirective(Directive):
         if lang == 'nl':
             if is_translation:
                 msg = "Dit is een vertaling. Het originele document is in het Engels."
+                btn_text = "View in English"
+                target_lang = "en"
             else:
                 msg = "Dit is het officiële document van record (Origineel)."
+                btn_text = "View in English"
+                target_lang = "en"
         else:
             if is_translation:
                 msg = "This is a translation. The original document is in Dutch."
+                btn_text = "Bekijk in het Nederlands"
+                target_lang = "nl"
             else:
                 msg = "This is the official document of record (Original)."
+                btn_text = "Bekijk in het Nederlands"
+                target_lang = "nl"
             
         banner_node = nodes.container()
         banner_node['classes'].append('document-of-record-banner')
@@ -98,10 +106,15 @@ class DocumentOfRecordDirective(Directive):
         # Icon and Text
         icon_class = "fa-language" if is_translation else "fa-certificate"
         icon_html = nodes.raw('', f'<i class="fa {icon_class}"></i> ', format='html')
-        text_node = nodes.Text(msg)
+        text_node = nodes.inline(text=msg)
         
         banner_node.append(icon_html)
         banner_node.append(text_node)
+        
+        # Language Toggle Button (JS Based)
+        js_code = f"window.location.href = window.location.href.replace('/{lang}/', '/{target_lang}/');"
+        btn_html = nodes.raw('', f'<button onclick="{js_code}" class="banner-language-toggle">{btn_text}</button>', format='html')
+        banner_node.append(btn_html)
         
         return [banner_node]
 

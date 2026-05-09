@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -66,10 +67,33 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2em;
 }
 
+.document-of-record-banner .banner-language-toggle {
+    background-color: #d4a96a;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.document-of-record-banner .banner-language-toggle:hover {
+    background-color: #c4995a;
+    transform: translateY(-1px);
+}
+
 .document-of-record-banner.translation-banner {
     background-color: #fdf6e3;
     border-left: 5px solid #d4a96a;
     color: #586e75;
+}
+
+.document-of-record-banner.translation-banner .banner-language-toggle {
+    background-color: #1a2a6b;
 }
 
 .document-of-record-banner.translation-banner i {

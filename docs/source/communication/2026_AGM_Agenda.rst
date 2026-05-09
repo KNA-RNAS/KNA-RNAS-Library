@@ -6,8 +6,14 @@
 
 .. note::
 
-   - **Archived DOI**: Draft ID: 20097081
-   - **Original Document**: :download:`Download PDF <../_static/downloads/2026_AGM_Agenda.pdf>`
+   **Archived DOI**: Draft ID: 20097163
+
+   .. button-link:: ../_static/downloads/2026_AGM_Agenda.pdf
+      :color: primary
+      :outline:
+      :shadow:
+
+      Download Original PDF
 
 | Royal Netherlands Astronomical Society
 | Koninklijke Nederlandse Astronomenclub
@@ -27,13 +33,12 @@ Please submit apologies for absence; proposed business items; or, in case you wi
 
 Relevant documents will be provided to members at least 48 hours prior to the meeting, or during the meeting, as appropriate.
 
---------------------
 Agenda (as proposed)
 --------------------
 
 
 Annual General Meeting 13 May 2026, 09:00 CEST
-==============================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 1. Opening of the meeting

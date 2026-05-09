@@ -18,3 +18,8 @@ Business Meeting May 2026
    :approved: false
    :approved_in: Pending
    :notary_stamp: Pending
+
+.. toctree::
+   :hidden:
+
+   2026_AGM_Agenda

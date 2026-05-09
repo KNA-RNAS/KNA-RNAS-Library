@@ -165,15 +165,14 @@ def extract_premium_text(pdf_path):
         if is_header:
             rst_lines.append("")
             if "Agenda" in p:
-                rst_lines.append("-" * len(p))
                 rst_lines.append(p)
                 rst_lines.append("-" * len(p))
             elif "Annual" in p:
                 rst_lines.append(p)
-                rst_lines.append("=" * len(p))
+                rst_lines.append("~" * len(p))
             else:
                 rst_lines.append(p)
-                rst_lines.append("-" * len(p))
+                rst_lines.append("~" * len(p))
             rst_lines.append("")
             prev_type = "header"
             continue
@@ -238,8 +237,14 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
 
 .. note::
 
-   - **Archived DOI**: {doi_display}
-   - **Original Document**: :download:`Download PDF <{rel_path_to_static}>`
+   **Archived DOI**: {doi_display}
+
+   .. button-link:: {rel_path_to_static}
+      :color: primary
+      :outline:
+      :shadow:
+
+      Download Original PDF
 
 {text}
 

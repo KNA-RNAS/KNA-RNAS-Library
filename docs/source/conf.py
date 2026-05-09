@@ -112,7 +112,15 @@ class DocumentOfRecordDirective(Directive):
         banner_node.append(text_node)
         
         # Language Toggle Button (JS Based)
-        js_code = f"window.location.href = window.location.href.replace('/{lang}/', '/{target_lang}/');"
+        js_code = f"""
+            var url = window.location.href;
+            if (url.includes('/{lang}/')) {{
+                window.location.href = url.replace('/{lang}/', '/{target_lang}/');
+            }} else {{
+                alert('Translation switching is only supported when viewing the hosted documentation (URL must contain /{lang}/). Locally, please navigate to the locale build directory manually.');
+            }}
+        """.replace('\n', ' ').strip()
+        
         btn_html = nodes.raw('', f'<button onclick="{js_code}" class="banner-language-toggle">{btn_text}</button>', format='html')
         banner_node.append(btn_html)
         

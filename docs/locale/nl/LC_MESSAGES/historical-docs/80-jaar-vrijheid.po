@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-15 19:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/historical-docs/80-jaar-vrijheid.rst:2
+msgid "80-jaar-vrijheid"
+msgstr "80-jaar-vrijheid"
+
+#: ../../source/historical-docs/80-jaar-vrijheid.rst:4
+msgid ""
+"This document commemorates the 80th anniversary of freedom, highlighting the"
+" significance of this milestone in relation to the KNA-RNAS Library. It "
+"reflects on the historical context, the events leading up to this "
+"anniversary, and the impact it has had on the library and its community."
+msgstr ""
+"Dit document herdenkt de 80e verjaardag van de vrijheid en belicht de "
+"betekenis van deze mijlpaal in relatie tot de KNA-RNAS Bibliotheek. Het "
+"reflecteert op de historische context, de gebeurtenissen die hebben geleid "
+"tot dit jubileum en de impact die het heeft gehad op de bibliotheek en haar "
+"gemeenschap."
+
+#: ../../source/historical-docs/80-jaar-vrijheid.rst:7
+msgid "Key Highlights"
+msgstr "Hoogtepunten"
+
+#: ../../source/historical-docs/80-jaar-vrijheid.rst:9
+msgid "Historical events leading to the 80th anniversary of freedom."
+msgstr ""
+"Historische gebeurtenissen die leidden tot de 80e verjaardag van de "
+"vrijheid."
+
+#: ../../source/historical-docs/80-jaar-vrijheid.rst:10
+msgid ""
+"Contributions of the KNA-RNAS Library to the preservation of astronomical "
+"knowledge during this period."
+msgstr ""
+"Bijdragen van de KNA-RNAS Bibliotheek aan het behoud van astronomische "
+"kennis in deze periode."
+
+#: ../../source/historical-docs/80-jaar-vrijheid.rst:11
+msgid "Celebratory events and publications related to the anniversary."
+msgstr "Feestelijke evenementen en publicaties in verband met de verjaardag."
+
+#: ../../source/historical-docs/80-jaar-vrijheid.rst:13
+msgid ""
+"For more information, please refer to the official communications and "
+"publications sections of the KNA-RNAS Library documentation."
+msgstr ""
+"Raadpleeg voor meer informatie de secties officiële mededelingen en "
+"publicaties van de KNA-RNAS-bibliotheekdocumentatie."

@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-09 12:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/governing-docs/kvk-registration.rst:2
+#, fuzzy
+msgid "KNA-RNAS Registration with the Dutch Chamber of Commerce (KvK)"
+msgstr "KNA-RNAS Inschrijving bij de Nederlandse Kamer van Koophandel (KVK)"
+
+#: ../../source/governing-docs/kvk-registration.rst:11
+#, fuzzy
+msgid ""
+"This document provides information about the registration of the KNA-RNAS "
+"Library with the Dutch Chamber of Commerce (KvK)."
+msgstr ""
+"Dit document geeft informatie over de inschrijving van de KNA-RNAS "
+"Bibliotheek bij de Nederlandse Kamer van Koophandel (KVK)."
+
+#: ../../source/governing-docs/kvk-registration.rst:13
+#, fuzzy
+msgid "**KvK Registration Details:**"
+msgstr "**KVK Registratiegegevens:**"
+
+#: ../../source/governing-docs/kvk-registration.rst:15
+#, fuzzy
+msgid "**Chamber of Commerce Number:** 72839401 (Example)"
+msgstr "**Nummer Kamer van Koophandel:** [KVK-nummer hier invoegen]"
+
+#: ../../source/governing-docs/kvk-registration.rst:16
+#, fuzzy
+msgid "**Date of Registration:** 2023-05-10"
+msgstr "**Doel van de registratie:**"
+
+#: ../../source/governing-docs/kvk-registration.rst:17
+#, fuzzy
+msgid "**Registered Address:** Amsterdam, Netherlands"
+msgstr "**Geregistreerd adres:** [Voeg hier adres in]"
+
+#: ../../source/governing-docs/kvk-registration.rst:18
+#, fuzzy
+msgid "**Contact Information:** secretary@kna-rnas.nl"
+msgstr "**Contactinformatie:** [Voeg hier contactgegevens in]"
+
+#: ../../source/governing-docs/kvk-registration.rst:20
+#, fuzzy
+msgid "**Purpose of Registration:** Public Astronomy Society"
+msgstr "**Doel van de registratie:**"
+
+#: ../../source/governing-docs/kvk-registration.rst:23
+msgid "**Registered Board Members:**"
+msgstr "**Geregistreerde bestuursleden:**"
+
+#: ../../source/governing-docs/kvk-registration.rst:22
+msgid "Jacob Noel-Storr, President"
+msgstr "Jacob Noel-Storr, Voorzitter"
+
+#: ../../source/governing-docs/kvk-registration.rst:23
+#, fuzzy
+msgid "[Name 2, Secretary]"
+msgstr "[Naam 2, Positie]"
+
+#: ../../source/governing-docs/kvk-registration.rst:24
+msgid "[Name 3, Treasurer]"
+msgstr "[Naam 3, Penningmeester]"
+
+#: ../../source/governing-docs/kvk-registration.rst:25
+msgid ""
+"**UBO:** Ultimate Beneficial Owner information is on file with the KvK."
+msgstr ""
+"**UBO:** De gegevens van de uiteindelijke begunstigde staan in het bestand "
+"van de KvK."
+
+#: ../../source/governing-docs/kvk-registration.rst:27
+msgid "**Banking and Financial Information:**"
+msgstr "**Bancaire en financiële informatie:**"
+
+#: ../../source/governing-docs/kvk-registration.rst:29
+#, fuzzy
+msgid "**Bank Name:** Rabobank"
+msgstr "**Banknaam:** [Banknaam hier invoegen]"
+
+#: ../../source/governing-docs/kvk-registration.rst:30
+msgid "**IBAN:** NL00 RABC 0123 4567 89"
+msgstr "**IBAN:** NL00 RABC 0123 4567 89"
+
+#: ../../source/governing-docs/kvk-registration.rst:31
+msgid "**BIC:** RABONL2U"
+msgstr "**BIC:** RABONL2U"
+
+#: ../../source/governing-docs/kvk-registration.rst:32
+msgid "**Account Holder:** KNA-RNAS"
+msgstr "**Rekeninghouder:** KNA-RNAS"
+
+#: ../../source/governing-docs/kvk-registration.rst:33
+msgid "**Audit Committee:** Appointed annually by the General Assembly."
+msgstr "**Auditcommissie:** Jaarlijks benoemd door de Algemene Vergadering."
+
+#: ../../source/governing-docs/kvk-registration.rst:35
+#, fuzzy
+msgid ""
+"For any inquiries regarding the KvK registration, please contact the "
+"treasurer at treasurer@kna-rnas.nl."
+msgstr ""
+"Voor vragen over de KVK inschrijving kun je contact opnemen met de "
+"penningmeester via treasurer@kna-rnas.nl."
+
+#~ msgid "**Date of Registration:** [Insert Date Here]"
+#~ msgstr "**Datum van registratie:** [Datum hier invullen]"
+
+#~ msgid "[Name 1, Position]"
+#~ msgstr "[Naam 1, Positie]"
+
+#~ msgid "[Name 3, Position]"
+#~ msgstr "[Naam 3, Positie]"
+
+#~ msgid "[Name 4, Position]"
+#~ msgstr "[Naam 4, Positie]"
+
+#~ msgid "**UBO:** [Insert UBO Information Here]"
+#~ msgstr "**UBO:** [Voeg hier UBO-informatie in]"
+
+#~ msgid "**IBAN:** [Insert IBAN Here]"
+#~ msgstr "**IBAN:** [IBAN hier invoegen]"
+
+#~ msgid "**BIC:** [Insert BIC Here]"
+#~ msgstr "**BIC:** [Voeg hier BIC in]"
+
+#~ msgid "**Account Holder:** [Insert Account Holder Name Here]"
+#~ msgstr "**Rekeninghouder:** [Vul hier de naam van de rekeninghouder in]"
+
+#~ msgid "**Audit Committee:** [Insert Audit Committee Information Here]"
+#~ msgstr "**Auditcomité:** [Voeg hier informatie over het auditcomité in]"

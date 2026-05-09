@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-09 12:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/api.rst:2
+msgid "API"
+msgstr "API"
+
+#: ../../source/api.rst:4
+msgid ""
+"The KNA-RNAS Library project is primarily a documentation repository. "
+"Currently, there are no public Python APIs to document. This page will be "
+"updated if custom extensions or utilities are added to the core library "
+"package."
+msgstr ""
+"Het KNA-RNAS bibliotheekproject is voornamelijk een "
+"documentatieopslagplaats. Momenteel zijn er geen openbare Python API's om te"
+" documenteren. Deze pagina zal worden bijgewerkt als er aangepaste "
+"uitbreidingen of hulpprogramma's worden toegevoegd aan het kernpakket van de"
+" bibliotheek."

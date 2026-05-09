@@ -13,6 +13,10 @@ Annual Member Meeting May 2025
    - Location: [Insert Location Here]
    - DOI-number: [Insert DOI Here]
    - PDF: [Insert PDF Link Here]
-   - Approved on: [Insert Approval Date Here]
+
+.. document-status::
+   :approved: False
+   :approved_in: :doc:`/minutes/meeting-minutes`
+   :notary_stamp: Pending
 
 

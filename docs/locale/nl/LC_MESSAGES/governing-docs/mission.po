@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-09 12:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/governing-docs/mission.rst:2
+msgid "Mission of the KNA-RNAS"
+msgstr "Missie van de KNA-RNAS"
+
+#: ../../source/governing-docs/mission.rst:11
+msgid ""
+"The mission of the KNA-RNAS is to promote the study of astronomy and related"
+" sciences, to support the astronomical community in the Netherlands, and to "
+"preserve the historical heritage of Dutch astronomy."
+msgstr ""
+"De missie van de KNA-RNAS is het bevorderen van de studie van de "
+"sterrenkunde en aanverwante wetenschappen, het ondersteunen van de "
+"sterrenkundige gemeenschap in Nederland en het bewaren van het historische "
+"erfgoed van de Nederlandse sterrenkunde."
+
+#~ msgid "The mission of the KNA-RNAS is to"
+#~ msgstr "De missie van de KNA-RNAS is om"

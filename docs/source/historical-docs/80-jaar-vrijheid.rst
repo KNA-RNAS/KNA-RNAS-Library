@@ -1,6 +1,13 @@
 80-jaar-vrijheid
 =================
 
+.. document-of-record::
+
+.. document-status::
+   :approved: true
+   :approved_in: General Assembly 2024
+   :notary_stamp: Pending
+
 This document commemorates the 80th anniversary of freedom, highlighting the significance of this milestone in relation to the KNA-RNAS Library. It reflects on the historical context, the events leading up to this anniversary, and the impact it has had on the library and its community.
 
 Key Highlights

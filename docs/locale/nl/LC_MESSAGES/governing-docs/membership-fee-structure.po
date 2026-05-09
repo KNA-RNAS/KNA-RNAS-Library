@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-15 19:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:2
+msgid "Membership Fee Structure"
+msgstr "Structuur lidmaatschapsgeld"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:4
+msgid ""
+"This document outlines the current structure of membership fees for the KNA-"
+"RNAS. The fees may be modified by a vote of the Annual Members Meeting."
+msgstr ""
+"Dit document beschrijft de huidige structuur van de lidmaatschapsgelden voor"
+" de KNA-RNAS. De tarieven kunnen worden gewijzigd door een stemming tijdens "
+"de jaarlijkse ledenvergadering."
+
+#: ../../source/governing-docs/membership-fee-structure.rst:7
+msgid "Membership Categories"
+msgstr "Lidmaatschap Categorieën"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:9
+msgid "**General Membership**"
+msgstr "**Algemeen Lidmaatschap**"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:11
+#: ../../source/governing-docs/membership-fee-structure.rst:16
+#: ../../source/governing-docs/membership-fee-structure.rst:21
+#: ../../source/governing-docs/membership-fee-structure.rst:27
+#: ../../source/governing-docs/membership-fee-structure.rst:32
+msgid "Annual Fee (regular): €XX"
+msgstr "Jaarlijkse bijdrage (normaal): €XX"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:12
+msgid "Annual Fee (with SEPA mandate): €XX"
+msgstr "Jaarlijkse vergoeding (met SEPA-mandaat): €XX"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:14
+msgid "**Flemish Membership**"
+msgstr "**Vlaams lidmaatschap**"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:17
+#: ../../source/governing-docs/membership-fee-structure.rst:22
+#: ../../source/governing-docs/membership-fee-structure.rst:28
+msgid "Annual Fee (with SEPA mandate) €XX"
+msgstr "Jaarlijkse vergoeding (met SEPA-mandaat) €XX"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:19
+msgid "**Overseas Membership**"
+msgstr "**Overzees lidmaatschap**"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:23
+msgid "Annual Fee (from countries outside the SEPA region): €XX"
+msgstr "Jaarlijkse kosten (van landen buiten de SEPA-regio): €XX"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:25
+msgid "**Student Membership**"
+msgstr "**Studenten Lidmaatschap**"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:30
+msgid "**Emeritus Membership**"
+msgstr "**Emeritus Lidmaatschap**"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:33
+msgid "Annual Fee (with SEPA mandate) €xxxx"
+msgstr "Jaarlijkse vergoeding (met SEPA-mandaat) €xxxx"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:35
+msgid "**Life Membership**"
+msgstr "**Levenslang Lidmaatschap**"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:37
+msgid "One-time Fee (regular; 20x general membership): €XXXX"
+msgstr "Eenmalige bijdrage (regulier; 20x algemeen lidmaatschap): €XXXX"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:38
+msgid "Reduced Fee (for emeritus members): €XXXX"
+msgstr "Gereduceerd tarief (voor emeritus leden): €XXXX"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:42
+msgid "Payment Methods"
+msgstr "Betaalmethoden"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:44
+msgid "Membership fees can be paid via:"
+msgstr "Lidmaatschapsgeld kan worden betaald via:"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:46
+msgid ""
+"Direct Debit: With completed SEPA mandate in the members online profile."
+msgstr ""
+"Automatische incasso: Met ingevuld SEPA-mandaat in het online profiel van "
+"het lid."
+
+#: ../../source/governing-docs/membership-fee-structure.rst:47
+msgid ""
+"iDEAL, [Belgian iDEAL] or Credit Card: Via the unique link in the members "
+"online profile."
+msgstr ""
+"iDEAL, [Belgische iDEAL] of Creditcard: Via de unieke link in het online "
+"profiel van het lid."
+
+#: ../../source/governing-docs/membership-fee-structure.rst:49
+msgid ""
+"*Note: Direct Debit provides a discounted membership fee as listed above. "
+"International Members with an address that is outside of the SEPA region are"
+" eligible to pay the discounted rate via Credit Card or Bank Transfer.*"
+msgstr ""
+"*Opmerking: Bij automatische incasso geldt een korting op het "
+"lidmaatschapsgeld zoals hierboven vermeld. Internationale leden met een "
+"adres buiten de SEPA-regio kunnen het kortingstarief betalen via creditcard "
+"of bankoverschrijving*"
+
+#: ../../source/governing-docs/membership-fee-structure.rst:52
+msgid ""
+"For more information on membership fees or to apply for membership, please "
+"contact secretary@kna-rnas.nl."
+msgstr ""
+"Voor meer informatie over lidmaatschapsgelden of om je aan te melden, kun je"
+" contact opnemen met secretary@kna-rnas.nl."

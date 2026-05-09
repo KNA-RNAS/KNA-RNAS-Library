@@ -1,4 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poppins:wght@400;600&display=swap');
+
+/* Typography */
+body {
+    font-family: 'Nunito Sans', sans-serif !important;
+    color: #4a4a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important;
+    color: #1a2a6b !important; /* Society Dark Blue */
+    font-weight: 600 !important;
+}
+
+/* Sidebar Customization */
+.wy-nav-side {
+    background: #d4a96a !important; /* Golden/Tan Accent */
+}
+
+.wy-side-nav-search {
+    background-color: #1a2a6b !important; /* Header Blue */
+}
+
+.wy-menu-vertical a {
+    color: #1a2a6b !important;
+    font-weight: 500;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: rgba(26, 42, 107, 0.1) !important;
+}
+
+.wy-menu-vertical li.current > a {
+    background: rgba(26, 42, 107, 0.15) !important;
+    color: #1a2a6b !important;
+}
+
+.wy-side-nav-search input[type="text"] {
+    border-color: #d4a96a;
+}
+
+/* Main Content Area */
 .wy-nav-content {
-    /* max-width: 100% !important; */
-    max-width: 1616px !important;
+    max-width: 1200px !important;
+    background: #ffffff;
+}
+
+.wy-nav-content-wrap {
+    background: #fdfdfd;
+}
+
+/* Document of Record Banner */
+.document-of-record-banner {
+    background-color: #1a2a6b;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.document-of-record-banner i {
+    font-size: 1.2em;
+}
+
+/* Document Status Box */
+.document-status-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid #1a2a6b;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 0.95em;
+    color: #4a4a4a;
+}
+.document-status-box p {
+    margin-bottom: 5px;
+}
+.document-status-box p:last-child {
+    margin-bottom: 0;
+}
+.status-approval {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.status-notary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }

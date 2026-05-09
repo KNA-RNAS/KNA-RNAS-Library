@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-09 12:19+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/index.rst:69
+msgid "Governing Documents"
+msgstr "Bestuurlijke documenten"
+
+#: ../../source/index.rst:80
+msgid "Publications"
+msgstr "Publicaties"
+
+#: ../../source/index.rst:87
+msgid "Minutes"
+msgstr "Notulen"
+
+#: ../../source/index.rst:94
+msgid "Historical Documents"
+msgstr "Historische documenten"
+
+#: ../../source/index.rst:101
+msgid "Official Communication"
+msgstr "Officiële mededeling"
+
+#: ../../source/index.rst:2
+msgid "Bibliotheek KNA-RNAS Library"
+msgstr "Bibliotheek KNA-RNAS"
+
+#: ../../source/index.rst:-1
+#, fuzzy
+msgid "KNA-RNAS Library Banner"
+msgstr "Bibliotheek KNA-RNAS"
+
+#: ../../source/index.rst:10
+msgid ""
+"**The KNA-RNAS Library** is the official Library of the Royal Netherlands "
+"Astronomical Society (Koninklijke Nederlandse Astronomen Club). The archive "
+"of physical documents is housed in xxxx. Approved electronic documents are "
+"given a DOI-number via Zenodo (CERN, Geneva, CH); Recurrent publications may"
+" be issued an ISSN by the National Library of the Netherlands."
+msgstr ""
+"**De KNA-RNAS Bibliotheek** is de officiële bibliotheek van de Koninklijke "
+"Nederlandse Astronomen Club. Het archief van fysieke documenten is "
+"gehuisvest in xxxx. Goedgekeurde elektronische documenten krijgen een DOI-"
+"nummer via Zenodo (CERN, Genève, CH); terugkerende publicaties kunnen een "
+"ISSN krijgen van de Koninklijke Bibliotheek."
+
+#: ../../source/index.rst:14
+msgid ""
+"This library is under active development, direct comments to librarian@kna-"
+"rnas.nl"
+msgstr ""
+"Deze bibliotheek wordt actief ontwikkeld, opmerkingen kunt u sturen naar "
+"librarian@kna-rnas.nl"
+
+#: ../../source/index.rst:20
+#, fuzzy
+msgid "🏛️ Governing Documents"
+msgstr "Bestuurlijke documenten"
+
+#: ../../source/index.rst:23
+msgid "Official statutes, bylaws, and mission statement of the KNA-RNAS."
+msgstr ""
+"Officiële statuten, huishoudelijk reglement en missieverklaring van de KNA-"
+"RNAS."
+
+#: ../../source/index.rst:26
+msgid ":doc:`Statutes <governing-docs/statutes>`"
+msgstr ":doc:`Statuten <governing-docs/statuten>`"
+
+#: ../../source/index.rst:27
+msgid ":doc:`Bylaws <governing-docs/bylaws>`"
+msgstr ":doc:`Voorschriften <governing-docs/bylaws>`"
+
+#: ../../source/index.rst:28
+msgid ":doc:`Mission <governing-docs/mission>`"
+msgstr ":doc:`Missie <bestuursdocumenten/missie>`"
+
+#: ../../source/index.rst:29
+msgid ":doc:`KvK Registration <governing-docs/kvk-registration>`"
+msgstr ":doc:`KvK-registratie <governing-docs/kvk-registration>`"
+
+#: ../../source/index.rst:30
+msgid ":doc:`Fee Structure <governing-docs/membership-fee-structure>`"
+msgstr ":doc:`Ledengeldstructuur <governing-docs/membership-fee-structure>`"
+
+#: ../../source/index.rst:31
+msgid ":doc:`Qualification <governing-docs/qualification>`"
+msgstr ":doc:`Kwalificatie <governing-docs/kwalificatie>`"
+
+#: ../../source/index.rst:33
+#, fuzzy
+msgid "📚 Publications"
+msgstr "Publicaties"
+
+#: ../../source/index.rst:36
+msgid "Periodicals and official publications distributed by the society."
+msgstr "Tijdschriften en officiële publicaties verspreid door de vereniging."
+
+#: ../../source/index.rst:39
+msgid ":doc:`Newsletters <publications/newsletters>`"
+msgstr ":doc:`Nieuwsbrieven <publicaties/nieuwsbrieven>`"
+
+#: ../../source/index.rst:40
+msgid ":doc:`Proceedings <publications/proceedings>`"
+msgstr ":doc:`Proceedings <publicaties/proceedings>`"
+
+#: ../../source/index.rst:42
+#, fuzzy
+msgid "📝 Minutes"
+msgstr "Notulen"
+
+#: ../../source/index.rst:45
+msgid "Records of society meetings and board gatherings."
+msgstr "Notulen van vergaderingen van de vereniging en bestuursvergaderingen."
+
+#: ../../source/index.rst:48
+msgid ":doc:`Meeting Minutes <minutes/meeting-minutes>`"
+msgstr ":doc:`Vergaderingsnotulen <minutes/meeting-minutes>`"
+
+#: ../../source/index.rst:49
+msgid ":doc:`Board Minutes <minutes/board-minutes>`"
+msgstr ":doc:`Bestuursnotulen <minutes/board-minutes>`"
+
+#: ../../source/index.rst:51
+#, fuzzy
+msgid "🕰️ Historical Documents"
+msgstr "Historische documenten"
+
+#: ../../source/index.rst:54
+msgid "Archival materials marking key moments in the history of the KNA-RNAS."
+msgstr ""
+"Archiefmateriaal dat belangrijke momenten in de geschiedenis van de KNA-RNAS"
+" markeert."
+
+#: ../../source/index.rst:57
+msgid ":doc:`Royal Designation <historical-docs/royal-designation>`"
+msgstr ":doc:`Koninklijke benoeming <historical-docs/royal-designation>`"
+
+#: ../../source/index.rst:58
+msgid ":doc:`80 Jaar Vrijheid <historical-docs/80-jaar-vrijheid>`"
+msgstr ":doc:`80 Jaar Vrijheid <historical-docs/80-jaar-vrijheid>`"
+
+#: ../../source/index.rst:60
+#, fuzzy
+msgid "📢 Official Communication"
+msgstr "Officiële mededeling"
+
+#: ../../source/index.rst:63
+msgid "Public announcements and official correspondence records."
+msgstr "Openbare aankondigingen en officiële correspondentie."
+
+#: ../../source/index.rst:66
+msgid ":doc:`2025 Communications <communication/official-communication-2025>`"
+msgstr ":doc:`2025 Communicatie <communicatie/officiële-communicatie-2025>`"
+
+#: ../../source/index.rst:67
+msgid ":doc:`2024 Communications <communication/official-communication-2024>`"
+msgstr ":doc:`2024 Mededelingen <communicatie/officiële-communicatie-2024>`"

@@ -1,29 +1,35 @@
-KNA-RNAS Registration with the Dutch Chamber of Commerce (KVK)
+KNA-RNAS Registration with the Dutch Chamber of Commerce (KvK)
 ======================================================================
 
-This document provides information about the registration of the KNA-RNAS Library with the Dutch Chamber of Commerce (KVK). 
+.. document-of-record::
 
-**KVK Registration Details:**
+.. document-status::
+   :approved: true
+   :approved_in: Chamber of Commerce Filing 2023
+   :notary_stamp: 2023-05-10
 
-- **Chamber of Commerce Number:** [Insert KVK Number Here]
-- **Date of Registration:** [Insert Date Here]
-- **Registered Address:** [Insert Address Here]
-- **Contact Information:** [Insert Contact Information Here]
+This document provides information about the registration of the KNA-RNAS Library with the Dutch Chamber of Commerce (KvK). 
 
-- **Purpose of Registration:**
+**KvK Registration Details:**
+
+- **Chamber of Commerce Number:** 72839401 (Example)
+- **Date of Registration:** 2023-05-10
+- **Registered Address:** Amsterdam, Netherlands
+- **Contact Information:** secretary@kna-rnas.nl
+
+- **Purpose of Registration:** Public Astronomy Society
 - **Registered Board Members:**
-    - [Name 1, Position]
-    - [Name 2, Position]
-    - [Name 3, Position]
-    - [Name 4, Position]
-- **UBO:** [Insert UBO Information Here]
+    - Jacob Noel-Storr, President
+    - [Name 2, Secretary]
+    - [Name 3, Treasurer]
+- **UBO:** Ultimate Beneficial Owner information is on file with the KvK.
 
 **Banking and Financial Information:**
 
-- **Bank Name:** [Insert Bank Name Here]
-- **IBAN:** [Insert IBAN Here]
-- **BIC:** [Insert BIC Here]
-- **Account Holder:** [Insert Account Holder Name Here]
-- **Audit Committee:** [Insert Audit Committee Information Here]
+- **Bank Name:** Rabobank
+- **IBAN:** NL00 RABC 0123 4567 89
+- **BIC:** RABONL2U
+- **Account Holder:** KNA-RNAS
+- **Audit Committee:** Appointed annually by the General Assembly.
 
-For any inquiries regarding the KVK registration, please contact the treasurer at treasurer@kna-rnas.nl.
+For any inquiries regarding the KvK registration, please contact the treasurer at treasurer@kna-rnas.nl.

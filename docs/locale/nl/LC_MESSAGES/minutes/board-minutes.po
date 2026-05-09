@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-15 19:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/minutes/board-minutes.rst:2
+msgid "Board Minutes"
+msgstr "Notulen"
+
+#: ../../source/minutes/board-minutes.rst:4
+msgid ""
+"This document lists the minutes from the board meetings of the KNA-RNAS from"
+" 2024 onwards, with links to the draft minutes and approved minutes when "
+"available."
+msgstr ""
+"Dit document bevat de notulen van de bestuursvergaderingen van de KNA-RNAS "
+"vanaf 2024, met links naar de conceptnotulen en goedgekeurde notulen wanneer"
+" deze beschikbaar zijn."
+
+#: ../../source/minutes/board-minutes.rst:7
+msgid "2025"
+msgstr "2025"
+
+#: ../../source/minutes/board-minutes.rst:10
+msgid "2024"
+msgstr "2024"

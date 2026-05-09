@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-15 19:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/historical-docs/royal-designation.rst:2
+msgid "Royal Designation of the KNA-RNAS"
+msgstr "Koninklijke aanwijzing van de KNA-RNAS"
+
+#: ../../source/historical-docs/royal-designation.rst:4
+msgid ""
+"The Royal Netherlands Astronomical Society (Koninklijke Nederlandse "
+"Astronomen Club, KNA-RNAS) was granted the royal designation by His Majesty "
+"King Willem-Alexander of the Netherlands on October 2018, on the 100th "
+"Anniversary of the society. This designation is a recognition of the "
+"society's long-standing contributions to the field of astronomy and its "
+"commitment to promoting astronomical knowledge and education in the "
+"Netherlands."
+msgstr ""
+"De Koninklijke Nederlandse Astronomen Club (KNA-RNAS) ontving het koninklijk"
+" predicaat van Zijne Majesteit Koning Willem-Alexander van Nederland in "
+"oktober 2018, ter gelegenheid van het 100-jarig bestaan van de vereniging. "
+"Dit predicaat is een erkenning van de jarenlange bijdragen van de vereniging"
+" op het gebied van astronomie en haar inzet voor het bevorderen van "
+"astronomische kennis en onderwijs in Nederland."

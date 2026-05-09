@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-09 14:30+0200\n"
+"POT-Creation-Date: 2026-05-09 15:28+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgstr "uitnodiging voor de AVA 2026 en voorgestelde agenda"
 
 #: ../../source/communication/2026_AGM_Agenda.rst:9
 #, fuzzy
-msgid "**Archived DOI**: Draft ID: 20096542"
+msgid "**Archived DOI**: Draft ID: 20097081"
 msgstr "**Gearchiveerd DOI**: Concept Depositienummer: 20095995"
 
 #: ../../source/communication/2026_AGM_Agenda.rst:10
@@ -37,201 +37,286 @@ msgstr ""
 "**Origineel document**: :download:`Download PDF "
 "<../_static/downloads/2026_AGM_Agenda.pdf>`"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:16
-#: ../../source/communication/2026_AGM_Agenda.rst:135
-msgid ""
-"​Royal Netherlands Astronomical Society​ ​Koninklijke Nederlandse "
-"Astronomenclub​"
+#: ../../source/communication/2026_AGM_Agenda.rst:12
+#, fuzzy
+msgid "Royal Netherlands Astronomical Society"
 msgstr ""
 "koninklijke Nederlandse Astronomische Vereniging Koninklijke Nederlandse "
 "Astronomenclub"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:19
-#: ../../source/communication/2026_AGM_Agenda.rst:138
-msgid "​Office of the Secretary​"
+#: ../../source/communication/2026_AGM_Agenda.rst:13
+#, fuzzy
+msgid "Koninklijke Nederlandse Astronomenclub"
+msgstr ""
+"koninklijke Nederlandse Astronomische Vereniging Koninklijke Nederlandse "
+"Astronomenclub"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:14
+#, fuzzy
+msgid "Office of the Secretary"
 msgstr "kantoor van de Secretaris"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:24
-#: ../../source/communication/2026_AGM_Agenda.rst:143
-msgid "​Het Kantoor van de Secretaris​"
+#: ../../source/communication/2026_AGM_Agenda.rst:15
+#, fuzzy
+msgid "Het Kantoor van de Secretaris"
 msgstr "het Kantoor van de Secretaris"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:28
-msgid ""
-"​29 April 2026, Groningen, Netherlands​ ​Members of the society are "
-"respectfully invited to attend the Annual General Meeting of the​ ​Society, "
-"to be held at 09:00 Central European Standard Time, on the 13th day of May,​"
-" ​2026, in the Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, the "
-"Netherlands.​ ​The meeting is held in conjunction with the 81st Netherlands "
-"Astronomy Conference, all​ ​members are invited to attend regardless of "
-"registration for the conference as a whole. To​ ​ensure access to the venue,"
-" please contact the secretary if you plan to attend without​ ​meeting "
-"registration at least one hour in advance of the meeting.​ ​Please submit "
-"apologies for absence; proposed business items; or, in case you will not be​"
-" ​present, comments, opinion, or votes on agenda items, or other matters, to"
-" be included in​ ​the record; to the secretary at least 24 hours before the "
-"announced meeting time.​ ​Relevant documents will be provided to members at "
-"least 48 hours prior to the meeting, or​ ​during the meeting, as "
-"appropriate.​"
-msgstr ""
-"29 april 2026, Groningen, Nederland Leden van de vereniging worden van harte"
-" uitgenodigd tot het bijwonen van de Jaarlijkse Algemene Vergadering van de "
-"Vereniging, te houden op 13 mei 2026 om 09:00 uur Centraal Europese "
-"Standaard Tijd, in Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, "
-"Nederland. De vergadering wordt gehouden in combinatie met de 81e "
-"Nederlandse Astronomie Conferentie, alle leden worden uitgenodigd aanwezig "
-"te zijn, ongeacht registratie voor de conferentie als geheel. Om toegang tot"
-" de locatie te garanderen, verzoeken wij u ten minste één uur voor aanvang "
-"van de vergadering contact op te nemen met de secretaris als u van plan bent"
-" aanwezig te zijn zonder registratie voor de vergadering. Gelieve "
-"verontschuldigingen voor afwezigheid, voorgestelde agendapunten of, in het "
-"geval u niet aanwezig zult zijn, opmerkingen, meningen of stemmingen over "
-"agendapunten of andere zaken die in het verslag moeten worden opgenomen ten "
-"minste 24 uur voor de aangekondigde vergadertijd in te dienen bij de "
-"secretaris. Relevante documenten zullen ten minste 48 uur voor de "
-"vergadering of tijdens de vergadering aan de leden worden verstrekt"
+#: ../../source/communication/2026_AGM_Agenda.rst:20
+msgid "29 April 2026, Groningen, Netherlands"
+msgstr "29 april 2026, Groningen, Nederland"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:31
-msgid "​Agenda​​(as proposed)​"
+#: ../../source/communication/2026_AGM_Agenda.rst:22
+#, fuzzy
+msgid ""
+"Members of the society are respectfully invited to attend the Annual General"
+" Meeting of the Society, to be held at 09:00 Central European Standard Time,"
+" on the 13th day of May, 2026, in the Hotel Zuiderduin (Lamoraalzaal), "
+"Egmond aan Zee, the Netherlands."
+msgstr ""
+"29 april 2026, Groningen, Nederland Leden van de vereniging worden met alle "
+"respect uitgenodigd tot het bijwonen van de jaarlijkse Algemene Vergadering "
+"van de vereniging, die zal worden gehouden op 13 mei 2026 om 09.00 uur "
+"Centraal Europese Standaard Tijd in Hotel Zuiderduin (Lamoraalzaal), Egmond "
+"aan Zee, Nederland."
+
+#: ../../source/communication/2026_AGM_Agenda.rst:24
+msgid ""
+"The meeting is held in conjunction with the 81st Netherlands Astronomy "
+"Conference, all members are invited to attend regardless of registration for"
+" the conference as a whole. To ensure access to the venue, please contact "
+"the secretary if you plan to attend without meeting registration at least "
+"one hour in advance of the meeting."
+msgstr ""
+"De bijeenkomst wordt gehouden in combinatie met de 81e Nederlandse "
+"Astronomie Conferentie, alle leden worden uitgenodigd om de bijeenkomst bij "
+"te wonen ongeacht of ze zich registreren voor de conferentie als geheel. Om "
+"toegang tot de locatie te garanderen, verzoeken we je om ten minste één uur "
+"van tevoren contact op te nemen met de secretaris als je van plan bent om de"
+" bijeenkomst zonder registratie bij te wonen."
+
+#: ../../source/communication/2026_AGM_Agenda.rst:26
+msgid ""
+"Please submit apologies for absence; proposed business items; or, in case "
+"you will not be present, comments, opinion, or votes on agenda items, or "
+"other matters, to be included in the record; to the secretary at least 24 "
+"hours before the announced meeting time."
+msgstr ""
+"Gelieve uw verontschuldigingen voor afwezigheid, voorgestelde agendapunten "
+"of, indien u niet aanwezig zult zijn, opmerkingen, meningen of stemmen over "
+"agendapunten of andere zaken die in het verslag moeten worden opgenomen, ten"
+" minste 24 uur voor de aangekondigde vergadertijd in te dienen bij de "
+"secretaris."
+
+#: ../../source/communication/2026_AGM_Agenda.rst:28
+#, fuzzy
+msgid ""
+"Relevant documents will be provided to members at least 48 hours prior to "
+"the meeting, or during the meeting, as appropriate."
+msgstr ""
+"relevante documenten worden ten minste 48 uur voor de vergadering aan de "
+"leden verstrekt, of"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:32
+#, fuzzy
+msgid "Agenda (as proposed)"
 msgstr "agenda (zoals voorgesteld)"
 
 #: ../../source/communication/2026_AGM_Agenda.rst:36
-msgid "​Annual General Meeting 13 May 2026, 09:00 CEST​"
+#, fuzzy
+msgid "Annual General Meeting 13 May 2026, 09:00 CEST"
 msgstr "jaarlijkse Algemene Vergadering 13 mei 2026, 09:00 CEST"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:39
+#, fuzzy
+msgid "Opening of the meeting"
+msgstr "1. Opening van de vergadering"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:40
+#, fuzzy
+msgid "Adoption of the Agenda"
+msgstr "2. Vaststelling van de agenda"
 
 #: ../../source/communication/2026_AGM_Agenda.rst:41
 #, fuzzy
-msgid "​1.​ ​Opening of the meeting​"
-msgstr "1. Opening van de vergadering"
+msgid "Board Announcements"
+msgstr "9. Aankondigingen"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:46
+#: ../../source/communication/2026_AGM_Agenda.rst:43
+msgid "Board Membership and approval of new board members"
+msgstr "Samenstelling bestuur en goedkeuring nieuwe bestuursleden"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:44
+msgid "Board Meetings"
+msgstr "Bestuursvergaderingen"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:45
+msgid "Other Announcements of the Board"
+msgstr "Andere mededelingen van het bestuur"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:47
+msgid "Approval of Minutes"
+msgstr "Goedkeuring van de notulen"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:49
 #, fuzzy
-msgid "​2.​ ​Adoption of the Agenda​"
-msgstr "2. Vaststelling van de agenda"
-
-#: ../../source/communication/2026_AGM_Agenda.rst:51
-#, fuzzy
-msgid "​3.​ ​Board Announcements​"
-msgstr "3. Mededelingen bestuur"
-
-#: ../../source/communication/2026_AGM_Agenda.rst:55
-#, fuzzy
-msgid "​a.​ ​Board Membership and approval of new board members​"
-msgstr "a. Samenstelling bestuur en goedkeuring nieuwe bestuursleden"
-
-#: ../../source/communication/2026_AGM_Agenda.rst:58
-#, fuzzy
-msgid "​b.​ ​Board Meetings​"
-msgstr "3. Mededelingen bestuur"
-
-#: ../../source/communication/2026_AGM_Agenda.rst:68
-msgid ""
-"​c.​ ​Other Announcements of the Board​ ​4.​ ​Approval of Minutes​ ​a.​ ​AGM"
-" 2025 (27 May 2025, Berg en Dal, Netherlands)​ ​5.​ ​2025 Annual Report of "
-"the Secretary​"
+msgid "AGM 2025 (27 May 2025, Berg en Dal, Netherlands)"
 msgstr ""
 "c. Overige mededelingen van het bestuur 4. Goedkeuring notulen a. AVA 2025 "
 "(27 mei 2025, Berg en Dal, Nederland) 5. Jaarverslag 2025 van de secretaris"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:71
-msgid "​a.​ ​Secretary’s Report​"
+#: ../../source/communication/2026_AGM_Agenda.rst:51
+#, fuzzy
+msgid "2025 Annual Report of the Secretary"
+msgstr "7. 2025 Jaarverslag van de voorzitter"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:53
+#, fuzzy
+msgid "Secretary’s Report"
 msgstr "a. Verslag van de secretaris"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:76
-msgid "​i.​ ​Report and membership data​"
+#: ../../source/communication/2026_AGM_Agenda.rst:55
+#, fuzzy
+msgid "Report and membership data"
 msgstr "i. Rapport en lidmaatschapsgegevens"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:81
-msgid "​ii.​ ​Report from the EAS​"
+#: ../../source/communication/2026_AGM_Agenda.rst:56
+#, fuzzy
+msgid "Report from the EAS"
 msgstr "ii. Verslag van de EAS"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:85
-msgid ""
-"​iii.​ ​Report from (or on behalf of) the Archives​ ​iv.​ ​Process for "
-"termination of membership​"
+#: ../../source/communication/2026_AGM_Agenda.rst:57
+#, fuzzy
+msgid "Report from (or on behalf of) the Archives"
 msgstr ""
 "iii. Verslag van (of namens) het Archief iv. Procedure voor beëindiging van "
 "het lidmaatschap"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:88
-msgid "​b.​ ​Executive Office Report​"
-msgstr "b. Verslag van het uitvoerend bureau"
+#: ../../source/communication/2026_AGM_Agenda.rst:58
+#, fuzzy
+msgid "Process for termination of membership"
+msgstr ""
+"iii. Verslag van (of namens) het Archief iv. Procedure voor beëindiging van "
+"het lidmaatschap"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:92
-msgid ""
-"​i.​ ​Report on servers, apps, and other services​ ​6.​ ​2025 Treasury "
-"Reports and Actions​ ​a.​ ​Financial Statement 2025​ ​i.​ ​Treasurer’s "
-"report​"
+#: ../../source/communication/2026_AGM_Agenda.rst:60
+msgid "Executive Office Report"
+msgstr "Verslag van het Uitvoerend Bureau"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:62
+#, fuzzy
+msgid "Report on servers, apps, and other services"
 msgstr ""
 "i. Verslag over servers, apps en andere diensten 6. Financieel verslag en "
 "acties 2025 a. Financieel verslag 2025 i. Verslag penningmeester"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:95
-msgid "​ii.​ ​Report of the Financial Audit Committee​"
+#: ../../source/communication/2026_AGM_Agenda.rst:64
+#, fuzzy
+msgid "2025 Treasury Reports and Actions"
+msgstr "2025 Schatkist Rapporten en Acties"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:66
+msgid "Financial Statement 2025"
+msgstr "Financieel overzicht 2025"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:68
+#, fuzzy
+msgid "Treasurer’s report"
+msgstr "a. Verslag van de secretaris"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:69
+#, fuzzy
+msgid "Report of the Financial Audit Committee"
 msgstr "ii. Verslag van de financiële controlecommissie"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:99
-msgid ""
-"​b.​ ​RNAS Grants and Awards Policies and Plans​ ​i.​ ​Motion for spending "
-"on Grants and Awards, per the membership,​ ​board, or executive committee​ "
-"​c.​ ​Proposed Budget 2026 and 2027​ ​i.​ ​Motion of change in budget cycle "
-"to approve new annual budgets in​ ​the prior year (thus 2027 budget here), "
-"subject to mid-budget​ ​amendment in the current year.​ ​d.​ ​Election of "
-"the 2026 Financial Audit Committee​"
-msgstr ""
-"b. Beleid en plannen met betrekking tot RNAS Grants and Awards i. Motie voor"
-" besteding aan Grants and Awards, per lidmaatschap, bestuur of uitvoerend "
-"comité c. Voorgestelde begroting 2026 en 2027 i. Motie voor wijziging in "
-"begrotingscyclus om nieuwe jaarlijkse begrotingen in het voorgaande jaar "
-"goed te keuren (dus begroting 2027 hier), onder voorbehoud van tussentijdse "
-"begrotingswijziging in het lopende jaar. d. Verkiezing van de financiële "
-"controlecommissie 2026"
+#: ../../source/communication/2026_AGM_Agenda.rst:71
+msgid "RNAS Grants and Awards Policies and Plans"
+msgstr "Beleid en plannen voor subsidies en toekenningen van de RNAS"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:108
+#: ../../source/communication/2026_AGM_Agenda.rst:73
 #, fuzzy
-msgid "​7.​ ​2025 Annual Report of the Chair​"
+msgid ""
+"Motion for spending on Grants and Awards, per the membership, board, or "
+"executive committee"
+msgstr "i. Motie voor het uitgeven van subsidies en prijzen, volgens de leden"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:75
+msgid "Proposed Budget 2026 and 2027"
+msgstr "Voorgestelde begroting 2026 en 2027"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:77
+#, fuzzy
+msgid ""
+"Motion of change in budget cycle to approve new annual budgets in the prior "
+"year (thus 2027 budget here), subject to mid-budget amendment in the current"
+" year."
+msgstr ""
+"het voorgaande jaar (hier dus begroting 2027), onder voorbehoud van "
+"tussentijdse begroting"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:79
+#, fuzzy
+msgid "Election of the 2026 Financial Audit Committee"
+msgstr "ii. Verslag van de financiële controlecommissie"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:81
+#, fuzzy
+msgid "2025 Annual Report of the Chair"
 msgstr "7. 2025 Jaarverslag van de voorzitter"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:113
+#: ../../source/communication/2026_AGM_Agenda.rst:82
 #, fuzzy
-msgid "​8.​ ​Any Other Business (Rondvraag)​"
+msgid "Any Other Business (Rondvraag)"
 msgstr "8. Rondvraag"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:118
+#: ../../source/communication/2026_AGM_Agenda.rst:83
 #, fuzzy
-msgid "​9.​ ​Announcements​"
+msgid "Announcements"
 msgstr "9. Aankondigingen"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:123
-msgid "​10.​ ​Closing of the Meeting​"
-msgstr "10. Sluiting van de vergadering"
+#: ../../source/communication/2026_AGM_Agenda.rst:84
+#, fuzzy
+msgid "Closing of the Meeting"
+msgstr "1. Opening van de vergadering"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:127
+#: ../../source/communication/2026_AGM_Agenda.rst:86
+msgid "Respectfully submitted / Hoogachtend,,"
+msgstr "Hoogachtend,,"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:87
+msgid "Dr. J. Noel-Storr, Secretary/Secretaris"
+msgstr "Dr. J. Noel-Storr, secretaris/secretaris"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:88
+#, fuzzy
+msgid "secretary@kna-rnas.nl"
+msgstr "www.kna-rnas.nl"
+
+#: ../../source/communication/2026_AGM_Agenda.rst:90
+msgid "On behalf of the board."
+msgstr "Namens het bestuur."
+
+#: ../../source/communication/2026_AGM_Agenda.rst:95
 #, fuzzy
 msgid ""
-"​Respectfully submitted / Hoogachtend,,​ ​Dr. J. Noel-Storr, "
-"Secretary/Secretaris​ ​secretary@kna-rnas.nl​ ​On behalf of the board.​"
-msgstr "dr. J. Noel-Storr, secretaris/secretaris"
-
-#: ../../source/communication/2026_AGM_Agenda.rst:147
-#, fuzzy
-msgid ""
-"​Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-"
-"Storr (Secretary), Steven Rieder (Treasurer)​"
+"Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr"
+" (Secretary), Steven Rieder (Treasurer)"
 msgstr ""
 "peter Barthel (voormalig voorzitter), Ralph Wijers (co-penningmeester)"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:150
-msgid "​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​"
+#: ../../source/communication/2026_AGM_Agenda.rst:96
+#, fuzzy
+msgid "Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)"
 msgstr ""
 "peter Barthel (voormalig voorzitter), Ralph Wijers (co-penningmeester)"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:155
-msgid "​KvK: 40047819​"
+#: ../../source/communication/2026_AGM_Agenda.rst:97
+#, fuzzy
+msgid "KvK: 40047819"
 msgstr "kvK: 40047819"
 
-#: ../../source/communication/2026_AGM_Agenda.rst:160
-msgid "​www.kna-rnas.nl​"
+#: ../../source/communication/2026_AGM_Agenda.rst:98
+#, fuzzy
+msgid "www.kna-rnas.nl"
 msgstr "www.kna-rnas.nl"
 
 #~ msgid "​Royal Netherlands Astronomical Society​"
@@ -390,7 +475,7 @@ msgstr "www.kna-rnas.nl"
 #~ msgstr "d. Verkiezing van de financiële controlecommissie 2026"
 
 #~ msgid "​secretary@kna-rnas.nl​"
-#~ msgstr "secretary@kna-rnas.nl"
+#~ msgstr "www.kna-rnas.nl"
 
 #~ msgid "​29 April 2026, Groningen, Netherlands​"
 #~ msgstr "29 april 2026, Groningen, Nederland"
@@ -475,3 +560,149 @@ msgstr "www.kna-rnas.nl"
 
 #~ msgid "​On behalf of the board.​"
 #~ msgstr "namens het bestuur"
+
+#~ msgid ""
+#~ "​29 April 2026, Groningen, Netherlands​ ​Members of the society are "
+#~ "respectfully invited to attend the Annual General Meeting of the​ ​Society, "
+#~ "to be held at 09:00 Central European Standard Time, on the 13th day of May,​"
+#~ " ​2026, in the Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, the "
+#~ "Netherlands.​ ​The meeting is held in conjunction with the 81st Netherlands "
+#~ "Astronomy Conference, all​ ​members are invited to attend regardless of "
+#~ "registration for the conference as a whole. To​ ​ensure access to the venue,"
+#~ " please contact the secretary if you plan to attend without​ ​meeting "
+#~ "registration at least one hour in advance of the meeting.​ ​Please submit "
+#~ "apologies for absence; proposed business items; or, in case you will not be​"
+#~ " ​present, comments, opinion, or votes on agenda items, or other matters, to"
+#~ " be included in​ ​the record; to the secretary at least 24 hours before the "
+#~ "announced meeting time.​ ​Relevant documents will be provided to members at "
+#~ "least 48 hours prior to the meeting, or​ ​during the meeting, as "
+#~ "appropriate.​"
+#~ msgstr ""
+#~ "29 april 2026, Groningen, Nederland Leden van de vereniging worden van harte"
+#~ " uitgenodigd tot het bijwonen van de Jaarlijkse Algemene Vergadering van de "
+#~ "Vereniging, te houden op 13 mei 2026 om 09:00 uur Centraal Europese "
+#~ "Standaard Tijd, in Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, "
+#~ "Nederland. De vergadering wordt gehouden in combinatie met de 81e "
+#~ "Nederlandse Astronomie Conferentie, alle leden worden uitgenodigd aanwezig "
+#~ "te zijn, ongeacht registratie voor de conferentie als geheel. Om toegang tot"
+#~ " de locatie te garanderen, verzoeken wij u ten minste één uur voor aanvang "
+#~ "van de vergadering contact op te nemen met de secretaris als u van plan bent"
+#~ " aanwezig te zijn zonder registratie voor de vergadering. Gelieve "
+#~ "verontschuldigingen voor afwezigheid, voorgestelde agendapunten of, in het "
+#~ "geval u niet aanwezig zult zijn, opmerkingen, meningen of stemmingen over "
+#~ "agendapunten of andere zaken die in het verslag moeten worden opgenomen ten "
+#~ "minste 24 uur voor de aangekondigde vergadertijd in te dienen bij de "
+#~ "secretaris. Relevante documenten zullen ten minste 48 uur voor de "
+#~ "vergadering of tijdens de vergadering aan de leden worden verstrekt"
+
+#~ msgid ""
+#~ "​b.​ ​RNAS Grants and Awards Policies and Plans​ ​i.​ ​Motion for spending "
+#~ "on Grants and Awards, per the membership,​ ​board, or executive committee​ "
+#~ "​c.​ ​Proposed Budget 2026 and 2027​ ​i.​ ​Motion of change in budget cycle "
+#~ "to approve new annual budgets in​ ​the prior year (thus 2027 budget here), "
+#~ "subject to mid-budget​ ​amendment in the current year.​ ​d.​ ​Election of "
+#~ "the 2026 Financial Audit Committee​"
+#~ msgstr ""
+#~ "b. Beleid en plannen met betrekking tot RNAS Grants and Awards i. Motie voor"
+#~ " besteding aan Grants and Awards, per lidmaatschap, bestuur of uitvoerend "
+#~ "comité c. Voorgestelde begroting 2026 en 2027 i. Motie voor wijziging in "
+#~ "begrotingscyclus om nieuwe jaarlijkse begrotingen in het voorgaande jaar "
+#~ "goed te keuren (dus begroting 2027 hier), onder voorbehoud van tussentijdse "
+#~ "begrotingswijziging in het lopende jaar. d. Verkiezing van de financiële "
+#~ "controlecommissie 2026"
+
+#~ msgid ""
+#~ "​Respectfully submitted / Hoogachtend,,​ ​Dr. J. Noel-Storr, "
+#~ "Secretary/Secretaris​ ​secretary@kna-rnas.nl​ ​On behalf of the board.​"
+#~ msgstr "dr. J. Noel-Storr, secretaris/secretaris"
+
+#~ msgid "29 April 2026, Groningen, Netherlands"
+#~ msgstr "29 april 2026, Groningen, Nederland"
+
+#~ msgid ""
+#~ "Members of the society are respectfully invited to attend the Annual General"
+#~ " Meeting of the"
+#~ msgstr ""
+#~ "leden van de vereniging worden met respect uitgenodigd om de jaarlijkse "
+#~ "Algemene Vergadering van de"
+
+#~ msgid ""
+#~ "Society, to be held at 09:00 Central European Standard Time, on the 13th day"
+#~ " of May,"
+#~ msgstr ""
+#~ "society, te houden op 13 mei om 09.00 uur Centraal-Europese Standaardtijd"
+
+#~ msgid ""
+#~ "2026, in the Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, the "
+#~ "Netherlands."
+#~ msgstr "2026, in Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, Nederland"
+
+#~ msgid "Board Announcements"
+#~ msgstr "3. Mededelingen bestuur"
+
+#~ msgid "Board Membership and approval of new board members"
+#~ msgstr "a. Samenstelling bestuur en goedkeuring nieuwe bestuursleden"
+
+#~ msgid "Board Meetings"
+#~ msgstr "3. Mededelingen bestuur"
+
+#~ msgid "Other Announcements of the Board"
+#~ msgstr "c. Overige mededelingen van het bestuur 4. Goedkeuring van de notulen"
+
+#~ msgid "Approval of Minutes"
+#~ msgstr "Goedkeuring van de notulen"
+
+#~ msgid "Secretary’s Report"
+#~ msgstr "a. Verslag van de secretaris"
+
+#~ msgid "Executive Office Report"
+#~ msgstr "b. Verslag van het uitvoerend bureau"
+
+#~ msgid "Financial Statement 2025"
+#~ msgstr "a. Financieel overzicht 2025"
+
+#~ msgid "RNAS Grants and Awards Policies and Plans"
+#~ msgstr "b. Beleid en plannen inzake subsidies en toekenningen van de RNAS"
+
+#~ msgid "board, or executive committee"
+#~ msgstr "raad van bestuur of uitvoerend comité"
+
+#~ msgid "Proposed Budget 2026 and 2027"
+#~ msgstr "c. Voorgestelde begroting 2026 en 2027"
+
+#~ msgid "Closing of the Meeting"
+#~ msgstr "10. Sluiting van de vergadering"
+
+#~ msgid "Respectfully submitted / Hoogachtend,,"
+#~ msgstr "hoogachtend,"
+
+#~ msgid "Dr. J. Noel-Storr, Secretary/Secretaris secretary@kna-rnas.nl"
+#~ msgstr "dr. J. Noel-Storr, secretaris/secretaris"
+
+#~ msgid "On behalf of the board."
+#~ msgstr "namens het bestuur"
+
+#~ msgid ""
+#~ "board, or executive committee c. Proposed Budget 2026 and 2027    i. Motion "
+#~ "of change in budget cycle to approve new annual budgets in"
+#~ msgstr ""
+#~ "i. Motie van wijziging in begrotingscyclus om nieuwe jaarlijkse begrotingen "
+#~ "goed te keuren in"
+
+#~ msgid ""
+#~ "Board Announcements a. Board Membership and approval of new board members b."
+#~ " Board Meetings c. Other Announcements of the Board"
+#~ msgstr ""
+#~ "Mededelingen bestuur a. Lidmaatschap bestuur en goedkeuring nieuwe "
+#~ "bestuursleden b. Vergaderingen bestuur c. Overige mededelingen bestuur"
+
+#~ msgid "2025 Annual Report of the Secretary a. Secretary’s Report"
+#~ msgstr "7. 2025 Jaarverslag van de voorzitter"
+
+#~ msgid ""
+#~ "10. Closing of the Meeting | Respectfully submitted / Hoogachtend,, | Dr. J."
+#~ " Noel-Storr, Secretary/Secretaris | secretary@kna-rnas.nl On behalf of the "
+#~ "board."
+#~ msgstr ""
+#~ "10. Sluiting van de vergadering Hoogachtend, Dr. J. Noel-Storr, "
+#~ "secretaris/secretaris secretary@kna-rnas.nl Namens het bestuur."

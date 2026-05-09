@@ -55,7 +55,7 @@ def publish_deposition(deposition_id):
     
     return response.json()
 
-def archive_document(file_path, title, description, creators):
+def archive_document(file_path, title, description, creators, publish=False):
     """Full workflow to archive a document."""
     if not ACCESS_TOKEN:
         print("Error: ZENODO_ACCESS_TOKEN not found in .env")
@@ -86,17 +86,16 @@ def archive_document(file_path, title, description, creators):
     if not upload_file(dep_id, file_path):
         return None
     
-    print("Publishing deposition...")
-    # NOTE: Publishing is irreversible. Comment out for testing.
-    # published = publish_deposition(dep_id)
-    # if not published:
-    #     return None
-    
-    # print(f"Successfully archived! DOI: {published['doi']}")
-    # return published['doi']
-    
-    print("Deposition created and file uploaded. PUBLISH STEP SKIPPED (TEST MODE).")
-    return dep_id
+    if publish:
+        print("Publishing deposition (PRODUCTION)...")
+        published = publish_deposition(dep_id)
+        if not published:
+            return None
+        print(f"Successfully archived! DOI: {published['doi']}")
+        return published['doi']
+    else:
+        print("Deposition created as DRAFT. Visit Zenodo to review and publish.")
+        return dep_id
 
 if __name__ == "__main__":
     # Example usage

@@ -2,68 +2,121 @@ import os
 import sys
 import argparse
 from pathlib import Path
-from pdfminer.high_level import extract_text
+import fitz  # PyMuPDF
 from archive_to_zenodo import archive_document
 import subprocess
+import shutil
 
-def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=None):
+# Common Society Headers/Footers to potentially strip
+SOCIETY_STRINGS = [
+    "Royal Netherlands Astronomical Society",
+    "Koninklijke Nederlandse Astronomenclub",
+    "Office of the Secretary",
+    "Het Kantoor van de Secretaris",
+    "Executive Committee of the Board",
+    "KvK: 40047819",
+    "www.kna-rnas.nl"
+]
+
+def clean_text_block(text):
+    """Basic cleaning of text blocks."""
+    lines = text.split('\n')
+    cleaned_lines = []
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        # Strip common society headers if they appear alone
+        if any(s in line for s in SOCIETY_STRINGS) and len(line) < 100:
+            continue
+        cleaned_lines.append(line)
+    return "\n".join(cleaned_lines)
+
+def extract_structured_text(pdf_path):
+    """Extract text using PyMuPDF with header/footer stripping."""
+    doc = fitz.open(pdf_path)
+    full_text = []
+    num_pages = len(doc)
+
+    for i, page in enumerate(doc):
+        # Extract blocks to maintain some structure
+        blocks = page.get_text("blocks")
+        page_text = []
+        
+        for b in blocks:
+            block_text = b[4].strip()
+            if not block_text:
+                continue
+            
+            # Header Stripping: Strip society strings from all pages except the first
+            if i > 0:
+                if any(s in block_text for s in SOCIETY_STRINGS) and len(block_text) < 200:
+                    continue
+            
+            # Footer Stripping: Strip society strings from all pages except the last
+            if i < num_pages - 1:
+                # Often footers are at the bottom of the page (check block y-coordinate)
+                # block b is (x0, y0, x1, y1, text, block_no, block_type)
+                if b[1] > page.rect.height * 0.8:
+                     if any(s in block_text for s in SOCIETY_STRINGS):
+                         continue
+
+            page_text.append(block_text)
+        
+        full_text.append("\n\n".join(page_text))
+    
+    return "\n\n".join(full_text)
+
+def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=None, publish=False):
     """
     Automated workflow to ingest a PDF into the KNA-RNAS library.
-    1. Extract text from PDF.
-    2. Upload PDF to Zenodo to get DOI.
-    3. Create RST file with metadata and extracted text.
-    4. Trigger translation.
     """
     pdf_path = Path(pdf_path)
     if not pdf_path.exists():
         print(f"Error: File {pdf_path} not found.")
         return
 
-    # 1. Determine Title and Filename
     if not title:
         title = pdf_path.stem.replace("-", " ").replace("_", " ").title()
     
     file_stem = pdf_path.stem
-    rst_path = Path(f"docs/source/{category}/{file_stem}.rst")
-    rst_path.parent.mkdir(parents=True, exist_ok=True)
+    # Use category/filename structure
+    target_dir = Path(f"docs/source/{category}")
+    target_dir.mkdir(parents=True, exist_ok=True)
+    rst_path = target_dir / f"{file_stem}.rst"
 
-    # 2. Extract Text
-    print(f"Extracting text from {pdf_path}...")
-    try:
-        text = extract_text(pdf_path)
-    except Exception as e:
-        print(f"Error extracting text: {e}")
-        text = "[Text extraction failed. Please review the original PDF.]"
+    # 1. Extract Text
+    print(f"Extracting structured text from {pdf_path}...")
+    text = extract_structured_text(pdf_path)
 
-    # 3. Upload to Zenodo
-    print("Archiving to Zenodo...")
+    # 2. Upload to Zenodo
+    print(f"Archiving to Zenodo (Publish={publish})...")
     if not description:
         description = f"Official {category} document: {title}"
     
-    # Using a placeholder creator if not provided
     creators = [{'name': 'KNA-RNAS Society', 'affiliation': 'KNA-RNAS'}]
     
-    # NOTE: This returns a deposition ID or DOI depending on test mode.
-    # In production, we'd want the DOI.
-    doi_or_id = archive_document(str(pdf_path), title, description, creators)
+    # archive_document now handles the publish flag
+    doi_or_id = archive_document(str(pdf_path), title, description, creators, publish=publish)
     
-    if not doi_or_id:
-        print("Failed to get DOI from Zenodo. Proceeding without DOI link.")
-        doi_link = "PENDING"
-    else:
-        # If it's a numeric ID (test mode), we use a placeholder DOI
-        if isinstance(doi_or_id, int):
-            doi_link = f"TEST-ID-{doi_or_id}"
+    doi_display = "PENDING (Draft Mode)"
+    if doi_or_id:
+        if isinstance(doi_or_id, int) or "TEST" in str(doi_or_id):
+            doi_display = f"Draft Deposition ID: {doi_or_id}"
         else:
-            doi_link = doi_or_id
+            doi_display = f":doi:`{doi_or_id}`"
 
-    # 4. Create RST Content
-    # We copy the PDF to a local _static/downloads folder so Sphinx can serve it
+    # 3. Handle PDF Download
     downloads_dir = Path("docs/source/_static/downloads")
     downloads_dir.mkdir(parents=True, exist_ok=True)
-    target_pdf = downloads_dir / pdf_path.name
-    import shutil
-    shutil.copy(pdf_path, target_pdf)
+    target_pdf_rel = Path(f"_static/downloads/{pdf_path.name}")
+    target_pdf_abs = Path("docs/source") / target_pdf_rel
+    shutil.copy(pdf_path, target_pdf_abs)
+
+    # 4. Create RST Content
+    # We use a path relative to the RST file for the download link
+    # Since rst is in docs/source/{category}/, we need to go up one level to reach _static
+    rel_path_to_static = "../" * len(category.split('/')) + "_static/downloads/" + pdf_path.name
 
     rst_content = f"""{title}
 {"=" * len(title)}
@@ -73,19 +126,14 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
 
 .. note::
 
-   This document is archived on Zenodo with DOI: {doi_link}
-   
-   - **Original Document**: :download:`Download PDF </_static/downloads/{pdf_path.name}>`
-
-Extracted Content
------------------
+   - **Archived DOI**: {doi_display}
+   - **Original Document**: :download:`Download PDF <{rel_path_to_static}>`
 
 {text}
 
 .. document-status::
    :approved: true
    :approved_in: Automated Ingestion
-   :notary_stamp: Pending
 """
 
     with open(rst_path, "w") as f:
@@ -93,29 +141,27 @@ Extracted Content
     
     print(f"Created RST file at {rst_path}")
 
-    # 5. Update parent index/toctree (Basic approach: check if it's in meeting-minutes.rst)
-    # This part is complex to automate perfectly without knowing the structure,
-    # but we can append to a 'pending' section or just let the user know.
-    print(f"Please ensure {rst_path.relative_to('docs/source')} is added to your toctree.")
+    # 5. Open for Manual Polish (Optional but recommended)
+    print(f"\n--- ACTION REQUIRED ---")
+    print(f"Please review and polish the formatting at: {rst_path}")
+    print(f"Once you are happy, commit the changes.")
 
     # 6. Run Translation
-    print("Running translation script...")
+    print("\nRunning translation update...")
     try:
-        # We need to run gettext first to pick up the new file
         subprocess.run(["make", "gettext"], cwd="docs", check=True)
         subprocess.run(["sphinx-intl", "update", "-p", "build/gettext", "-l", "nl"], cwd="docs", check=True)
         subprocess.run(["python3", "scripts/translate_docs.py"], check=True)
     except Exception as e:
         print(f"Translation failed: {e}")
 
-    print("\nDone! Document ingested and translation triggered.")
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Ingest a PDF into the KNA-RNAS Library.")
     parser.add_argument("pdf_path", help="Path to the PDF file")
-    parser.add_argument("--category", default="minutes", help="Category folder (governing-docs, minutes, etc.)")
-    parser.add_argument("--lang", default="en", help="Original language (en/nl)")
+    parser.add_argument("--category", default="minutes", help="Category folder")
+    parser.add_argument("--lang", default="en", help="Original language")
     parser.add_argument("--title", help="Document title")
+    parser.add_argument("--publish", action="store_true", help="Publish to Zenodo immediately")
     
     args = parser.parse_args()
-    ingest_pdf(args.pdf_path, args.category, args.lang, args.title)
+    ingest_pdf(args.pdf_path, args.category, args.lang, args.title, publish=args.publish)

@@ -143,14 +143,10 @@ class DocumentStatusDirective(Directive):
             
             container.append(p)
 
-        if notary_stamp is not None:
+        if notary_stamp is not None and notary_stamp.lower() != 'pending':
             p = nodes.paragraph(classes=['status-notary'])
-            if notary_stamp.lower() == 'pending':
-                icon_html = nodes.raw('', '<i class="fa fa-clock-o" style="color: #d4a96a;"></i> ', format='html')
-                text = "Notary Stamp: Pending"
-            else:
-                icon_html = nodes.raw('', '<i class="fa fa-institution" style="color: #1a2a6b;"></i> ', format='html')
-                text = f"Notary Stamped: {notary_stamp}"
+            icon_html = nodes.raw('', '<i class="fa fa-institution" style="color: #1a2a6b;"></i> ', format='html')
+            text = f"Notary Stamped: {notary_stamp}"
             
             p.append(icon_html)
             p.append(nodes.strong(text, text))

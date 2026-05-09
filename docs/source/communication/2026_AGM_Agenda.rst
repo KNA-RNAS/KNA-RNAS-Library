@@ -6,218 +6,140 @@
 
 .. note::
 
-   This document is archived on Zenodo with DOI: TEST-ID-20095859
-   
-   - **Original Document**: :download:`Download PDF </_static/downloads/2026_AGM_Agenda.pdf>`
+   - **Archived DOI**: Draft Deposition ID: 20095995
+   - **Original Document**: :download:`Download PDF <../_static/downloads/2026_AGM_Agenda.pdf>`
 
-Extracted Content
------------------
+​Royal Netherlands Astronomical Society​
 
- Royal Netherlands Astronomical Society 
+​Koninklijke Nederlandse Astronomenclub​
 
- Koninklijke Nederlandse Astronomenclub 
+​Office of the Secretary​
 
- Ofﬁce of the Secretary 
+​Het Kantoor van de Secretaris​
 
- Het Kantoor van de Secretaris 
+​29 April 2026, Groningen, Netherlands​
 
- 29 April 2026, Groningen, Netherlands 
+​Members of the society are respectfully invited to attend the Annual General Meeting of the​
 
- Members of the society are respectfully invited to attend the Annual General Meeting of the 
+​Society, to be held at 09:00 Central European Standard Time, on the 13th day of May,​
 
- Society, to be held at 09:00 Central European Standard Time, on the 13th day of May, 
+​2026, in the Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, the Netherlands.​
 
- 2026, in the Hotel Zuiderduin (Lamoraalzaal), Egmond aan Zee, the Netherlands. 
+​The meeting is held in conjunction with the 81st Netherlands Astronomy Conference, all​
 
- The meeting is held in conjunction with the 81st Netherlands Astronomy Conference, all 
+​members are invited to attend regardless of registration for the conference as a whole. To​
 
- members are invited to attend regardless of registration for the conference as a whole. To 
+​ensure access to the venue, please contact the secretary if you plan to attend without​
 
- ensure access to the venue, please contact the secretary if you plan to attend without 
+​meeting registration at least one hour in advance of the meeting.​
 
- meeting registration at least one hour in advance of the meeting. 
+​Please submit apologies for absence; proposed business items; or, in case you will not be​
 
- Please submit apologies for absence; proposed business items; or, in case you will not be 
+​present, comments, opinion, or votes on agenda items, or other matters, to be included in​
 
- present, comments, opinion, or votes on agenda items, or other matters, to be included in 
+​the record; to the secretary at least 24 hours before the announced meeting time.​
 
- the record; to the secretary at least 24 hours before the announced meeting time. 
+​Relevant documents will be provided to members at least 48 hours prior to the meeting, or​
 
- Relevant documents will be provided to members at least 48 hours prior to the meeting, or 
+​during the meeting, as appropriate.​
 
- during the meeting, as appropriate. 
+​Agenda​​(as proposed)​
 
- Agenda  (as proposed) 
+​Annual General Meeting 13 May 2026, 09:00 CEST​
 
- Annual General Meeting 13 May 2026, 09:00 CEST 
+​1.​
+​Opening of the meeting​
 
- 1. 
+​2.​
+​Adoption of the Agenda​
 
- 2. 
+​3.​
+​Board Announcements​
 
- 3. 
+​a.​ ​Board Membership and approval of new board members​
 
- Opening of the meeting 
+​b.​ ​Board Meetings​
 
- Adoption of the Agenda 
+​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​
 
- Board Announcements 
- a. 
+​c.​ ​Other Announcements of the Board​
+​4.​
+​Approval of Minutes​
 
- Board Membership and approval of new board members 
+​a.​ ​AGM 2025 (27 May 2025, Berg en Dal, Netherlands)​
+​5.​
+​2025 Annual Report of the Secretary​
 
- b. 
+​a.​ ​Secretary’s Report​
 
- Board Meetings 
+​i.​
+​Report and membership data​
 
- Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr (Secretary), Steven Rieder (Treasurer) 
+​ii.​
+​Report from the EAS​
 
- Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer) 
+​iii.​
+​Report from (or on behalf of) the Archives​
 
- KvK: 40047819 
+​iv.​
+​Process for termination of membership​
 
- www.kna-rnas.nl 
+​b.​ ​Executive Office Report​
 
- Royal Netherlands Astronomical Society 
+​i.​
+​Report on servers, apps, and other services​
+​6.​
+​2025 Treasury Reports and Actions​
 
- Koninklijke Nederlandse Astronomenclub 
+​a.​ ​Financial Statement 2025​
 
- Ofﬁce of the Secretary 
+​i.​
+​Treasurer’s report​
 
- Het Kantoor van de Secretaris 
+​ii.​
+​Report of the Financial Audit Committee​
 
- 4. 
+​b.​ ​RNAS Grants and Awards Policies and Plans​
 
- 5. 
+​i.​
+​Motion for spending on Grants and Awards, per the membership,​
 
- c. 
+​board, or executive committee​
 
- Other Announcements of the Board 
+​c.​ ​Proposed Budget 2026 and 2027​
 
- Approval of Minutes 
- a. 
+​i.​
+​Motion of change in budget cycle to approve new annual budgets in​
 
- AGM 2025 (27 May 2025, Berg en Dal, Netherlands) 
+​the prior year (thus 2027 budget here), subject to mid-budget​
 
- 2025 Annual Report of the Secretary 
- a. 
+​amendment in the current year.​
 
- Secretary’s Report 
+​d.​ ​Election of the 2026 Financial Audit Committee​
 
- i. 
+​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​
 
- ii. 
+​7.​
+​2025 Annual Report of the Chair​
 
- iii. 
+​8.​
+​Any Other Business (Rondvraag)​
 
- iv. 
+​9.​
+​Announcements​
 
- Report and membership data 
+​10.​ ​Closing of the Meeting​
 
- Report from the EAS 
+​Respectfully submitted / Hoogachtend,,​
 
- Report from (or on behalf of) the Archives 
+​Dr. J. Noel-Storr, Secretary/Secretaris​
 
- Process for termination of membership 
+​secretary@kna-rnas.nl​
 
- b. 
+​On behalf of the board.​
 
- Executive Ofﬁce Report 
-
- i. 
-
- Report on servers, apps, and other services 
-
- 6. 
-
- 2025 Treasury Reports and Actions 
- a. 
-
- Financial Statement 2025 
-
- i. 
-
- ii. 
-
- Treasurer’s report 
-
- Report of the Financial Audit Committee 
-
- b. 
-
- RNAS Grants and Awards Policies and Plans 
-
- i. 
-
- Motion for spending on Grants and Awards, per the membership, 
-
- board, or executive committee 
-
- c. 
-
- Proposed Budget 2026 and 2027 
-
- i. 
-
- Motion of change in budget cycle to approve new annual budgets in 
-
- the prior year (thus 2027 budget here), subject to mid-budget 
-
- amendment in the current year. 
-
- d. 
-
- Election of the 2026 Financial Audit Committee 
-
- Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr (Secretary), Steven Rieder (Treasurer) 
-
- Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer) 
-
- KvK: 40047819 
-
- www.kna-rnas.nl 
-
- Ofﬁce of the Secretary 
-
- Het Kantoor van de Secretaris 
-
- Royal Netherlands Astronomical Society 
-
- Koninklijke Nederlandse Astronomenclub 
-
- 7. 
-
- 8. 
-
- 9. 
-
- 2025 Annual Report of the Chair 
-
- Any Other Business (Rondvraag) 
-
- Announcements 
-
- 10.   Closing of the Meeting 
-
- Respectfully submitted / Hoogachtend,, 
-
- Dr. J. Noel-Storr, Secretary/Secretaris 
-
- secretary@kna-rnas.nl 
-
- On behalf of the board. 
-
- Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr (Secretary), Steven Rieder (Treasurer) 
-
- Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer) 
-
- KvK: 40047819 
-
- www.kna-rnas.nl 
-
-
+​Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)​
 
 .. document-status::
    :approved: true
    :approved_in: Automated Ingestion
-   :notary_stamp: Pending

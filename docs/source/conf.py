@@ -44,7 +44,7 @@ html_theme_options = {
     'style_nav_header_background': '#1a2a6b', # Society Dark Blue
 }
 
-html_logo = "_static/logo_white.png"
+html_logo = "_static/logo_white.svg"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

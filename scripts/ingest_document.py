@@ -116,8 +116,6 @@ def extract_premium_text(pdf_path):
         
     # 3. Format paragraphs into RST
     rst_lines = []
-    header_done = False
-    footer_started = False
     
     # Find indices for horizontal rules
     first_content_idx = 0
@@ -132,51 +130,76 @@ def extract_premium_text(pdf_path):
             last_content_idx = i
             break
 
+    prev_type = None
+    prev_indent = None
+
     for i, p in enumerate(paragraphs):
+        p = p.replace("Agenda(as proposed)", "Agenda (as proposed)")
+        
         if i == first_content_idx:
             rst_lines.extend(["", "----", ""])
+            prev_type = "hr"
             
         if i == last_content_idx + 1:
             rst_lines.extend(["", "----", ""])
+            prev_type = "hr"
             
         is_society = any(s in p for s in SOCIETY_STRINGS)
         if is_society:
-            # Line blocks for letterhead
+            if prev_type and prev_type != "line_block":
+                rst_lines.append("")
             rst_lines.append(f"| {p}")
+            prev_type = "line_block"
             continue
             
         indent = get_list_indent(p)
         if indent is not None:
+            if prev_type != "list" or prev_indent != indent:
+                rst_lines.append("")
             rst_lines.append(f"{indent}{p}")
+            prev_type = "list"
+            prev_indent = indent
             continue
             
         is_header = len(p) < 80 and any(k in p for k in ["Agenda", "Annual General Meeting", "Meeting"])
         if is_header:
             rst_lines.append("")
-            rst_lines.append(p)
-            if "Annual" in p:
+            if "Agenda" in p:
+                rst_lines.append("-" * len(p))
+                rst_lines.append(p)
+                rst_lines.append("-" * len(p))
+            elif "Annual" in p:
+                rst_lines.append(p)
                 rst_lines.append("=" * len(p))
             else:
+                rst_lines.append(p)
                 rst_lines.append("-" * len(p))
             rst_lines.append("")
+            prev_type = "header"
             continue
             
         # Address blocks or dates
         if len(p) < 100 and ("April" in p or "May" in p or "Netherlands" in p) and not p.endswith('.'):
+            if prev_type:
+                rst_lines.append("")
             rst_lines.append(f"{p}")
-            rst_lines.append("")
+            prev_type = "paragraph"
             continue
             
         # Short signature lines
         if len(p) < 60 and not p.endswith('.'):
+            if prev_type and prev_type != "line_block":
+                rst_lines.append("")
             rst_lines.append(f"| {p}")
+            prev_type = "line_block"
             continue
             
         # Normal paragraph
+        if prev_type:
+            rst_lines.append("")
         rst_lines.append(p)
-        rst_lines.append("")
+        prev_type = "paragraph"
 
-    # Clean up double line blocks
     final_rst = "\n".join(rst_lines)
     return final_rst.strip()
 

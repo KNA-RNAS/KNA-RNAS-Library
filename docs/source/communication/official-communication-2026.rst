@@ -10,8 +10,7 @@ This document contains the official communications for the KNA-RNAS Society for 
 Business Meeting May 2026
 -------------------------
 
-- **Invitation**: [Insert link to invitation once uploaded]
-- **Proposed Agenda**: [Insert link to agenda once uploaded]
+- **Invitation & Agenda**: :doc:`2026 AGM Invitation and Proposed Agenda <2026_AGM_Agenda>`
 - **Date**: May 2026
 - **Location**: TBD
 

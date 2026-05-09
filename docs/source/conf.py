@@ -67,22 +67,37 @@ from docutils.parsers.rst import Directive, directives
 class DocumentOfRecordDirective(Directive):
     """Directive to display a banner indicating the document of record."""
     has_content = True
+    option_spec = {
+        'original-lang': directives.unchanged,
+    }
     
     def run(self):
         env = self.state.document.settings.env
         lang = getattr(env.config, 'language', 'en')
+        original_lang = self.options.get('original-lang', 'en')
         
-        # Message based on language
+        is_translation = lang != original_lang
+        
+        # Message based on language and translation status
         if lang == 'nl':
-            msg = "Dit is het officiële document van record."
+            if is_translation:
+                msg = "Dit is een vertaling. Het originele document is in het Engels."
+            else:
+                msg = "Dit is het officiële document van record (Origineel)."
         else:
-            msg = "This is the official document of record."
+            if is_translation:
+                msg = "This is a translation. The original document is in Dutch."
+            else:
+                msg = "This is the official document of record (Original)."
             
         banner_node = nodes.container()
         banner_node['classes'].append('document-of-record-banner')
+        if is_translation:
+            banner_node['classes'].append('translation-banner')
         
         # Icon and Text
-        icon_html = nodes.raw('', '<i class="fa fa-certificate"></i> ', format='html')
+        icon_class = "fa-language" if is_translation else "fa-certificate"
+        icon_html = nodes.raw('', f'<i class="fa {icon_class}"></i> ', format='html')
         text_node = nodes.Text(msg)
         
         banner_node.append(icon_html)

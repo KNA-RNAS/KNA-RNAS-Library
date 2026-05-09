@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-09 13:04+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/communication/official-communication-2026.rst:2
+msgid "Official Communications 2026"
+msgstr "Officiële mededelingen 2026"
+
+#: ../../source/communication/official-communication-2026.rst:4
+msgid ""
+"This document contains the official communications for the KNA-RNAS Society "
+"for the year 2026. It includes announcements, updates, and important "
+"information relevant to the society's operations and activities throughout "
+"the year."
+msgstr ""
+"Dit document bevat de officiële communicatie voor de KNA-RNAS Society voor "
+"het jaar 2026. Het bevat aankondigingen, updates en belangrijke informatie "
+"over de activiteiten van de vereniging gedurende het jaar."
+
+#: ../../source/communication/official-communication-2026.rst:8
+msgid "Table of Contents"
+msgstr "Inhoudsopgave"
+
+#: ../../source/communication/official-communication-2026.rst:11
+msgid "Business Meeting May 2026"
+msgstr "Vergadering mei 2026"
+
+#: ../../source/communication/official-communication-2026.rst:13
+msgid "**Invitation**: [Insert link to invitation once uploaded]"
+msgstr "**Uitnodiging**: [Link naar uitnodiging invoegen zodra geüpload]"
+
+#: ../../source/communication/official-communication-2026.rst:14
+msgid "**Proposed Agenda**: [Insert link to agenda once uploaded]"
+msgstr ""
+"**Voorgestelde agenda**: [Voeg link naar agenda toe zodra deze geüpload is]"
+
+#: ../../source/communication/official-communication-2026.rst:15
+msgid "**Date**: May 2026"
+msgstr "**Datum**: Mei 2026"
+
+#: ../../source/communication/official-communication-2026.rst:16
+msgid "**Location**: TBD"
+msgstr "**Locatie**: TBD"

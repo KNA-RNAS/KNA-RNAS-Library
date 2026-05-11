@@ -20,210 +20,193 @@ SOCIETY_STRINGS = [
     "Peter Barthel",
     "Ralph Wijers",
     "KvK: 40047819",
-    "www.kna-rnas.nl"
+    "www.kna-rnas.nl",
+    "The one-and-only professional organization",
+    "Please visit the website"
 ]
 
-def get_list_indent(text):
-    text_lower = text.strip().lower()
-    match = re.match(r'^(\d+(?:\.\d+)*)\.', text_lower)
-    if match:
-        depth = len(match.group(1).split('.'))
-        return "   " * (depth - 1)
-    if re.match(r'^[ivx]+\.', text_lower): return "      "
-    if re.match(r'^[a-z]\.', text_lower): return "   "
-    return None
+def extract_structural_text(doc_path):
+    """Uses Pandoc to extract structural RST from Word/ODT files."""
+    print(f"Running Pandoc on {doc_path}...")
+    try:
+        # Convert to rst
+        result = subprocess.run(
+            ["pandoc", str(doc_path), "--from", "docx" if doc_path.suffix == ".docx" else "odt", "--to", "rst"],
+            capture_output=True, text=True, check=True
+        )
+        text = result.stdout
+        
+        # Post-process Pandoc output for our specific needs
+        # 1. Ensure blank lines between list items for translation isolation
+        # Pandoc often groups list items together. We want to force space.
+        lines = text.splitlines()
+        processed_lines = []
+        for i, line in enumerate(lines):
+            processed_lines.append(line)
+            # If line starts with a list marker and next line exists and is not empty, add a blank line
+            # This is a bit naive but works for simple lists
+            if re.match(r'^\d+\.', line.strip()) and i + 1 < len(lines) and lines[i+1].strip():
+                processed_lines.append("")
+        
+        return "\n".join(processed_lines)
+    except Exception as e:
+        print(f"Pandoc conversion failed: {e}")
+        return None
 
-def is_list_item(text):
-    return get_list_indent(text) is not None
+def generate_pdf_from_doc(doc_path, output_dir):
+    """Uses LibreOffice to generate a PDF version of the document."""
+    print(f"Generating PDF via LibreOffice...")
+    try:
+        subprocess.run(
+            ["libreoffice", "--headless", "--convert-to", "pdf", str(doc_path), "--outdir", str(output_dir)],
+            check=True
+        )
+        pdf_path = output_dir / f"{doc_path.stem}.pdf"
+        return pdf_path
+    except Exception as e:
+        print(f"PDF generation failed: {e}")
+        return None
 
-def extract_premium_text(pdf_path):
+def extract_premium_text_from_pdf(pdf_path):
+    """Legacy coordinate-based PDF extractor (Fallback)."""
     doc = fitz.open(pdf_path)
-    all_lines = []
-    num_pages = len(doc)
-
+    raw_spans = []
+    
     for i, page in enumerate(doc):
+        blocks = page.get_text("dict")["blocks"]
         page_height = page.rect.height
-        HEADER_MARGIN = 150
-        FOOTER_MARGIN = 150
         
-        blocks_data = page.get_text("dict")["blocks"]
-        for b in blocks_data:
+        for b in blocks:
             if b['type'] != 0: continue
-            
-            y0, y1 = b['bbox'][1], b['bbox'][3]
-            block_text = "".join([s['text'] for l in b['lines'] for s in l['spans']]).replace('\u200b', '').strip()
-            
-            if not block_text: continue
-            is_society = any(s in block_text for s in SOCIETY_STRINGS)
-            
-            if i == 0:
-                if y0 > (page_height - FOOTER_MARGIN): continue
-            else:
-                if y1 < HEADER_MARGIN or y0 > (page_height - FOOTER_MARGIN): continue
-                if is_society and len(block_text) < 200: continue
-                
             for l in b['lines']:
-                line_text = "".join([s['text'] for s in l['spans']]).replace('\u200b', '').strip()
-                if line_text:
-                    all_lines.append(line_text)
+                for s in l['spans']:
+                    y0 = s['bbox'][1]
+                    text_s = s['text'].strip()
+                    if not text_s: continue
+                    
+                    is_list_marker = re.match(r'^(\d+(?:\.\d+)*\.|[a-z]\.|[ivx]+\.)', text_s.lower())
+                    is_society_blob = any(soc.lower() in text_s.lower() for soc in SOCIETY_STRINGS)
+                    is_in_margin = y0 < 180 or y0 > (page_height - 100)
+                    
+                    if (is_society_blob and not is_list_marker and len(text_s) < 150) or (is_in_margin and len(text_s) < 50):
+                        continue
+                    
+                    raw_spans.append({
+                        'text': text_s,
+                        'x0': s['bbox'][0],
+                        'y0': y0,
+                        'size': round(s['size'], 1),
+                        'bold': bool(s['flags'] & 2**4),
+                    })
 
-    # 1. Fix detached list markers
-    fixed_lines = []
-    skip_next = False
-    for i, line in enumerate(all_lines):
-        if skip_next:
-            skip_next = False
-            continue
-        if re.match(r'^(\d+(?:\.\d+)*\.|[a-z]\.|[ivx]+\.)$', line.lower()) and i + 1 < len(all_lines):
-            fixed_lines.append(line + " " + all_lines[i+1])
-            skip_next = True
-        else:
-            fixed_lines.append(line)
-            
-    # 2. Build paragraphs based on semantic rules
-    paragraphs = []
-    current_para = []
-    
-    for line in fixed_lines:
-        is_list = is_list_item(line)
-        is_header = len(line) < 80 and not line.endswith(('.', ':', ',', ';', 'h')) and any(k in line for k in ["Agenda", "Annual General Meeting", "Minutes"]) and not is_list
-        is_society = any(s in line for s in SOCIETY_STRINGS)
-        is_signature = any(k in line for k in ["Respectfully", "Hoogachtend", "secretary@", "On behalf", "Dr."])
-        is_date_loc = re.match(r'^\d+\s(?:January|February|March|April|May|June|July|August|September|October|November|December)\s\d{4},', line)
-        
-        start_new = False
-        if not current_para:
-            start_new = False
-        elif is_list or is_header or is_society or is_signature or is_date_loc:
-            start_new = True
-        else:
-            prev_line = current_para[-1]
-            if prev_line.endswith(('.', ':', '!', '?')) and line and line[0].isupper():
-                start_new = True
-            elif any(k in prev_line for k in ["Respectfully", "Hoogachtend", "secretary@", "On behalf", "Dr."]):
-                start_new = True
-            elif re.match(r'^\d+\s(?:January|February|March|April|May|June|July|August|September|October|November|December)\s\d{4},', prev_line):
-                start_new = True
-                
-        if start_new:
-            paragraphs.append(" ".join(current_para))
-            current_para = [line]
-        else:
-            current_para.append(line)
-            
-    if current_para:
-        paragraphs.append(" ".join(current_para))
-        
-    # 3. Format paragraphs into RST
-    rst_lines = []
-    
-    first_content_idx = 0
-    for i, p in enumerate(paragraphs):
-        if not any(s in p for s in SOCIETY_STRINGS):
-            first_content_idx = i
-            break
-            
-    last_content_idx = len(paragraphs) - 1
-    for i in range(len(paragraphs)-1, -1, -1):
-        if not any(s in paragraphs[i] for s in SOCIETY_STRINGS):
-            last_content_idx = i
-            break
+    if not raw_spans: return ""
 
-    prev_type = None
-    prev_indent = None
-
-    for i, p in enumerate(paragraphs):
-        p = p.replace("Agenda(as proposed)", "Agenda (as proposed)")
-        
-        if i == first_content_idx:
-            rst_lines.extend(["", "----", ""])
-            prev_type = "hr"
-            
-        if i == last_content_idx + 1:
-            rst_lines.extend(["", "----", ""])
-            prev_type = "hr"
-            
-        is_society = any(s in p for s in SOCIETY_STRINGS)
-        if is_society:
-            if prev_type and prev_type != "line_block":
-                rst_lines.append("")
-            rst_lines.append(f"| {p}")
-            prev_type = "line_block"
-            continue
-            
-        indent = get_list_indent(p)
-        if indent is not None:
-            if prev_type != "list" or prev_indent != indent:
-                rst_lines.append("")
-            rst_lines.append(f"{indent}{p}")
-            prev_type = "list"
-            prev_indent = indent
-            continue
-            
-        is_list = get_list_indent(p) is not None
-        is_header = len(p) < 80 and not p.endswith(('.', ':', ',', ';', 'h')) and any(k in p for k in ["Agenda", "Annual General Meeting", "Minutes"]) and not is_list
-        if is_header:
-            rst_lines.append("")
-            if "Agenda" in p:
-                rst_lines.append(p)
-                rst_lines.append("-" * len(p))
-            elif "Annual" in p:
-                rst_lines.append(p)
-                rst_lines.append("~" * len(p))
+    lines = []
+    if raw_spans:
+        curr_line = raw_spans[0]
+        for s in raw_spans[1:]:
+            if abs(s['y0'] - curr_line['y0']) < 3 and s['x0'] - (curr_line['x0'] + len(curr_line['text'])*4) < 120:
+                curr_line['text'] += " " + s['text']
+                curr_line['x0'] = min(curr_line['x0'], s['x0'])
+                curr_line['size'] = max(curr_line['size'], s['size'])
+                curr_line['bold'] = curr_line['bold'] or s['bold']
             else:
-                rst_lines.append(p)
-                rst_lines.append("~" * len(p))
-            rst_lines.append("")
-            prev_type = "header"
-            continue
-            
-        if len(p) < 100 and ("April" in p or "May" in p or "Netherlands" in p) and not p.endswith('.'):
-            if prev_type:
-                rst_lines.append("")
-            rst_lines.append(f"{p}")
-            prev_type = "paragraph"
-            continue
-            
-        if len(p) < 60 and not p.endswith('.'):
-            if prev_type and prev_type != "line_block":
-                rst_lines.append("")
-            rst_lines.append(f"| {p}")
-            prev_type = "line_block"
-            continue
-            
-        if prev_type:
-            rst_lines.append("")
-        rst_lines.append(p)
-        prev_type = "paragraph"
+                lines.append(curr_line)
+                curr_line = s
+        lines.append(curr_line)
 
-    final_rst = "\n".join(rst_lines)
-    return final_rst.strip()
-
-
-def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=None, publish=False, deposition_id=None):
-    pdf_path = Path(pdf_path)
-    if not pdf_path.exists(): return
-
-    if not title: title = pdf_path.stem.replace("-", " ").replace("_", " ").title()
+    blocks = []
+    curr_block = None
     
-    file_stem = pdf_path.stem
+    for l in lines:
+        text = l['text'].strip()
+        if not text: continue
+        is_list_marker = re.match(r'^(\d+(?:\.\d+)*\.|[a-z]\.|[ivx]+\.)', text.lower())
+        is_at_margin = l['x0'] < 80
+        is_major_header = is_at_margin and l['size'] > 15
+        is_minor_header = is_at_margin and l['size'] > 11 and l['bold'] and not is_list_marker and len(text) < 60
+        indent_level = max(0, int((l['x0'] - 71) / 18))
+
+        if is_major_header or is_minor_header:
+            if curr_block: blocks.append(curr_block)
+            blocks.append({'type': 'header', 'text': text, 'indent': 0, 'size': l['size']})
+            curr_block = None
+        elif is_list_marker:
+            if curr_block: blocks.append(curr_block)
+            blocks.append({'type': 'list', 'text': text, 'indent': indent_level})
+            curr_block = None
+        else:
+            if curr_block and curr_block['type'] in ['paragraph', 'list'] and curr_block['indent'] == indent_level:
+                curr_block['text'] += " " + text
+            else:
+                if curr_block: blocks.append(curr_block)
+                curr_block = {'type': 'paragraph', 'text': text, 'indent': indent_level}
+                
+    if curr_block: blocks.append(curr_block)
+
+    rst_lines = []
+    for b in blocks:
+        if b['type'] == 'header':
+            rst_lines.append("")
+            rst_lines.append(b['text'])
+            char = "=" if b['size'] > 17 else "-"
+            rst_lines.append(char * len(b['text']))
+            rst_lines.append("")
+        elif b['type'] == 'list':
+            indent = "   " * b['indent']
+            rst_lines.append("")
+            rst_lines.append(f"{indent}{b['text']}")
+        elif b['type'] == 'paragraph':
+            indent = "   " * b['indent']
+            rst_lines.append("")
+            rst_lines.append(f"{indent}{b['text']}")
+            
+    return "\n".join(rst_lines).strip()
+
+def ingest_document(file_path, category, original_lang='en', title=None, description=None, publish=False, deposition_id=None):
+    file_path = Path(file_path)
+    if not file_path.exists():
+        print(f"Error: File not found {file_path}")
+        return
+
+    if not title: title = file_path.stem.replace("-", " ").replace("_", " ").title()
+    
+    file_stem = file_path.stem
     target_dir = Path(f"docs/source/{category}")
     target_dir.mkdir(parents=True, exist_ok=True)
     rst_path = target_dir / f"{file_stem}.rst"
 
-    print(f"Extracting premium text from {pdf_path}...")
-    text = extract_premium_text(pdf_path)
+    # 1. Determine Source & Extract Text
+    if file_path.suffix.lower() in ['.docx', '.odt']:
+        text = extract_structural_text(file_path)
+        # Generate PDF for archive
+        pdf_path = generate_pdf_from_doc(file_path, Path("docs/source/_static/archive"))
+    elif file_path.suffix.lower() == '.pdf':
+        print(f"Using legacy PDF extraction for {file_path}...")
+        text = extract_premium_text_from_pdf(file_path)
+        pdf_path = file_path
+    else:
+        print(f"Error: Unsupported file type {file_path.suffix}")
+        return
 
+    if not text:
+        print("Error: Could not extract text from document.")
+        return
+
+    # 2. Archive to Zenodo
     print(f"Archiving to Zenodo (Publish={publish})...")
     creators = [{'name': 'KNA-RNAS Society', 'affiliation': 'KNA-RNAS'}]
+    # We always use the PDF for Zenodo
     doi_or_id = archive_document(str(pdf_path), title, description or f"Official {category} document", creators, publish=publish, deposition_id=deposition_id)
     
     doi_display = f":doi:`{doi_or_id}`" if publish and not isinstance(doi_or_id, int) else f"Draft ID: {doi_or_id}"
 
+    # 3. Ensure PDF is in static archive
     downloads_dir = Path("docs/source/_static/archive")
     downloads_dir.mkdir(parents=True, exist_ok=True)
-    target_pdf_abs = Path("docs/source/_static/archive") / pdf_path.name
-    shutil.copy(pdf_path, target_pdf_abs)
+    target_pdf_abs = (downloads_dir / pdf_path.name).resolve()
+    if pdf_path.resolve() != target_pdf_abs:
+        shutil.copy(pdf_path, target_pdf_abs)
 
     rel_path_to_static = "../" * len(category.split('/')) + "_static/archive/" + pdf_path.name
 
@@ -254,21 +237,24 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
     with open(rst_path, "w") as f: f.write(rst_content)
     print(f"Created RST file at {rst_path}")
 
+    # 4. Synchronize translations
     print("\nRunning translation update...")
     try:
-        subprocess.run(["make", "gettext"], cwd="docs", check=True)
-        subprocess.run(["sphinx-intl", "update", "-p", "build/gettext", "-l", "nl"], cwd="docs", check=True)
-        subprocess.run(["python3", "scripts/translate_docs.py"], check=True)
-    except Exception as e: print(f"Translation failed: {e}")
+        docs_dir = Path("docs")
+        venv_bin = Path(".venv/bin").resolve()
+        subprocess.run([str(venv_bin / "sphinx-build"), "-b", "gettext", "source", "build/gettext"], cwd=docs_dir, check=True)
+        subprocess.run([str(venv_bin / "sphinx-intl"), "update", "-p", "build/gettext", "-l", "nl"], cwd=docs_dir, check=True)
+        subprocess.run([str(venv_bin / "python3"), "scripts/translate_docs.py"], check=True)
+    except Exception as e:
+        print(f"Translation sync failed: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("pdf_path")
+    parser.add_argument("file_path")
     parser.add_argument("--category", default="minutes")
     parser.add_argument("--lang", default="en")
     parser.add_argument("--title")
     parser.add_argument("--publish", action="store_true")
     parser.add_argument("--deposition-id", help="Zenodo deposition ID to update (instead of creating new)")
     args = parser.parse_args()
-    ingest_pdf(args.pdf_path, args.category, args.lang, args.title, publish=args.publish, deposition_id=args.deposition_id)
-
+    ingest_document(args.file_path, args.category, args.lang, args.title, publish=args.publish, deposition_id=args.deposition_id)

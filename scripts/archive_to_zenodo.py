@@ -55,35 +55,48 @@ def publish_deposition(deposition_id):
     
     return response.json()
 
-def archive_document(file_path, title, description, creators, publish=False):
+def delete_deposition(deposition_id):
+    """Delete a deposition."""
+    url = f"{BASE_URL}/deposit/depositions/{deposition_id}"
+    params = {'access_token': ACCESS_TOKEN}
+    response = requests.delete(url, params=params)
+    return response.status_code == 204
+
+def archive_document(file_path, title, description, creators, publish=False, deposition_id=None):
     """Full workflow to archive a document."""
     if not ACCESS_TOKEN:
         print("Error: ZENODO_ACCESS_TOKEN not found in .env")
         return None
 
-    metadata = {
-        'metadata': {
-            'title': title,
-            'upload_type': 'publication',
-            'publication_type': 'report',
-            'description': description,
-            'creators': creators,
-            'access_right': 'open',
-            'license': 'CC-BY-4.0',
-            'communities': [{'identifier': 'kna-rnas'}]
+    dep_id = deposition_id
+    if not dep_id:
+        metadata = {
+            'metadata': {
+                'title': title,
+                'upload_type': 'publication',
+                'publication_type': 'report',
+                'description': description,
+                'creators': creators,
+                'access_right': 'open',
+                'license': 'CC-BY-4.0',
+                'communities': [{'identifier': 'kna-rnas'}]
+            }
         }
-    }
-    
-    print(f"Creating deposition for '{title}'...")
-    deposition = create_deposition(metadata)
-    if not deposition:
-        return None
-    
-    dep_id = deposition['id']
-    print(f"Deposition created with ID: {dep_id}")
+        print(f"Creating deposition for '{title}'...")
+        deposition = create_deposition(metadata)
+        if not deposition:
+            return None
+        dep_id = deposition['id']
+        print(f"Deposition created with ID: {dep_id}")
+    else:
+        print(f"Updating existing deposition ID: {dep_id}")
+        # To update, we should ideally delete existing files if we're replacing them
+        # But Zenodo API for draft update is a bit complex. For now we just attempt upload.
     
     print(f"Uploading file '{file_path}'...")
     if not upload_file(dep_id, file_path):
+        # If upload fails, maybe the file already exists? 
+        # Zenodo requires deleting the file first if it exists.
         return None
     
     if publish:
@@ -94,7 +107,7 @@ def archive_document(file_path, title, description, creators, publish=False):
         print(f"Successfully archived! DOI: {published['doi']}")
         return published['doi']
     else:
-        print("Deposition created as DRAFT. Visit Zenodo to review and publish.")
+        print(f"Deposition {'updated' if deposition_id else 'created'} as DRAFT. Visit Zenodo to review and publish.")
         return dep_id
 
 if __name__ == "__main__":

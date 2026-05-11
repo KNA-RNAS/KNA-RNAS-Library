@@ -202,7 +202,7 @@ def extract_premium_text(pdf_path):
     final_rst = "\n".join(rst_lines)
     return final_rst.strip()
 
-def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=None, publish=False):
+def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=None, publish=False, deposition_id=None):
     pdf_path = Path(pdf_path)
     if not pdf_path.exists(): return
 
@@ -218,7 +218,7 @@ def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=N
 
     print(f"Archiving to Zenodo (Publish={publish})...")
     creators = [{'name': 'KNA-RNAS Society', 'affiliation': 'KNA-RNAS'}]
-    doi_or_id = archive_document(str(pdf_path), title, description or f"Official {category} document", creators, publish=publish)
+    doi_or_id = archive_document(str(pdf_path), title, description or f"Official {category} document", creators, publish=publish, deposition_id=deposition_id)
     
     doi_display = f":doi:`{doi_or_id}`" if publish and not isinstance(doi_or_id, int) else f"Draft ID: {doi_or_id}"
 
@@ -270,6 +270,7 @@ if __name__ == "__main__":
     parser.add_argument("--lang", default="en")
     parser.add_argument("--title")
     parser.add_argument("--publish", action="store_true")
+    parser.add_argument("--deposition-id", help="Zenodo deposition ID to update (instead of creating new)")
     args = parser.parse_args()
-    ingest_pdf(args.pdf_path, args.category, args.lang, args.title, publish=args.publish)
+    ingest_pdf(args.pdf_path, args.category, args.lang, args.title, publish=args.publish, deposition_id=args.deposition_id)
 

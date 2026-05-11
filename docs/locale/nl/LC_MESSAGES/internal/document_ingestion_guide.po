@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-11 12:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/internal/document_ingestion_guide.rst:2
+msgid "Document Ingestion Guide"
+msgstr "Gids voor documentinvoer"
+
+#: ../../source/internal/document_ingestion_guide.rst:4
+msgid ""
+"This guide describes the process for adding new official documents (PDFs) to"
+" the KNA-RNAS Library. The system is designed to automate text extraction, "
+"RST generation, translation updates, and Zenodo archiving."
+msgstr ""
+"Deze handleiding beschrijft het proces voor het toevoegen van nieuwe "
+"officiële documenten (PDF's) aan de KNA-RNAS-bibliotheek. Het systeem is "
+"ontworpen om tekst extractie, RST generatie, vertaling updates en Zenodo "
+"archivering te automatiseren."
+
+#: ../../source/internal/document_ingestion_guide.rst:7
+msgid "Prerequisites"
+msgstr "Vereisten"
+
+#: ../../source/internal/document_ingestion_guide.rst:9
+msgid "Before ingesting a document, ensure you have:"
+msgstr "Zorg ervoor dat je een document hebt voordat je het inneemt:"
+
+#: ../../source/internal/document_ingestion_guide.rst:11
+msgid "**Python 3.10+** installed with a configured virtual environment."
+msgstr ""
+"**Python 3.10+** geïnstalleerd met een geconfigureerde virtuele omgeving."
+
+#: ../../source/internal/document_ingestion_guide.rst:12
+msgid ""
+"**Required Packages**: Install dependencies via ``pip install -r "
+"requirements.txt`` (primarily ``pymupdf``, ``requests``, and ``python-"
+"dotenv``)."
+msgstr ""
+"**Verplichte pakketten**: Installeer afhankelijkheden via ``pip install -r "
+"requirements.txt`` (voornamelijk ``pymupdf``, ``requests``, en ``python-"
+"dotenv``)."
+
+#: ../../source/internal/document_ingestion_guide.rst:13
+msgid ""
+"**Zenodo Access**: A valid ``ZENODO_ACCESS_TOKEN`` in your ``.env`` file."
+msgstr ""
+"**Zenodo Access**: Een geldige ``ZENODO_ACCESS_TOKEN`` in je ``.env`` "
+"bestand."
+
+#: ../../source/internal/document_ingestion_guide.rst:14
+msgid "**PDF Metadata**: The document category, title, and original language."
+msgstr ""
+"**PDF Metadata**: De documentcategorie, titel en oorspronkelijke taal."
+
+#: ../../source/internal/document_ingestion_guide.rst:17
+msgid "Directory Structure"
+msgstr "Directory-structuur"
+
+#: ../../source/internal/document_ingestion_guide.rst:19
+msgid ""
+"Documents are organized into the following categories in ``docs/source/``:"
+msgstr ""
+"Documenten zijn georganiseerd in de volgende categorieën in "
+"``docs/source/``:"
+
+#: ../../source/internal/document_ingestion_guide.rst:21
+msgid "``communication/``: Official announcements and letters."
+msgstr "``communicatie``: Officiële aankondigingen en brieven."
+
+#: ../../source/internal/document_ingestion_guide.rst:22
+msgid "``governing-docs/``: Statutes, bylaws, and official registrations."
+msgstr ""
+"bestuursdocumenten: Statuten, huishoudelijke reglementen en officiële "
+"registraties."
+
+#: ../../source/internal/document_ingestion_guide.rst:23
+msgid "``historical-docs/``: Significant archival materials."
+msgstr "``historische-docs/``: Belangrijk archiefmateriaal."
+
+#: ../../source/internal/document_ingestion_guide.rst:24
+msgid "``minutes/``: Records of board and general meetings."
+msgstr "notulen: Notulen van bestuurs- en algemene vergaderingen."
+
+#: ../../source/internal/document_ingestion_guide.rst:25
+msgid "``publications/``: Newsletters and proceedings."
+msgstr "``publicaties/``: Nieuwsbrieven en procedures."
+
+#: ../../source/internal/document_ingestion_guide.rst:28
+msgid "Ingestion Workflow"
+msgstr "Workflow voor invoer"
+
+#: ../../source/internal/document_ingestion_guide.rst:31
+msgid "Step 1: Prepare the PDF"
+msgstr "Stap 1: De PDF voorbereiden"
+
+#: ../../source/internal/document_ingestion_guide.rst:33
+msgid ""
+"Ensure the PDF is clearly legible. The ingestion script uses semantic "
+"analysis to strip headers/footers and identify society-specific strings "
+"(e.g., \"Royal Netherlands Astronomical Society\")."
+msgstr ""
+"Zorg ervoor dat de PDF duidelijk leesbaar is. Het ingestion script gebruikt "
+"semantische analyse om headers/footers te strippen en maatschappij-"
+"specifieke strings te identificeren (bijv. \"Koninklijke Nederlandse "
+"Astronomische Vereniging\")."
+
+#: ../../source/internal/document_ingestion_guide.rst:36
+msgid "Step 2: Run the Ingestion Script"
+msgstr "Stap 2: Voer het invoerscript uit"
+
+#: ../../source/internal/document_ingestion_guide.rst:38
+msgid "Use the ``scripts/ingest_document.py`` tool to process the file."
+msgstr ""
+"Gebruik het hulpprogramma ``scripts/ingest_document.py`` om het bestand te "
+"verwerken."
+
+#: ../../source/internal/document_ingestion_guide.rst:44
+msgid "**Arguments:**"
+msgstr "**Argumenten:**"
+
+#: ../../source/internal/document_ingestion_guide.rst:46
+msgid "``pdf_path``: Path to the source PDF file."
+msgstr "``pdf_pad``: Pad naar het bron-PDF-bestand."
+
+#: ../../source/internal/document_ingestion_guide.rst:47
+msgid ""
+"``--category``: One of the folders listed above (default: ``minutes``)."
+msgstr ""
+"``-categorie``: Een van de bovenstaande mappen (standaard: ``minuten``)."
+
+#: ../../source/internal/document_ingestion_guide.rst:48
+msgid "``--title``: The display title for the library."
+msgstr "``-titel``: De weergavetitel voor de bibliotheek."
+
+#: ../../source/internal/document_ingestion_guide.rst:49
+msgid "``--lang``: Original language code (default: ``en``)."
+msgstr "``--lang``: Originele taalcode (standaard: ``en``)."
+
+#: ../../source/internal/document_ingestion_guide.rst:50
+msgid ""
+"``--publish``: (Optional) If included, immediately publishes to Zenodo "
+"(PRODUCTION). **Omit this to create a draft.**"
+msgstr ""
+"``--publiceer``: (Optioneel) Als deze optie is opgenomen, wordt het document"
+" onmiddellijk gepubliceerd naar Zenodo (PRODUCTIE). **laat dit weg om een "
+"concept te maken.**"
+
+#: ../../source/internal/document_ingestion_guide.rst:53
+msgid "Step 3: Review Generated Files"
+msgstr "Stap 3: Gegenereerde bestanden bekijken"
+
+#: ../../source/internal/document_ingestion_guide.rst:55
+msgid "The script performs the following actions:"
+msgstr "Het script voert de volgende acties uit:"
+
+#: ../../source/internal/document_ingestion_guide.rst:57
+msgid "**Text Extraction**: Converts PDF content to premium reStructuredText."
+msgstr ""
+"**Text Extraction**: Converteert PDF-inhoud naar hoogwaardige "
+"reStructuredText."
+
+#: ../../source/internal/document_ingestion_guide.rst:58
+msgid "**Static Copy**: Copies the PDF to ``docs/source/_static/archive/``."
+msgstr ""
+"**Statische kopie**: Kopieert de PDF naar ``docs/source/_static/archive/``."
+
+#: ../../source/internal/document_ingestion_guide.rst:59
+msgid ""
+"**RST Creation**: Generates the ``.rst`` file in the specified category "
+"folder."
+msgstr ""
+"**RST Aanmaken**: Genereert het ``.rst`` bestand in de opgegeven categorie "
+"map."
+
+#: ../../source/internal/document_ingestion_guide.rst:60
+msgid "**Zenodo Archiving**: Creates a **Draft Deposition** on Zenodo."
+msgstr "**Zenodo-archivering**: Creëert een **Draft Deposition** op Zenodo."
+
+#: ../../source/internal/document_ingestion_guide.rst:61
+msgid ""
+"**Translation Update**: Runs ``make gettext`` and updates Dutch translations"
+" via ``scripts/translate_docs.py``."
+msgstr ""
+"**Vertalingen bijwerken**: Voert ``make gettext`` uit en werkt Nederlandse "
+"vertalingen bij via ``scripts/translate_docs.py``."
+
+#: ../../source/internal/document_ingestion_guide.rst:64
+msgid "Step 4: Review Zenodo Draft"
+msgstr "Stap 4: Zenodo Concept beoordelen"
+
+#: ../../source/internal/document_ingestion_guide.rst:66
+msgid "Visit your Zenodo dashboard to review the draft entry."
+msgstr "Ga naar je Zenodo dashboard om de conceptvermelding te bekijken."
+
+#: ../../source/internal/document_ingestion_guide.rst:68
+msgid "**Zenodo Metadata Draft Details:**"
+msgstr "**Zenodo Metadata Draft Details:**"
+
+#: ../../source/internal/document_ingestion_guide.rst:70
+msgid "**Upload Type**: Publication"
+msgstr "**Upload Type**: Publicatie"
+
+#: ../../source/internal/document_ingestion_guide.rst:71
+msgid "**Publication Type**: Report"
+msgstr "**Type publicatie**: Verslag"
+
+#: ../../source/internal/document_ingestion_guide.rst:72
+msgid "**Access Right**: Open Access"
+msgstr "**Toegangsrecht**: Open Toegang"
+
+#: ../../source/internal/document_ingestion_guide.rst:73
+msgid ""
+"**License**: Creative Commons Attribution 4.0 International (CC-BY-4.0)"
+msgstr ""
+"**Licentie**: Creative Commons Naamsvermelding 4.0 Internationaal (CC-"
+"BY-4.0)"
+
+#: ../../source/internal/document_ingestion_guide.rst:74
+msgid "**Communities**: ``kna-rnas``"
+msgstr "**Gemeenschappen**: ``kna-rnas``"
+
+#: ../../source/internal/document_ingestion_guide.rst:76
+msgid ""
+"Once reviewed, you can manually publish on Zenodo to receive a permanent "
+"DOI, then update the ``:doi:`` field in the generated RST file if necessary."
+msgstr ""
+"Eenmaal beoordeeld, kun je handmatig publiceren op Zenodo om een permanente "
+"DOI te ontvangen, werk dan het ``:doi:`` veld bij in het gegenereerde RST "
+"bestand indien nodig."
+
+#: ../../source/internal/document_ingestion_guide.rst:79
+msgid "Step 5: Verify and Commit"
+msgstr "Stap 5: Verifiëren en vastleggen"
+
+#: ../../source/internal/document_ingestion_guide.rst:81
+msgid "Build the documentation locally to ensure everything looks correct:"
+msgstr ""
+"Bouw de documentatie lokaal om er zeker van te zijn dat alles er correct "
+"uitziet:"
+
+#: ../../source/internal/document_ingestion_guide.rst:88
+msgid "If satisfied, commit the new files and create a Pull Request."
+msgstr ""
+"Als je tevreden bent, commit dan de nieuwe bestanden en maak een Pull "
+"Request aan."
+
+#: ../../source/internal/document_ingestion_guide.rst:91
+msgid "Troubleshooting"
+msgstr "Problemen oplossen"
+
+#: ../../source/internal/document_ingestion_guide.rst:93
+msgid ""
+"**Extraction Errors**: If the PDF layout is complex, the script might "
+"misidentify headers. Manually edit the generated ``.rst`` file to fix "
+"structural issues."
+msgstr ""
+"**Extractiefouten**: Als de PDF-indeling complex is, kan het script "
+"kopteksten verkeerd identificeren. Bewerk het gegenereerde ``.rst`` bestand "
+"handmatig om structurele problemen op te lossen."
+
+#: ../../source/internal/document_ingestion_guide.rst:94
+msgid ""
+"**Translation Failures**: Ensure ``sphinx-intl`` is installed and configured"
+" correctly."
+msgstr ""
+"**Vertaalfouten**: Zorg ervoor dat ``sphinx-intl`` correct is geïnstalleerd "
+"en geconfigureerd."
+
+#: ../../source/internal/document_ingestion_guide.rst:95
+msgid ""
+"**Zenodo Timeout**: If the upload fails, check your internet connection and "
+"verify the ``ZENODO_ACCESS_TOKEN`` permissions."
+msgstr ""
+"**Zenodo Timeout**: Als het uploaden mislukt, controleer dan je "
+"internetverbinding en controleer de ``ZENODO_ACCESS_TOKEN`` rechten."

@@ -67,6 +67,14 @@ Bibliotheek KNA-RNAS Library
       - :doc:`2025 Communications <communication/official-communication-2025>`
       - :doc:`2024 Communications <communication/official-communication-2024>`
 
+   .. grid-item-card:: 🛠️ Administration
+      :shadow: md
+
+      Internal guides and tools for library maintenance.
+      
+      +++
+      - :doc:`Document Ingestion Guide <internal/document_ingestion_guide>`
+
 .. toctree::
    :hidden:
    :caption: Governing Documents
@@ -106,4 +114,9 @@ Bibliotheek KNA-RNAS Library
    communication/official-communication-2026
    communication/official-communication-2025
    communication/official-communication-2024
+.. toctree::
+   :hidden:
+   :caption: Administration
+
+   internal/document_ingestion_guide
    api

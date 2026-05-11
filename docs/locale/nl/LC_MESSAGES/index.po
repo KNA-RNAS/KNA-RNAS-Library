@@ -9,36 +9,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-09 13:04+0200\n"
+"POT-Creation-Date: 2026-05-11 12:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: nl\n"
 "Language-Team: nl <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../source/index.rst:70
+#: ../../source/index.rst:78
 msgid "Governing Documents"
 msgstr "Bestuurlijke documenten"
 
-#: ../../source/index.rst:81
+#: ../../source/index.rst:89
 msgid "Publications"
 msgstr "Publicaties"
 
-#: ../../source/index.rst:88
+#: ../../source/index.rst:96
 msgid "Minutes"
 msgstr "Notulen"
 
-#: ../../source/index.rst:95
+#: ../../source/index.rst:103
 msgid "Historical Documents"
 msgstr "Historische documenten"
 
-#: ../../source/index.rst:102
+#: ../../source/index.rst:110
 msgid "Official Communication"
 msgstr "Officiële mededeling"
+
+#: ../../source/index.rst:117
+msgid "Administration"
+msgstr "Administratie"
 
 #: ../../source/index.rst:2
 msgid "Bibliotheek KNA-RNAS Library"
@@ -51,23 +55,22 @@ msgstr "Bibliotheek KNA-RNAS"
 
 #: ../../source/index.rst:10
 msgid ""
-"**The KNA-RNAS Library** is the official Library of the Royal Netherlands"
-" Astronomical Society (Koninklijke Nederlandse Astronomen Club). The "
-"archive of physical documents is housed in xxxx. Approved electronic "
-"documents are given a DOI-number via Zenodo (CERN, Geneva, CH); Recurrent"
-" publications may be issued an ISSN by the National Library of the "
-"Netherlands."
+"**The KNA-RNAS Library** is the official Library of the Royal Netherlands "
+"Astronomical Society (Koninklijke Nederlandse Astronomen Club). The archive "
+"of physical documents is housed in xxxx. Approved electronic documents are "
+"given a DOI-number via Zenodo (CERN, Geneva, CH); Recurrent publications may"
+" be issued an ISSN by the National Library of the Netherlands."
 msgstr ""
-"**De KNA-RNAS Bibliotheek** is de officiële bibliotheek van de "
-"Koninklijke Nederlandse Astronomen Club. Het archief van fysieke "
-"documenten is gehuisvest in xxxx. Goedgekeurde elektronische documenten "
-"krijgen een DOI-nummer via Zenodo (CERN, Genève, CH); terugkerende "
-"publicaties kunnen een ISSN krijgen van de Koninklijke Bibliotheek."
+"**De KNA-RNAS Bibliotheek** is de officiële bibliotheek van de Koninklijke "
+"Nederlandse Astronomen Club. Het archief van fysieke documenten is "
+"gehuisvest in xxxx. Goedgekeurde elektronische documenten krijgen een DOI-"
+"nummer via Zenodo (CERN, Genève, CH); terugkerende publicaties kunnen een "
+"ISSN krijgen van de Koninklijke Bibliotheek."
 
 #: ../../source/index.rst:14
 msgid ""
-"This library is under active development, direct comments to librarian"
-"@kna-rnas.nl"
+"This library is under active development, direct comments to librarian@kna-"
+"rnas.nl"
 msgstr ""
 "Deze bibliotheek wordt actief ontwikkeld, opmerkingen kunt u sturen naar "
 "librarian@kna-rnas.nl"
@@ -80,8 +83,8 @@ msgstr "Bestuurlijke documenten"
 #: ../../source/index.rst:23
 msgid "Official statutes, bylaws, and mission statement of the KNA-RNAS."
 msgstr ""
-"Officiële statuten, huishoudelijk reglement en missieverklaring van de "
-"KNA-RNAS."
+"Officiële statuten, huishoudelijk reglement en missieverklaring van de KNA-"
+"RNAS."
 
 #: ../../source/index.rst:26
 msgid ":doc:`Statutes <governing-docs/statutes>`"
@@ -149,8 +152,8 @@ msgstr "Historische documenten"
 #: ../../source/index.rst:54
 msgid "Archival materials marking key moments in the history of the KNA-RNAS."
 msgstr ""
-"Archiefmateriaal dat belangrijke momenten in de geschiedenis van de KNA-"
-"RNAS markeert."
+"Archiefmateriaal dat belangrijke momenten in de geschiedenis van de KNA-RNAS"
+" markeert."
 
 #: ../../source/index.rst:57
 msgid ":doc:`Royal Designation <historical-docs/royal-designation>`"
@@ -182,3 +185,14 @@ msgstr ":doc:`2025 Communicatie <communicatie/officiële-communicatie-2025>`"
 msgid ":doc:`2024 Communications <communication/official-communication-2024>`"
 msgstr ":doc:`2024 Mededelingen <communicatie/officiële-communicatie-2024>`"
 
+#: ../../source/index.rst:70
+msgid "🛠️ Administration"
+msgstr "🛠️ Administratie"
+
+#: ../../source/index.rst:73
+msgid "Internal guides and tools for library maintenance."
+msgstr "Interne gidsen en hulpmiddelen voor bibliotheekonderhoud."
+
+#: ../../source/index.rst:76
+msgid ":doc:`Document Ingestion Guide <internal/document_ingestion_guide>`"
+msgstr ":doc:`Gids voor documentinvoer <internal/document_ingestion_guide>`"

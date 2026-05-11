@@ -175,6 +175,15 @@ class DocumentStatusDirective(Directive):
 
         return [container]
 
+def doi_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+    """Role for DOI links."""
+    url = f"https://doi.org/{text}"
+    node = nodes.reference(rawtext, f"doi:{text}", refuri=url, **options)
+    return [node], []
+
+# We need to re-define setup to include the role
+
 def setup(app):
     app.add_directive("document-of-record", DocumentOfRecordDirective)
     app.add_directive("document-status", DocumentStatusDirective)
+    app.add_role("doi", doi_role)

@@ -75,15 +75,24 @@ Visit your Zenodo dashboard to review the draft entry.
 
 Once reviewed, you can manually publish on Zenodo to receive a permanent DOI, then update the ``:doi:`` field in the generated RST file if necessary.
 
-Step 5: Verify and Commit
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 5: Verify Build
+~~~~~~~~~~~~~~~~~~~~
 
-Build the documentation locally to ensure everything looks correct:
+Build the documentation locally to ensure the text extraction was successful:
 
 .. code-block:: bash
 
    cd docs
    make html
+
+Step 6: Update Category Index
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Newly ingested documents **will not appear automatically** in the library structure. You must manually add them to the corresponding category index file (e.g., ``docs/source/minutes/meeting-minutes.rst``).
+
+1.  Open the category's index file.
+2.  Add a descriptive link using the ``:doc:`` role.
+3.  Add the filename (without extension) to the ``.. toctree::`` block at the bottom of the page to ensure it appears in the sidebar.
 
 If satisfied, commit the new files and create a Pull Request.
 

@@ -9,14 +9,19 @@ Member Meeting Minutes
 Annual Member Meeting May 2025
 ----------------------------------   
 
-   - Date: [Insert Date Here]
-   - Location: [Insert Location Here]
-   - DOI-number: [Insert DOI Here]
-   - PDF: [Insert PDF Link Here]
+   - **Minutes**: :doc:`Minutes RNAS Meeting 2025 <Minutes_RNAS_Meeting_2025>`
+   - Date: 14 May 2025
+   - Location: Berg en Dal, Netherlands
+   - DOI-number: :doi:`10.5281/zenodo.16325959`
 
 .. document-status::
-   :approved: False
+   :approved: True
    :approved_in: :doc:`/minutes/meeting-minutes`
-   :notary_stamp: Pending
+   :notary_stamp: Verified
+
+.. toctree::
+   :hidden:
+
+   Minutes_RNAS_Meeting_2025
 
 

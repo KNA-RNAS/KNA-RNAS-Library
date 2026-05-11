@@ -17,7 +17,7 @@ Annual Member Meeting May 2025
 .. document-status::
    :approved: True
    :approved_in: :doc:`/minutes/meeting-minutes`
-   :notary_stamp: Verified
+   :notary_stamp: None
 
 .. toctree::
    :hidden:

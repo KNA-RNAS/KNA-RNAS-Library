@@ -1,3 +1,4 @@
+# Updated: 2026-05-11 12:38 CEST
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information

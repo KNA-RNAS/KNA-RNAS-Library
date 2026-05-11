@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 12:14+0200\n"
+"POT-Creation-Date: 2026-05-11 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -247,26 +247,61 @@ msgstr ""
 "bestand indien nodig."
 
 #: ../../source/internal/document_ingestion_guide.rst:79
-msgid "Step 5: Verify and Commit"
+#, fuzzy
+msgid "Step 5: Verify Build"
 msgstr "Stap 5: Verifiëren en vastleggen"
 
 #: ../../source/internal/document_ingestion_guide.rst:81
-msgid "Build the documentation locally to ensure everything looks correct:"
+#, fuzzy
+msgid ""
+"Build the documentation locally to ensure the text extraction was "
+"successful:"
 msgstr ""
 "Bouw de documentatie lokaal om er zeker van te zijn dat alles er correct "
 "uitziet:"
 
-#: ../../source/internal/document_ingestion_guide.rst:88
+#: ../../source/internal/document_ingestion_guide.rst:89
+msgid "Step 6: Update Category Index"
+msgstr "Stap 6: Categorie-index bijwerken"
+
+#: ../../source/internal/document_ingestion_guide.rst:91
+msgid ""
+"Newly ingested documents **will not appear automatically** in the library "
+"structure. You must manually add them to the corresponding category index "
+"file (e.g., ``docs/source/minutes/meeting-minutes.rst``)."
+msgstr ""
+"Nieuw ingevoerde documenten verschijnen **niet automatisch** in de "
+"bibliotheekstructuur. Je moet ze handmatig toevoegen aan het "
+"corresponderende categorie-indexbestand (bijv. "
+"``docs/source/minutes/meeting-minutes.rst``)."
+
+#: ../../source/internal/document_ingestion_guide.rst:93
+msgid "Open the category's index file."
+msgstr "Open het indexbestand van de categorie."
+
+#: ../../source/internal/document_ingestion_guide.rst:94
+msgid "Add a descriptive link using the ``:doc:`` role."
+msgstr "Voeg een beschrijvende link toe met de ``:doc:`` rol."
+
+#: ../../source/internal/document_ingestion_guide.rst:95
+msgid ""
+"Add the filename (without extension) to the ``.. toctree::`` block at the "
+"bottom of the page to ensure it appears in the sidebar."
+msgstr ""
+"Voeg de bestandsnaam (zonder extensie) toe aan het blok ``. toctree::`` "
+"onderaan de pagina om ervoor te zorgen dat het in de zijbalk verschijnt."
+
+#: ../../source/internal/document_ingestion_guide.rst:97
 msgid "If satisfied, commit the new files and create a Pull Request."
 msgstr ""
 "Als je tevreden bent, commit dan de nieuwe bestanden en maak een Pull "
 "Request aan."
 
-#: ../../source/internal/document_ingestion_guide.rst:91
+#: ../../source/internal/document_ingestion_guide.rst:100
 msgid "Troubleshooting"
 msgstr "Problemen oplossen"
 
-#: ../../source/internal/document_ingestion_guide.rst:93
+#: ../../source/internal/document_ingestion_guide.rst:102
 msgid ""
 "**Extraction Errors**: If the PDF layout is complex, the script might "
 "misidentify headers. Manually edit the generated ``.rst`` file to fix "
@@ -276,7 +311,7 @@ msgstr ""
 "kopteksten verkeerd identificeren. Bewerk het gegenereerde ``.rst`` bestand "
 "handmatig om structurele problemen op te lossen."
 
-#: ../../source/internal/document_ingestion_guide.rst:94
+#: ../../source/internal/document_ingestion_guide.rst:103
 msgid ""
 "**Translation Failures**: Ensure ``sphinx-intl`` is installed and configured"
 " correctly."
@@ -284,7 +319,7 @@ msgstr ""
 "**Vertaalfouten**: Zorg ervoor dat ``sphinx-intl`` correct is geïnstalleerd "
 "en geconfigureerd."
 
-#: ../../source/internal/document_ingestion_guide.rst:95
+#: ../../source/internal/document_ingestion_guide.rst:104
 msgid ""
 "**Zenodo Timeout**: If the upload fails, check your internet connection and "
 "verify the ``ZENODO_ACCESS_TOKEN`` permissions."

@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../source/index.rst:26
 msgid ":doc:`Statutes <governing-docs/statutes>`"
-msgstr ":doc:`Statuten <governing-docs/statuten>`"
+msgstr ":doc:`Statuten <governing-docs/statutes>`"
 
 #: ../../source/index.rst:27
 msgid ":doc:`Bylaws <governing-docs/bylaws>`"
@@ -96,7 +96,7 @@ msgstr ":doc:`Voorschriften <governing-docs/bylaws>`"
 
 #: ../../source/index.rst:28
 msgid ":doc:`Mission <governing-docs/mission>`"
-msgstr ":doc:`Missie <bestuursdocumenten/missie>`"
+msgstr ":doc:`Missie <governing-docs/mission>`"
 
 #: ../../source/index.rst:29
 msgid ":doc:`KvK Registration <governing-docs/kvk-registration>`"
@@ -108,7 +108,7 @@ msgstr ":doc:`Ledengeldstructuur <governing-docs/membership-fee-structure>`"
 
 #: ../../source/index.rst:31
 msgid ":doc:`Qualification <governing-docs/qualification>`"
-msgstr ":doc:`Kwalificatie <governing-docs/kwalificatie>`"
+msgstr ":doc:`Kwalificatie <governing-docs/qualification>`"
 
 #: ../../source/index.rst:33
 #, fuzzy
@@ -121,11 +121,11 @@ msgstr "Tijdschriften en officiële publicaties verspreid door de vereniging."
 
 #: ../../source/index.rst:39
 msgid ":doc:`Newsletters <publications/newsletters>`"
-msgstr ":doc:`Nieuwsbrieven <publicaties/nieuwsbrieven>`"
+msgstr ":doc:`Nieuwsbrieven <publications/newsletters>`"
 
 #: ../../source/index.rst:40
 msgid ":doc:`Proceedings <publications/proceedings>`"
-msgstr ":doc:`Proceedings <publicaties/proceedings>`"
+msgstr ":doc:`Proceedings <publications/proceedings>`"
 
 #: ../../source/index.rst:42
 #, fuzzy
@@ -175,15 +175,15 @@ msgstr "Openbare aankondigingen en officiële correspondentie."
 #: ../../source/index.rst:66
 #, fuzzy
 msgid ":doc:`2026 Communications <communication/official-communication-2026>`"
-msgstr ":doc:`2025 Communicatie <communicatie/officiële-communicatie-2025>`"
+msgstr ":doc:`2026 Communicatie <communication/official-communication-2026>`"
 
 #: ../../source/index.rst:67
 msgid ":doc:`2025 Communications <communication/official-communication-2025>`"
-msgstr ":doc:`2025 Communicatie <communicatie/officiële-communicatie-2025>`"
+msgstr ":doc:`2025 Communicatie <communication/official-communication-2025>`"
 
 #: ../../source/index.rst:68
 msgid ":doc:`2024 Communications <communication/official-communication-2024>`"
-msgstr ":doc:`2024 Mededelingen <communicatie/officiële-communicatie-2024>`"
+msgstr ":doc:`2024 Mededelingen <communication/official-communication-2024>`"
 
 #: ../../source/index.rst:70
 msgid "🛠️ Administration"

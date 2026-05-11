@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 19:08+0200\n"
+"POT-Creation-Date: 2026-05-11 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -33,17 +33,32 @@ msgid "Annual Member Meeting May 2025"
 msgstr "Jaarlijkse ledenvergadering mei 2025"
 
 #: ../../source/minutes/meeting-minutes.rst:12
-msgid "Date: [Insert Date Here]"
-msgstr "Datum: [vul hier datum in]"
+msgid ""
+"**Minutes**: :doc:`Minutes RNAS Meeting 2025 <Minutes_RNAS_Meeting_2025>`"
+msgstr ""
+"**Minulen**: :doc:`Minulen RNAS vergadering 2025 "
+"<Minutes_RNAS_Meeting_2025>`"
 
 #: ../../source/minutes/meeting-minutes.rst:13
-msgid "Location: [Insert Location Here]"
-msgstr "Locatie: [Plaats hier]"
+msgid "Date: 14 May 2025"
+msgstr "Datum: 14 mei 2025"
 
 #: ../../source/minutes/meeting-minutes.rst:14
-msgid "DOI-number: [Insert DOI Here]"
-msgstr "DOI-nummer: [voeg hier DOI in]"
+msgid "Location: Berg en Dal, Netherlands"
+msgstr "Locatie: Berg en Dal, Nederland"
 
 #: ../../source/minutes/meeting-minutes.rst:15
-msgid "PDF: [Insert PDF Link Here]"
-msgstr "PDF: [Voeg hier een PDF-link in]"
+msgid "DOI-number: :doi:`10.5281/zenodo.16325959`"
+msgstr "DOI-number: :doi:`10.5281/zenodo.16325959`"
+
+#~ msgid "Date: [Insert Date Here]"
+#~ msgstr "Datum: [vul hier datum in]"
+
+#~ msgid "Location: [Insert Location Here]"
+#~ msgstr "Locatie: [Plaats hier]"
+
+#~ msgid "DOI-number: [Insert DOI Here]"
+#~ msgstr "DOI-nummer: [voeg hier DOI in]"
+
+#~ msgid "PDF: [Insert PDF Link Here]"
+#~ msgstr "PDF: [Voeg hier een PDF-link in]"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 12:14+0200\n"
+"POT-Creation-Date: 2026-05-11 16:03+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -49,14 +49,11 @@ msgid "Het Kantoor van de Secretaris"
 msgstr "Het Kantoor van de Secretaris"
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:22
+#, fuzzy
 msgid ""
-"Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr"
-" (Secretary), Steven Rieder (Treasurer) Minutes of the Royal Netherlands "
-"Astronomical Society (Koninklijke Nederlandse"
-msgstr ""
-"Uitvoerend Comité van het Bestuur: Marijke Haverkorn (Voorzitter), Jake "
-"Noel-Storr (Secretaris), Steven Rieder (Penningmeester) Notulen van de "
-"Koninklijke Nederlandse Astronomische Vereniging"
+"Minutes of the Royal Netherlands Astronomical Society (Koninklijke "
+"Nederlandse"
+msgstr "Koninklijk Nederlands Astronomisch Genootschap"
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:27
 msgid ""
@@ -102,11 +99,13 @@ msgid "The Chair shared the mission of the society as reads:"
 msgstr "De voorzitter deelde de missie van de vereniging als volgt:"
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:37
+#, fuzzy
 msgid ""
 "The society wants to be THE platform for professional and former "
 "astronomers, it fosters contacts between them, and stimulates and supports "
 "actions towards the societal goals concerning the promotion of astronomy in"
-"   The Netherlands and Flanders."
+"   The Netherlands and The one-and-only professional organization of "
+"astronomers and space researchers in NL/B"
 msgstr ""
 "De vereniging wil HET platform zijn voor professionele en oud-astronomen, "
 "bevordert onderlinge contacten en stimuleert en ondersteunt acties ten "
@@ -115,296 +114,222 @@ msgstr ""
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:39
 msgid ""
-"The one-and-only professional organization of astronomers and space "
-"researchers in NL/B"
+"Opening and adoption of the agenda Meeting opened by the chair at 15:20h on "
+"27th May, 2025 in the Fletcher Landgoed Hotel Holthurnsche Hof, Berg en Dal,"
+" Netherlands, during the 80th  Netherlands Astronomy Conference, organized "
+"by our Radboud University Colleagues."
 msgstr ""
-"De enige echte professionele organisatie van astronomen en "
-"ruimteonderzoekers in NL/B"
+"Opening en vaststelling van de agenda Vergadering geopend door de voorzitter"
+" om 15:20u op 27 mei 2025 in het Fletcher Landgoed Hotel Holthurnsche Hof, "
+"Berg en Dal, Nederland, tijdens de 80e Netherlands Astronomy Conference, "
+"georganiseerd door onze collega's van de Radboud Universiteit."
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:41
+msgid "1.1. Agenda as announced adopted without objection"
+msgstr "1.1. Agenda zoals aangekondigd aangenomen zonder bezwaar"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:43
+msgid "Board announcements"
+msgstr "Aankondigingen"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:45
+msgid "2.1.  Apologies given as above"
+msgstr "2.1.  Excuses gegeven als hierboven"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:47
+msgid "Approval of Minutes"
+msgstr "Goedkeuring van de notulen"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:49
+msgid "3.1. Minutes of the business meeting of May 14, 2024"
+msgstr "3.1. Notulen van de bedrijfsvergadering van 14 mei 2024"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:51
+#, fuzzy
+msgid "3.1.1. Approved without objection"
+msgstr "Zonder bezwaar aangenomen"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:53
+msgid "3.2. Minutes of the special meeting of December 2, 2024"
+msgstr "3.2. Notulen van de bijzondere vergadering van 2 december 2024"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:55
+#, fuzzy
+msgid "3.2.1. Approved without objection"
+msgstr "Zonder bezwaar aangenomen"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:57
 msgid ""
-"1. Opening and adoption of the agenda Meeting opened by the chair at 15:20h "
-"on 27th May, 2025 in the Fletcher Landgoed Hotel Holthurnsche Hof, Berg en "
-"Dal, Netherlands, during the 80th  Netherlands Astronomy Conference, "
-"organized by our Radboud University Colleagues. 1.1. Agenda as announced "
-"adopted without objection 2. Board announcements 2.1.  Apologies given as "
-"above 3. Approval of Minutes 3.1. Minutes of the business meeting of May 14,"
-" 2024 3.1.1. Approved without objection 3.2. Minutes of the special meeting "
-"of December 2, 2024 3.2.1. Approved without objection 4. Annual report 2024 "
-"of the secretary (Treasurer since May), Sven De Rijcke, Katie Mulrey, "
-"Jacqueline Hodge, and 4.2. The number of members remained over 500. 4.3. "
-"There were two activities, the 79th NAC, and the musical celebration in "
-"Haarlem of asteroid (12639) Tonkoopman. 4.4. The planned RNAS/NOVA Teacher’s"
-" Day had to be postponed. 4.5. A standardized website for the annual NACs "
-"was designed and installed. 4.6. The 79th Netherlands Astronomers Conference"
-" in Egmond aan Zee was a great success. Well attended: ~250 participants. "
-"The first Kees de Jager (education) prize was awarded to Alex de Koter. 4.7."
-" A small rise in membership fees was discussed at the NAC Business"
+"Annual report 2024 of the secretary (Treasurer since May), Sven De Rijcke, "
+"Katie Mulrey, Jacqueline Hodge, and"
 msgstr ""
-"1. Opening en vaststelling agenda Vergadering geopend door de voorzitter op "
-"27 mei 2025 om 15:20u in het Fletcher Landgoed Hotel Holthurnsche Hof, Berg "
-"en Dal, Nederland, tijdens de 80e Netherlands Astronomy Conference, "
-"georganiseerd door onze collega's van de Radboud Universiteit. 1.1. Agenda "
-"zoals aangekondigd aangenomen zonder bezwaar 2. 2. Mededelingen bestuur 2.1."
-"  2.2. Excuses gegeven zoals hierboven 3. Goedkeuring van de notulen 3. "
-"Goedkeuring notulen 3.1. 3.1. Notulen van de vergadering van 14 mei 2024 "
-"3.1.1. Goedkeuring zonder bezwaar Goedgekeurd zonder bezwaar 3.2. 3.2. "
-"Notulen van de bijzondere vergadering van 2 december 2024 3.2.1. Zonder "
-"bezwaar goedgekeurd Goedgekeurd zonder bezwaar 4. 4.1. Jaarverslag 2024 van "
-"de secretaris (penningmeester sinds mei), Sven De Rijcke, Katie Mulrey, "
-"Jacqueline Hodge, en 4.2. Jaarverslag 2024 van de secretaris (penningmeester"
-" sinds mei), Sven De Rijcke, Katie Mulrey, Jacqueline Hodge. Het aantal "
-"leden bleef boven de 500. 4.3. Er waren twee activiteiten, de 79e NAC, en de"
-" muzikale viering in Haarlem van planetoïde (12639) Tonkoopman. 4.4. De "
-"geplande RNAS/NOVA Docentendag moest worden uitgesteld. 4.5. Een "
-"gestandaardiseerde website voor de jaarlijkse NAK's werd ontworpen en "
-"geïnstalleerd. 4.6. De 79e Nederlandse Astronomen Conferentie in Egmond aan "
-"Zee was een groot succes. Goed bezocht: ~250 deelnemers. De eerste Kees de "
-"Jager (onderwijs) prijs werd uitgereikt aan Alex de Koter. 4.7. Een kleine "
-"contributieverhoging werd besproken op de NAC Business List"
+"Jaarverslag 2024 van de secretaris (penningmeester sinds mei), Sven De "
+"Rijcke, Katie Mulrey, Jacqueline Hodge, en"
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:59
 msgid ""
-"Meeting, and later accepted during an on-line extra-ordinary member meeting."
+"4.2. The number of members remained over 500. 4.3. There were two "
+"activities, the 79th NAC, and the musical celebration in Haarlem of asteroid"
+" (12639) Tonkoopman. 4.4. The planned RNAS/NOVA Teacher’s Day had to be "
+"postponed. 4.5. A standardized website for the annual NACs was designed and "
+"installed. 4.6. The 79th Netherlands Astronomers Conference in Egmond aan "
+"Zee was a great success. Well attended: ~250 participants. The first Kees de"
+" Jager (education) prize was awarded to Alex de Koter. 4.7. A small rise in "
+"membership fees was discussed at the NAC Business Meeting, and later "
+"accepted during an on-line extra-ordinary member meeting. 4.8. Migration of "
+"website and (member + financial) administration was a major effort, which is"
+" nearly completed. An Indico server is now hosted for RNAS for this and "
+"future meetings. 4.9. A third Newsletter was e-mailed to all members. "
+"Continued focus on rejuvenation and optimal representation of its community,"
+" and on improving the Society’s value for all members. 4.10. The Board is in"
+" regular contact with the EAS, and encourages EAS- activities by the RNAS "
+"members. 4.11. The Board expresses sincere thanks to all who have "
+"contributed to and supported the Society. 4.12. Updates mid-2025"
 msgstr ""
-"Vergadering, en later aanvaard tijdens een online buitengewone "
-"ledenvergadering."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:62
-msgid ""
-"4.8. Migration of website and (member + financial) administration was a "
-"major effort, which is nearly completed. An Indico server is now hosted for "
-"RNAS for this and future meetings. 4.9. A third Newsletter was e-mailed to "
-"all members. Continued focus on rejuvenation and optimal representation of "
-"its community, and on improving the Society’s value for all members. 4.10."
-msgstr ""
-"4.8. Migratie van website en (leden + financiële) administratie was een "
-"grote inspanning, die bijna is voltooid. Een Indico-server wordt nu gehost "
-"voor RNAS voor deze en toekomstige bijeenkomsten. 4.9. Een derde nieuwsbrief"
-" werd naar alle leden gemaild. Blijvende focus op verjonging en optimale "
+"4.2. Het aantal leden bleef boven de 500. 4.3. Er waren twee activiteiten, "
+"de 79e NAC, en de muzikale viering in Haarlem van planetoïde (12639) "
+"Tonkoopman. 4.4. De geplande RNAS/NOVA Docentendag moest worden uitgesteld. "
+"4.5. Een gestandaardiseerde website voor de jaarlijkse NAK's werd ontworpen "
+"en geïnstalleerd. 4.6. De 79e Nederlandse Astronomen Conferentie in Egmond "
+"aan Zee was een groot succes. Goed bezocht: ~250 deelnemers. De eerste Kees "
+"de Jager (onderwijs) prijs werd uitgereikt aan Alex de Koter. 4.7. Een "
+"kleine contributieverhoging werd besproken tijdens de NAC Business Meeting, "
+"en later geaccepteerd tijdens een online buitengewone ledenvergadering. 4.8."
+" Migratie van website en (leden + financiële) administratie was een grote "
+"inspanning, die bijna is voltooid. Een Indico-server wordt nu gehost voor "
+"RNAS voor deze en toekomstige bijeenkomsten. 4.9. Een derde nieuwsbrief werd"
+" naar alle leden gemaild. Blijvende focus op verjonging en optimale "
 "vertegenwoordiging van de gemeenschap en op het verbeteren van de waarde van"
-" de Society voor alle leden. 4.10."
+" de Society voor alle leden. 4.10. Het bestuur heeft regelmatig contact met "
+"de EAS en stimuleert EAS-activiteiten door de RNAS-leden. 4.11. Het Bestuur "
+"spreekt zijn oprechte dank uit aan allen die hebben bijgedragen aan en steun"
+" hebben gegeven aan de Society. 4.12. Updates medio 2025"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:66
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:71
 msgid ""
-"The Board is in regular contact with the EAS, and encourages EAS- activities"
-" by the RNAS members."
+"4.12.1. Membership as of today is at 558 Members (noting that Lost Members "
+"and Members without status still contribute somewhat to this figure) 4.12.2."
+" Registration for the NAC this year was 241 participants 4.12.3. Membership "
+"database migration in good shape, billing and other handling underway "
+"4.12.4. Website member areas will be developed (working groups; communities;"
+" blogs) Inputs welcomed 4.12.5. Next Generation Astronomers – Social Media "
+"Takeover for 2 weeks; plus a featured page on the website introducing you to"
+" the community 4.12.6. Make the website a community space for Dutch "
+"Astronomy 4.12.7. Electronic Documents when approved will be archived in "
+"Zenodo (CERN)"
 msgstr ""
-"Het bestuur heeft regelmatig contact met de EAS en stimuleert EAS-"
-"activiteiten door de RNAS-leden."
+"4.12.1. Het ledenaantal staat momenteel op 558 (waarbij moet worden "
+"opgemerkt dat afwezige leden en leden zonder status nog enigszins bijdragen "
+"aan dit cijfer) 4.12.2. Dit jaar waren er 241 deelnemers ingeschreven voor "
+"de NAC 4.12.3. Migratie van ledendatabase in goede vorm, facturering en "
+"andere afhandelingen in gang gezet 4.12.4. Website ledengebieden worden "
+"ontwikkeld (werkgroepen; gemeenschappen; blogs) Inputs welkom 4.12.5. Next "
+"Generation Astronomers - Social Media Takeover voor 2 weken; plus een "
+"uitgelichte pagina op de website om je voor te stellen aan de gemeenschap "
+"4.12.6. Maak van de website een gemeenschapsruimte voor de Nederlandse "
+"sterrenkunde 4.12.7. Elektronische documenten worden na goedkeuring "
+"gearchiveerd in Zenodo (CERN)"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:68
-msgid "4.11."
-msgstr "4.11."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:70
-msgid ""
-"The Board expresses sincere thanks to all who have contributed to and "
-"supported the Society."
-msgstr ""
-"Het bestuur spreekt zijn oprechte dank uit aan iedereen die heeft "
-"bijgedragen aan en steun heeft gegeven aan de Society."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:72
-msgid "4.12."
-msgstr "4.12."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:74
-msgid "Updates mid-2025"
-msgstr "Updates medio 2025"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:76
-msgid "4.12.1."
-msgstr "4.12.1."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:78
-msgid ""
-"Membership as of today is at 558 Members (noting that Lost Members and "
-"Members without status still contribute somewhat to this figure)"
-msgstr ""
-"Het ledenaantal staat vanaf vandaag op 558 leden (waarbij moet worden "
-"opgemerkt dat Verloren Leden en Leden zonder status nog steeds een beetje "
-"bijdragen aan dit cijfer)"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:80
-msgid "4.12.2."
-msgstr "4.12.2."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:82
-msgid "Registration for the NAC this year was 241 participants"
-msgstr "Registratie voor de NAC dit jaar was 241 deelnemers"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:84
-msgid "4.12.3."
-msgstr "4.12.3."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:86
-msgid ""
-"Membership database migration in good shape, billing and other handling "
-"underway"
-msgstr ""
-"Migratie van ledendatabase in goede vorm, facturering en andere zaken in "
-"gang gezet"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:88
-msgid "4.12.4."
-msgstr "4.12.4."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:90
-msgid ""
-"Website member areas will be developed (working groups; communities; blogs) "
-"Inputs welcomed"
-msgstr ""
-"Website ledengebieden worden ontwikkeld (werkgroepen; communities; blogs) "
-"Inputs welkom"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:92
-msgid "4.12.5."
-msgstr "4.12.5."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:94
-msgid ""
-"Next Generation Astronomers – Social Media Takeover for 2 weeks; plus a "
-"featured page on the website introducing you to the community"
-msgstr ""
-"Next Generation Astronomers - Social Media Takeover voor 2 weken; plus een "
-"uitgelichte pagina op de website om je voor te stellen aan de gemeenschap"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:96
-msgid "4.12.6."
-msgstr "4.12.6."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:98
-msgid "Make the website a community space for Dutch Astronomy"
-msgstr ""
-"Maak van de website een gemeenschapsruimte voor de Nederlandse sterrenkunde"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:100
-msgid "4.12.7."
-msgstr "4.12.7."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:102
-msgid "Electronic Documents when approved will be archived in Zenodo (CERN)"
-msgstr ""
-"Elektronische documenten worden na goedkeuring gearchiveerd in Zenodo (CERN)"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:104
-msgid "4.13."
-msgstr "4.13."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:106
-msgid "Motion to approve the report and updates moved by the Secretary"
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:79
+#, fuzzy
+msgid "4.13. Motion to approve the report and updates moved by the Secretary"
 msgstr ""
 "Motie om het verslag en de updates goed te keuren ingediend door de "
 "secretaris"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:108
-msgid "4.13.1."
-msgstr "4.13.1."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:110
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:223
-msgid "Passed without objection"
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:81
+#, fuzzy
+msgid "4.13.1. Passed without objection"
 msgstr "Zonder bezwaar aangenomen"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:112
-msgid ""
-"5. Annual report 2024 of the treasurer 5.1. 2024 Financial Statement "
-"treasurer 5.1.1. Comments: 5.1.1.1."
-msgstr ""
-"5. Jaarverslag 2024 van de penningmeester 5.1. jaarverslag 2024 van de "
-"penningmeester 5.1.1. Opmerkingen: 5.1.1.1."
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:83
+msgid "Annual report 2024 of the treasurer"
+msgstr "Jaarverslag 2024 van de penningmeester"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:117
-msgid "Net loss equal to bank change, so okay and understood"
-msgstr "Nettoverlies gelijk aan bankwissel, dus oké en begrepen"
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:85
+msgid "5.1. 2024 Financial Statement treasurer"
+msgstr "5.1. jaarrekening 2024 penningmeester"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:119
-msgid "5.1.1.2."
-msgstr "5.1.1.2."
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:87
+msgid "5.1.1. Comments:"
+msgstr "5.1.1. Opmerkingen:"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:121
-msgid "Expenses normal, income reduced due to no fee collection"
-msgstr "Uitgaven normaal, inkomsten lager door geen inning van vergoedingen"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:123
-msgid "5.1.1.3."
-msgstr "5.1.1.3."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:125
-msgid "Higher web site expenses, but much better system"
-msgstr "Hogere kosten voor website, maar veel beter systeem"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:127
-msgid "5.1.1.4."
-msgstr "5.1.1.4."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:129
-msgid ""
-"New admin and financial system almost complete, doing last bits to get "
-"everything going and receive 2025 membership fees"
-msgstr ""
-"Nieuw administratief en financieel systeem bijna voltooid, laatste dingetjes"
-" om alles op gang te krijgen en 2025 lidmaatschapsgeld te ontvangen"
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:131
-msgid "5.1.1.5."
-msgstr "5.1.1.5."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:133
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:89
 #, python-format
 msgid ""
-"Large member increase and auto-pay increase: GOOD  (55% of members have "
-"direct debit setup, saving 10% each)"
+"5.1.1.1. Net loss equal to bank change, so okay and understood 5.1.1.2. "
+"Expenses normal, income reduced due to no fee collection 5.1.1.3. Higher web"
+" site expenses, but much better system 5.1.1.4. New admin and financial "
+"system almost complete, doing last bits to get everything going and receive "
+"2025 membership fees 5.1.1.5. Large member increase and auto-pay increase: "
+"GOOD  (55% of members have direct debit setup, saving 10% each) 5.1.1.6. "
+"Audit committee (Icke & Pijpers) discussed and informally 5.1.1.7. New "
+"budget equilibrium will need to be found: more income, but also more expense"
 msgstr ""
-"Grote toename leden en toename automatische incasso: GOED (55% van de leden "
-"heeft automatische incasso ingesteld, wat elk 10% bespaart)"
+"5.1.1.1. Nettoverlies gelijk aan bankwissel, dus oké en begrepen 5.1.1.2. "
+"Uitgaven normaal, inkomsten lager door geen inning van vergoedingen 5.1.1.3."
+" Hogere kosten website, maar veel beter systeem 5.1.1.4. 5.1.1.4. Nieuw "
+"administratief en financieel systeem bijna voltooid, laatste dingetjes om "
+"alles op gang te krijgen en 2025 lidmaatschapsgeld te ontvangen 5.1.1.5. "
+"Grote ledenstijging en automatische betaling Grote toename leden en auto-"
+"betaling: GOED (55% van de leden heeft een automatische incasso ingesteld, "
+"wat elk 10% bespaart) 5.1.1.6. Auditcommissie (Icke & Pijpers) besproken en "
+"informeel 5.1.1.7. Er zal een nieuw begrotingsevenwicht gevonden moeten "
+"worden: meer inkomsten, maar ook meer uitgaven"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:135
-msgid "5.1.1.6."
-msgstr "5.1.1.6."
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:97
+msgid "5.2. Report of the financial audit committee"
+msgstr "5.2. Verslag van de financiële controlecommissie"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:137
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:99
 msgid ""
-"Audit committee (Icke & Pijpers) discussed and informally approved 2024"
+"5.2.1. Vince Icke on behalf of the Audit Committee approves the concurrence "
+"of the Audit committee with the above statements."
 msgstr ""
-"Auditcomité (Icke & Pijpers) heeft 2024 besproken en informeel goedgekeurd"
+"5.2.1. Vince Icke keurt namens het Auditcomité de instemming van het "
+"Auditcomité met de bovenstaande verklaringen goed."
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:139
-msgid "5.1.1.7."
-msgstr "5.1.1.7."
-
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:141
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:101
+#, fuzzy
 msgid ""
-"New budget equilibrium will need to be found: more income, but also more "
-"expense"
+"5.3. Motion to approve the 2024 Financial Statement moved by the Treasurer"
 msgstr ""
-"Er moet een nieuw begrotingsevenwicht worden gevonden: meer inkomsten, maar "
-"ook meer uitgaven"
+"Motie om het verslag en de updates goed te keuren ingediend door de "
+"secretaris"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:143
-msgid ""
-"5.2. Report of the financial audit committee 5.2.1. Vince Icke on behalf of "
-"the Audit Committee approves the concurrence of the Audit committee with the"
-" above statements. 5.3. Motion to approve the 2024 Financial Statement moved"
-" by the Treasurer 5.3.1. Seconded: Icke 5.3.2. Motion Passed without "
-"objection 5.4. Installation new financial audit committee 5.4.1. Members "
-"volunteering: Frank Pijpers, Reynier Peletier 5.5. Motion to approve the "
-"2025 audit committee moved by the Treasurer 5.5.1. Motion Passed without "
-"Objection 6. Proposed budget 2025 6.1. Expenses:"
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:103
+msgid "5.3.1. Seconded: Icke 5.3.2. Motion Passed without objection"
+msgstr "5.3.1. Seconded: Icke 5.3.2. Motie aangenomen zonder bezwaar"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:106
+msgid "5.4. Installation new financial audit committee"
+msgstr "5.4. Installatie nieuwe financiële controlecommissie"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:108
+msgid "5.4.1. Members volunteering: Frank Pijpers, Reynier Peletier"
+msgstr "5.4.1. Vrijwillige leden: Frank Pijpers, Reynier Peletier"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:110
+#, fuzzy
+msgid "5.5. Motion to approve the 2025 audit committee moved by the Treasurer"
 msgstr ""
-"5.2. 5.2. Verslag van het financieel auditcomité Vince Icke keurt namens het"
-" Auditcomité de instemming van het Auditcomité met bovenstaande verklaringen"
-" goed. 5.3. 5.3. Voorstel tot goedkeuring van het financieel memorandum voor"
-" 2024 ingediend door de penningmeester 5.3.1. Voorstel tot goedkeuring van "
-"het financieel memorandum voor 2024 ingediend door de penningmeester. "
-"Ondersteund: Icke 5.3.2. Motie aangenomen zonder bezwaar 5.4. Installatie "
-"nieuwe financiële controlecommissie 5.4.1. Vrijwillige leden: Frank Pijpers,"
-" Reynier Peletier 5.5. Motie van de penningmeester om de auditcommissie van "
-"2025 goed te keuren 5.5.1. Motie aangenomen zonder bezwaar 6. Voorgestelde "
-"begroting 2025 6.1. 6.1. Uitgaven:"
+"Motie om het verslag en de updates goed te keuren ingediend door de "
+"secretaris"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:155
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:112
+#, fuzzy
+msgid "5.5.1. Motion Passed without Objection"
+msgstr "Zonder bezwaar aangenomen"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:114
+msgid "Proposed budget 2025"
+msgstr "Voorgesteld budget 2025"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:116
+msgid "6.1. Expenses:"
+msgstr "6.1. Uitgaven:"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:118
 msgid ""
 "Cost Description Executive Office 3500 Incudes website, administration fees,"
 " EAS participation, migration costs, NAC server Res. Olympiad 1250 Prize "
@@ -416,11 +341,11 @@ msgstr ""
 " 1250 Prijs Reserves 1000 2025 NAC Subsidies 1000 Lerarendag 500 November "
 "2025 Archiefkosten 300 Voor fysiek archief Onvoorzien 250 TOTAAL 7800"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:157
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:120
 msgid "6.2. Income:"
 msgstr "6.2. Inkomen:"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:159
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:122
 msgid ""
 "Income Description Membership fees 6000 Reflecting new rate Interest on "
 "saving 250 TOTAL 6250"
@@ -428,23 +353,35 @@ msgstr ""
 "Inkomsten Omschrijving Lidmaatschapskosten 6000 Rente op spaartegoeden 250 "
 "TOTAAL 6250"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:161
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:124
 msgid ""
 "6.3. Significant uncertainty, e.g., Olympiad unlikely this year, membership "
 "has significant error bar (but not overly optimistic). Some expenses are "
 "one-off due to extra changeover work. Prediction: at most small loss, but "
 "good thinking about new equilibrium will be needed 6.4. Negative balance not"
-" anticipated 6.5. Discussion 6.5.1. Secr.: The meeting registrations of non "
-"members is now also an additional income 6.5.2. Member: Olympiad Support? "
-"LOCNOC may have comments and thoughts 6.5.3. Co-Treas: controversy over the "
-"Olympiad; school numbers are small to participate, which has made removal. "
-"6.5.4. Incoming-Chair: Will coordinate with LOCNOC about what is really "
-"happening, maybe include NAEIC about inclusion 6.5.5. Member: New NWO "
-"curriculum includes astronomy in physics 6.5.6. Treas.: We welcome input "
-"from members 6.5.7. Member: NNV could also advertise it 6.5.8. Incoming-"
-"Chair: Discussion has been not to just abolish, so should be rekindled, and "
-"maybe have new directions. 6.5.9. Member: asks and BM-SDeR replies there is "
-"still a Belgian astronomy Olympiad 6.5.10."
+" anticipated 6.5. Discussion"
+msgstr ""
+"6.3. Aanzienlijke onzekerheid, bijv. Olympiade onwaarschijnlijk dit jaar, "
+"lidmaatschap heeft aanzienlijke foutbalk (maar niet te optimistisch). "
+"Sommige kosten zijn eenmalig door extra omschakelingswerk. Voorspelling: "
+"hoogstens klein verlies, maar goed nadenken over nieuw evenwicht zal nodig "
+"zijn 6.4. Negatief saldo niet verwacht 6.5. Discussie"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:128
+#, fuzzy
+msgid ""
+"6.5.1. Secr.: The meeting registrations of non members is now also an "
+"additional income 6.5.2. Member: Olympiad Support? LOCNOC may have comments "
+"and thoughts 6.5.3. Co-Treas: controversy over the Olympiad; school numbers "
+"are small to participate, which has made removal. 6.5.4. Incoming-Chair: "
+"Will coordinate with LOCNOC about what is really happening, maybe include "
+"NAEIC about inclusion 6.5.5. Member: New NWO curriculum includes astronomy "
+"in physics 6.5.6. Treas.: We welcome input from members 6.5.7. Member: NNV "
+"could also advertise it 6.5.8. Incoming-Chair: Discussion has been not to "
+"just abolish, so should be rekindled, and maybe have new directions. 6.5.9. "
+"Member: asks and BM-SDeR replies there is still a Belgian astronomy Olympiad"
+" 6.5.10. Member: What are the costs of the Exec office, treas. Replies these"
+" are structural"
 msgstr ""
 "6.3. Aanzienlijke onzekerheid, bijv. Olympiade onwaarschijnlijk dit jaar, "
 "lidmaatschap heeft aanzienlijke foutbalk (maar niet te optimistisch). "
@@ -464,54 +401,61 @@ msgstr ""
 "SDeR antwoordt dat er nog steeds een Belgische sterrenkunde Olympiade is "
 "6.5.10."
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:175
-msgid ""
-"Member: What are the costs of the Exec office, treas. Replies these are "
-"structural"
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:139
+#, fuzzy
+msgid "6.6. Motion to approve the budget of 2025 moved by the Treasurer"
 msgstr ""
-"Lid: Wat zijn de kosten van het Exec office, treas. Antwoorden deze zijn "
-"structureel"
+"Motie om het verslag en de updates goed te keuren ingediend door de "
+"secretaris"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:177
-msgid ""
-"6.6. Motion to approve the budget of 2025 moved by the Treasurer 6.6.1. "
-"Motion passed without objection 6.7. Announcement of the Board, from their "
-"meeting of 09 April 2025, of today."
-msgstr ""
-"6.6. Motie van de penningmeester om de begroting van 2025 goed te keuren "
-"6.6.1. Motie aangenomen zonder bezwaar 6.7. Mededeling van het bestuur, van "
-"hun vergadering van 09 april 2025, van vandaag."
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:141
+#, fuzzy
+msgid "6.6.1. Motion passed without objection"
+msgstr "Zonder bezwaar aangenomen"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:181
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:143
+#, fuzzy
 msgid ""
-"announced by the Chair on behalf of the Board complicated times for himself,"
-" while navigating a complex transition to"
+"6.7. Announcement of the Board, from their meeting of 09 April 2025, of "
+"today. announced by the Chair on behalf of the Board complicated times for "
+"himself, while navigating a complex transition to"
 msgstr ""
 "aangekondigd door de voorzitter namens het bestuur ingewikkelde tijden voor "
 "zichzelf, terwijl hij navigeerde door een complexe overgang naar"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:183
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:145
+msgid "RNAS house rules, ambitions and plans"
+msgstr "RNAS huisregels, ambities en plannen"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:147
+#, fuzzy
 msgid ""
-"7. RNAS house rules, ambitions and plans 7.1. Presented update from 2021 "
-"Evaluation Group report. Many items complete."
+"7.1. Presented update from 2021 Evaluation Group report. Many items "
+"complete."
 msgstr ""
 "7. 7. Huisregels, ambities en plannen RNAS 7.1. Presenteerde update van het "
 "rapport van de Evaluatiegroep 2021. Update gepresenteerd van het rapport van"
 " de Evaluatiegroep 2021. Veel items compleet."
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:186
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:149
 msgid "Pending remain:"
 msgstr "In afwachting blijven:"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:188
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:151
 msgid ""
 "7.1.1. More relevance of the society, e.g. working groups 7.1.2. Responsible"
-" persons in all institutes 7.1.3. More responsibilities for NAC 7.2. The "
-"society should take more responsibility and connection for NAC organisation,"
-" ensure close connection every year. 7.3. Working Groups proposed and "
-"discussed for Art and Creativity, and Education and Outreach. 8. Transfer of"
-" Chair 8.1. As approved by the Board in their meeting of 09 April 2025 that "
-"Prof. Dr. M."
+" persons in all institutes 7.1.3. More responsibilities for NAC"
+msgstr ""
+"7.1.1. Meer relevantie van de maatschappij, bijv. werkgroepen 7.1.2. "
+"Verantwoordelijke personen in alle instituten 7.1.3. Meer "
+"verantwoordelijkheden voor NAC"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:155
+#, fuzzy
+msgid ""
+"7.2. The society should take more responsibility and connection for NAC "
+"organisation, ensure close connection every year. 7.3. Working Groups "
+"proposed and discussed for Art and Creativity, and Education and Outreach."
 msgstr ""
 "7.1.1. Meer relevantie van de maatschappij, bijv. werkgroepen 7.1.2. "
 "Verantwoordelijke personen in alle instituten 7.1.3. Meer "
@@ -522,89 +466,417 @@ msgstr ""
 " voorzitter 8.1. Zoals goedgekeurd door het bestuur in hun vergadering van "
 "09 april 2025 dat Prof. Dr. M."
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:196
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:158
+msgid "Transfer of Chair"
+msgstr "Overdracht van stoel"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:160
+msgid ""
+"8.1. As approved by the Board in their meeting of 09 April 2025 that Prof. "
+"Dr. M."
+msgstr ""
+"8.1. Zoals goedgekeurd door het bestuur in hun vergadering van 09 april 2025"
+" dat Prof. dr."
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:162
 msgid ""
 "Haverkorn will become the 27th Chair of the Society officially from now."
 msgstr "Haverkorn wordt vanaf nu officieel de 27e voorzitter van de Society."
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:198
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:164
+msgid "8.2. Passing of the Gavel"
+msgstr "8.2. Doorgeven van de voorzittershamer"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:166
+#, fuzzy
 msgid ""
-"8.2. Passing of the Gavel 8.2.1. The gavel was passed to MH from PDB on 26 "
-"May 2025 at the opening of the NAC conference, in advance of this meeting. "
-"8.3. Thanks to Prof. Dr. P. D. Barthel for his years of service as the chair"
-" of the"
+"8.2.1. The gavel was passed to MH from PDB on 26 May 2025 at the opening of "
+"the NAC conference, in advance of this meeting."
 msgstr ""
 "8.2. Doorgeven van de voorzittershamer 8.2.1. De voorzittershamer is op 26 "
 "mei 2025 bij de opening van de NAC-conferentie, voorafgaand aan deze "
 "vergadering, doorgegeven aan MH van PDB. 8.3. Dank aan Prof. Dr. P. D. "
 "Barthel voor zijn jarenlange inzet als voorzitter van de"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:202
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:168
+msgid ""
+"8.3. Thanks to Prof. Dr. P. D. Barthel for his years of service as the chair"
+" of the"
+msgstr ""
+"8.3. Dank aan Prof. Dr. P. D. Barthel voor zijn jarenlange inzet als "
+"voorzitter van de"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:170
 msgid "society on behalf of the board and the society"
 msgstr "maatschappij namens het bestuur en de maatschappij"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:204
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:172
 msgid ""
 "8.3.1. Grateful he will continue in the board and exec committee for the "
 "upcoming year to complete archive activities, and ensure a smooth chair "
-"transition 9. Any other business 9.1. RJW Welcome any input on how to "
-"organize the NAC 9.1.1. Secr. will go to SRON in two weeks to help then "
-"transfer to the indico server, NAC email addresses, etc. 9.1.2. Member: NAC "
-"is very connected to NOVA, maybe other things that the society can do. "
-"9.1.3. Co-Treasurer will Contact NOVA 9.2. Member: EAS expects input in the "
-"area of science, but also in other community areas. We should contribute. "
-"10. Closure 10.1."
+"transition"
 msgstr ""
 "8.3.1. Dankbaar dat hij het komende jaar deel zal blijven uitmaken van het "
-"bestuur en de uitvoerende commissie om de archiefwerkzaamheden af te ronden "
-"en te zorgen voor een soepele overgang naar het voorzitterschap. 9. Diversen"
-" 9.1. RJW Verwelkomt alle input over hoe de NAC 9.1.1. te organiseren. Secr."
-" gaat over twee weken naar SRON om te helpen met de overdracht naar de "
-"indico server, NAC e-mailadressen, etc. 9.1.2. Lid: NAC is erg verbonden met"
-" NOVA, misschien andere dingen die de vereniging kan doen. 9.1.3. Co-"
-"penningmeester neemt contact op met NOVA 9.2. Lid: EAS verwacht input op het"
-" gebied van wetenschap, maar ook op andere gemeenschapsgebieden. We moeten "
-"bijdragen. 10. 10. Sluiting 10.1."
+"bestuur en de uitvoerende commissie om de archiefactiviteiten te voltooien "
+"en te zorgen voor een soepele overgang naar het voorzitterschap"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:214
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:174
+msgid "Any other business"
+msgstr "Andere zaken"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:176
+msgid "9.1. RJW Welcome any input on how to organize the NAC"
+msgstr "9.1. RJW Verwelkomt alle input over de organisatie van de NAC"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:178
 msgid ""
-"Motion to close the meeting and adjourn until May 2026 during the "
-"Netherlands Astronomy Conference to be organized by our colleagues from SRON"
-" moved by the Secretary"
+"9.1.1. Secr. will go to SRON in two weeks to help then transfer to the "
+"indico server, NAC email addresses, etc. 9.1.2. Member: NAC is very "
+"connected to NOVA, maybe other things that the society can do. 9.1.3. Co-"
+"Treasurer will Contact NOVA"
 msgstr ""
-"Motie om de vergadering te sluiten en te verdagen tot mei 2026 tijdens de "
-"Nederlandse Astronomie Conferentie die zal worden georganiseerd door onze "
-"collega's van SRON ingediend door de secretaris"
+"9.1.1. Secr. gaat over twee weken naar SRON om dan te helpen met de "
+"overdracht naar de indico server, NAC e-mailadressen, etc. 9.1.2. Lid: NAC "
+"is erg verbonden met NOVA, misschien andere dingen die de vereniging kan "
+"doen. 9.1.3. Co-penningmeester neemt contact op met NOVA"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:216
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:182
 msgid ""
-"Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr"
-" (Secretary), Steven Rieder (Treasurer)"
+"9.2. Member: EAS expects input in the area of science, but also in other "
+"community areas. We should contribute."
 msgstr ""
-"Uitvoerend Comité van het Bestuur: Marijke Haverkorn (voorzitter), Jake "
-"Noel-Storr (secretaris), Steven Rieder (penningmeester)"
+"9.2. Lid: EAS verwacht input op het gebied van wetenschap, maar ook op "
+"andere gebieden van de gemeenschap. We moeten bijdragen."
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:217
-msgid "Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)"
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:184
+msgid "Closure"
+msgstr "Sluiting"
+
+#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:186
+msgid ""
+"10.1. Motion to close the meeting and adjourn until May 2026 during the "
+"10.2. Passed without objection 10.3. Meeting adjourned at 16:00h"
 msgstr ""
-"Peter Barthel (voormalig voorzitter), Ralph Wijers (co-penningmeester)"
+"10.1. Motie om de vergadering te sluiten en te schorsen tot mei 2026 tijdens"
+" de 10.2. Zonder bezwaar aangenomen 10.3. Vergadering geschorst om 16:00u"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:218
-msgid "KvK: 40047819"
-msgstr "KvK: 40047819"
+#~ msgid ""
+#~ "Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr"
+#~ " (Secretary), Steven Rieder (Treasurer) Minutes of the Royal Netherlands "
+#~ "Astronomical Society (Koninklijke Nederlandse"
+#~ msgstr ""
+#~ "Uitvoerend Comité van het Bestuur: Marijke Haverkorn (Voorzitter), Jake "
+#~ "Noel-Storr (Secretaris), Steven Rieder (Penningmeester) Notulen van de "
+#~ "Koninklijke Nederlandse Astronomische Vereniging"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:219
-msgid "www.kna-rnas.nl"
-msgstr "www.kna-rnas.nl"
+#~ msgid ""
+#~ "The one-and-only professional organization of astronomers and space "
+#~ "researchers in NL/B"
+#~ msgstr ""
+#~ "De enige echte professionele organisatie van astronomen en "
+#~ "ruimteonderzoekers in NL/B"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:221
-msgid "10.2."
-msgstr "10.2."
+#~ msgid ""
+#~ "1. Opening and adoption of the agenda Meeting opened by the chair at 15:20h "
+#~ "on 27th May, 2025 in the Fletcher Landgoed Hotel Holthurnsche Hof, Berg en "
+#~ "Dal, Netherlands, during the 80th  Netherlands Astronomy Conference, "
+#~ "organized by our Radboud University Colleagues. 1.1. Agenda as announced "
+#~ "adopted without objection 2. Board announcements 2.1.  Apologies given as "
+#~ "above 3. Approval of Minutes 3.1. Minutes of the business meeting of May 14,"
+#~ " 2024 3.1.1. Approved without objection 3.2. Minutes of the special meeting "
+#~ "of December 2, 2024 3.2.1. Approved without objection 4. Annual report 2024 "
+#~ "of the secretary (Treasurer since May), Sven De Rijcke, Katie Mulrey, "
+#~ "Jacqueline Hodge, and 4.2. The number of members remained over 500. 4.3. "
+#~ "There were two activities, the 79th NAC, and the musical celebration in "
+#~ "Haarlem of asteroid (12639) Tonkoopman. 4.4. The planned RNAS/NOVA Teacher’s"
+#~ " Day had to be postponed. 4.5. A standardized website for the annual NACs "
+#~ "was designed and installed. 4.6. The 79th Netherlands Astronomers Conference"
+#~ " in Egmond aan Zee was a great success. Well attended: ~250 participants. "
+#~ "The first Kees de Jager (education) prize was awarded to Alex de Koter. 4.7."
+#~ " A small rise in membership fees was discussed at the NAC Business"
+#~ msgstr ""
+#~ "1. Opening en vaststelling agenda Vergadering geopend door de voorzitter op "
+#~ "27 mei 2025 om 15:20u in het Fletcher Landgoed Hotel Holthurnsche Hof, Berg "
+#~ "en Dal, Nederland, tijdens de 80e Netherlands Astronomy Conference, "
+#~ "georganiseerd door onze collega's van de Radboud Universiteit. 1.1. Agenda "
+#~ "zoals aangekondigd aangenomen zonder bezwaar 2. 2. Mededelingen bestuur 2.1."
+#~ "  2.2. Excuses gegeven zoals hierboven 3. Goedkeuring van de notulen 3. "
+#~ "Goedkeuring notulen 3.1. 3.1. Notulen van de vergadering van 14 mei 2024 "
+#~ "3.1.1. Goedkeuring zonder bezwaar Goedgekeurd zonder bezwaar 3.2. 3.2. "
+#~ "Notulen van de bijzondere vergadering van 2 december 2024 3.2.1. Zonder "
+#~ "bezwaar goedgekeurd Goedgekeurd zonder bezwaar 4. 4.1. Jaarverslag 2024 van "
+#~ "de secretaris (penningmeester sinds mei), Sven De Rijcke, Katie Mulrey, "
+#~ "Jacqueline Hodge, en 4.2. Jaarverslag 2024 van de secretaris (penningmeester"
+#~ " sinds mei), Sven De Rijcke, Katie Mulrey, Jacqueline Hodge. Het aantal "
+#~ "leden bleef boven de 500. 4.3. Er waren twee activiteiten, de 79e NAC, en de"
+#~ " muzikale viering in Haarlem van planetoïde (12639) Tonkoopman. 4.4. De "
+#~ "geplande RNAS/NOVA Docentendag moest worden uitgesteld. 4.5. Een "
+#~ "gestandaardiseerde website voor de jaarlijkse NAK's werd ontworpen en "
+#~ "geïnstalleerd. 4.6. De 79e Nederlandse Astronomen Conferentie in Egmond aan "
+#~ "Zee was een groot succes. Goed bezocht: ~250 deelnemers. De eerste Kees de "
+#~ "Jager (onderwijs) prijs werd uitgereikt aan Alex de Koter. 4.7. Een kleine "
+#~ "contributieverhoging werd besproken op de NAC Business List"
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:225
-msgid "10.3."
-msgstr "10.3."
+#~ msgid ""
+#~ "Meeting, and later accepted during an on-line extra-ordinary member meeting."
+#~ msgstr ""
+#~ "Vergadering, en later aanvaard tijdens een online buitengewone "
+#~ "ledenvergadering."
 
-#: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:228
-msgid "Meeting adjourned at 16:00h"
-msgstr "Vergadering geschorst om 16:00u"
+#~ msgid ""
+#~ "4.8. Migration of website and (member + financial) administration was a "
+#~ "major effort, which is nearly completed. An Indico server is now hosted for "
+#~ "RNAS for this and future meetings. 4.9. A third Newsletter was e-mailed to "
+#~ "all members. Continued focus on rejuvenation and optimal representation of "
+#~ "its community, and on improving the Society’s value for all members. 4.10."
+#~ msgstr ""
+#~ "4.8. Migratie van website en (leden + financiële) administratie was een "
+#~ "grote inspanning, die bijna is voltooid. Een Indico-server wordt nu gehost "
+#~ "voor RNAS voor deze en toekomstige bijeenkomsten. 4.9. Een derde nieuwsbrief"
+#~ " werd naar alle leden gemaild. Blijvende focus op verjonging en optimale "
+#~ "vertegenwoordiging van de gemeenschap en op het verbeteren van de waarde van"
+#~ " de Society voor alle leden. 4.10."
+
+#~ msgid ""
+#~ "The Board is in regular contact with the EAS, and encourages EAS- activities"
+#~ " by the RNAS members."
+#~ msgstr ""
+#~ "Het bestuur heeft regelmatig contact met de EAS en stimuleert EAS-"
+#~ "activiteiten door de RNAS-leden."
+
+#~ msgid "4.11."
+#~ msgstr "4.11."
+
+#~ msgid ""
+#~ "The Board expresses sincere thanks to all who have contributed to and "
+#~ "supported the Society."
+#~ msgstr ""
+#~ "Het bestuur spreekt zijn oprechte dank uit aan iedereen die heeft "
+#~ "bijgedragen aan en steun heeft gegeven aan de Society."
+
+#~ msgid "4.12."
+#~ msgstr "4.12."
+
+#~ msgid "Updates mid-2025"
+#~ msgstr "Updates medio 2025"
+
+#~ msgid "4.12.1."
+#~ msgstr "4.12.1."
+
+#~ msgid ""
+#~ "Membership as of today is at 558 Members (noting that Lost Members and "
+#~ "Members without status still contribute somewhat to this figure)"
+#~ msgstr ""
+#~ "Het ledenaantal staat vanaf vandaag op 558 leden (waarbij moet worden "
+#~ "opgemerkt dat Verloren Leden en Leden zonder status nog steeds een beetje "
+#~ "bijdragen aan dit cijfer)"
+
+#~ msgid "4.12.2."
+#~ msgstr "4.12.2."
+
+#~ msgid "Registration for the NAC this year was 241 participants"
+#~ msgstr "Registratie voor de NAC dit jaar was 241 deelnemers"
+
+#~ msgid "4.12.3."
+#~ msgstr "4.12.3."
+
+#~ msgid ""
+#~ "Membership database migration in good shape, billing and other handling "
+#~ "underway"
+#~ msgstr ""
+#~ "Migratie van ledendatabase in goede vorm, facturering en andere zaken in "
+#~ "gang gezet"
+
+#~ msgid "4.12.4."
+#~ msgstr "4.12.4."
+
+#~ msgid ""
+#~ "Website member areas will be developed (working groups; communities; blogs) "
+#~ "Inputs welcomed"
+#~ msgstr ""
+#~ "Website ledengebieden worden ontwikkeld (werkgroepen; communities; blogs) "
+#~ "Inputs welkom"
+
+#~ msgid "4.12.5."
+#~ msgstr "4.12.5."
+
+#~ msgid ""
+#~ "Next Generation Astronomers – Social Media Takeover for 2 weeks; plus a "
+#~ "featured page on the website introducing you to the community"
+#~ msgstr ""
+#~ "Next Generation Astronomers - Social Media Takeover voor 2 weken; plus een "
+#~ "uitgelichte pagina op de website om je voor te stellen aan de gemeenschap"
+
+#~ msgid "4.12.6."
+#~ msgstr "4.12.6."
+
+#~ msgid "Make the website a community space for Dutch Astronomy"
+#~ msgstr ""
+#~ "Maak van de website een gemeenschapsruimte voor de Nederlandse sterrenkunde"
+
+#~ msgid "4.12.7."
+#~ msgstr "4.12.7."
+
+#~ msgid "Electronic Documents when approved will be archived in Zenodo (CERN)"
+#~ msgstr ""
+#~ "Elektronische documenten worden na goedkeuring gearchiveerd in Zenodo (CERN)"
+
+#~ msgid "4.13."
+#~ msgstr "4.13."
+
+#~ msgid "4.13.1."
+#~ msgstr "4.13.1."
+
+#~ msgid ""
+#~ "5. Annual report 2024 of the treasurer 5.1. 2024 Financial Statement "
+#~ "treasurer 5.1.1. Comments: 5.1.1.1."
+#~ msgstr ""
+#~ "5. Jaarverslag 2024 van de penningmeester 5.1. jaarverslag 2024 van de "
+#~ "penningmeester 5.1.1. Opmerkingen: 5.1.1.1."
+
+#~ msgid "Net loss equal to bank change, so okay and understood"
+#~ msgstr "Nettoverlies gelijk aan bankwissel, dus oké en begrepen"
+
+#~ msgid "5.1.1.2."
+#~ msgstr "5.1.1.2."
+
+#~ msgid "Expenses normal, income reduced due to no fee collection"
+#~ msgstr "Uitgaven normaal, inkomsten lager door geen inning van vergoedingen"
+
+#~ msgid "5.1.1.3."
+#~ msgstr "5.1.1.3."
+
+#~ msgid "Higher web site expenses, but much better system"
+#~ msgstr "Hogere kosten voor website, maar veel beter systeem"
+
+#~ msgid "5.1.1.4."
+#~ msgstr "5.1.1.4."
+
+#~ msgid ""
+#~ "New admin and financial system almost complete, doing last bits to get "
+#~ "everything going and receive 2025 membership fees"
+#~ msgstr ""
+#~ "Nieuw administratief en financieel systeem bijna voltooid, laatste dingetjes"
+#~ " om alles op gang te krijgen en 2025 lidmaatschapsgeld te ontvangen"
+
+#~ msgid "5.1.1.5."
+#~ msgstr "5.1.1.5."
+
+#~ msgid ""
+#~ "Large member increase and auto-pay increase: GOOD  (55% of members have "
+#~ "direct debit setup, saving 10% each)"
+#~ msgstr ""
+#~ "Grote toename leden en toename automatische incasso: GOED (55% van de leden "
+#~ "heeft automatische incasso ingesteld, wat elk 10% bespaart)"
+
+#~ msgid "5.1.1.6."
+#~ msgstr "5.1.1.6."
+
+#~ msgid ""
+#~ "Audit committee (Icke & Pijpers) discussed and informally approved 2024"
+#~ msgstr ""
+#~ "Auditcomité (Icke & Pijpers) heeft 2024 besproken en informeel goedgekeurd"
+
+#~ msgid "5.1.1.7."
+#~ msgstr "5.1.1.7."
+
+#~ msgid ""
+#~ "New budget equilibrium will need to be found: more income, but also more "
+#~ "expense"
+#~ msgstr ""
+#~ "Er moet een nieuw begrotingsevenwicht worden gevonden: meer inkomsten, maar "
+#~ "ook meer uitgaven"
+
+#~ msgid ""
+#~ "5.2. Report of the financial audit committee 5.2.1. Vince Icke on behalf of "
+#~ "the Audit Committee approves the concurrence of the Audit committee with the"
+#~ " above statements. 5.3. Motion to approve the 2024 Financial Statement moved"
+#~ " by the Treasurer 5.3.1. Seconded: Icke 5.3.2. Motion Passed without "
+#~ "objection 5.4. Installation new financial audit committee 5.4.1. Members "
+#~ "volunteering: Frank Pijpers, Reynier Peletier 5.5. Motion to approve the "
+#~ "2025 audit committee moved by the Treasurer 5.5.1. Motion Passed without "
+#~ "Objection 6. Proposed budget 2025 6.1. Expenses:"
+#~ msgstr ""
+#~ "5.2. 5.2. Verslag van het financieel auditcomité Vince Icke keurt namens het"
+#~ " Auditcomité de instemming van het Auditcomité met bovenstaande verklaringen"
+#~ " goed. 5.3. 5.3. Voorstel tot goedkeuring van het financieel memorandum voor"
+#~ " 2024 ingediend door de penningmeester 5.3.1. Voorstel tot goedkeuring van "
+#~ "het financieel memorandum voor 2024 ingediend door de penningmeester. "
+#~ "Ondersteund: Icke 5.3.2. Motie aangenomen zonder bezwaar 5.4. Installatie "
+#~ "nieuwe financiële controlecommissie 5.4.1. Vrijwillige leden: Frank Pijpers,"
+#~ " Reynier Peletier 5.5. Motie van de penningmeester om de auditcommissie van "
+#~ "2025 goed te keuren 5.5.1. Motie aangenomen zonder bezwaar 6. Voorgestelde "
+#~ "begroting 2025 6.1. 6.1. Uitgaven:"
+
+#~ msgid ""
+#~ "Member: What are the costs of the Exec office, treas. Replies these are "
+#~ "structural"
+#~ msgstr ""
+#~ "Lid: Wat zijn de kosten van het Exec office, treas. Antwoorden deze zijn "
+#~ "structureel"
+
+#~ msgid ""
+#~ "6.6. Motion to approve the budget of 2025 moved by the Treasurer 6.6.1. "
+#~ "Motion passed without objection 6.7. Announcement of the Board, from their "
+#~ "meeting of 09 April 2025, of today."
+#~ msgstr ""
+#~ "6.6. Motie van de penningmeester om de begroting van 2025 goed te keuren "
+#~ "6.6.1. Motie aangenomen zonder bezwaar 6.7. Mededeling van het bestuur, van "
+#~ "hun vergadering van 09 april 2025, van vandaag."
+
+#~ msgid ""
+#~ "8.3.1. Grateful he will continue in the board and exec committee for the "
+#~ "upcoming year to complete archive activities, and ensure a smooth chair "
+#~ "transition 9. Any other business 9.1. RJW Welcome any input on how to "
+#~ "organize the NAC 9.1.1. Secr. will go to SRON in two weeks to help then "
+#~ "transfer to the indico server, NAC email addresses, etc. 9.1.2. Member: NAC "
+#~ "is very connected to NOVA, maybe other things that the society can do. "
+#~ "9.1.3. Co-Treasurer will Contact NOVA 9.2. Member: EAS expects input in the "
+#~ "area of science, but also in other community areas. We should contribute. "
+#~ "10. Closure 10.1."
+#~ msgstr ""
+#~ "8.3.1. Dankbaar dat hij het komende jaar deel zal blijven uitmaken van het "
+#~ "bestuur en de uitvoerende commissie om de archiefwerkzaamheden af te ronden "
+#~ "en te zorgen voor een soepele overgang naar het voorzitterschap. 9. Diversen"
+#~ " 9.1. RJW Verwelkomt alle input over hoe de NAC 9.1.1. te organiseren. Secr."
+#~ " gaat over twee weken naar SRON om te helpen met de overdracht naar de "
+#~ "indico server, NAC e-mailadressen, etc. 9.1.2. Lid: NAC is erg verbonden met"
+#~ " NOVA, misschien andere dingen die de vereniging kan doen. 9.1.3. Co-"
+#~ "penningmeester neemt contact op met NOVA 9.2. Lid: EAS verwacht input op het"
+#~ " gebied van wetenschap, maar ook op andere gemeenschapsgebieden. We moeten "
+#~ "bijdragen. 10. 10. Sluiting 10.1."
+
+#~ msgid ""
+#~ "Motion to close the meeting and adjourn until May 2026 during the "
+#~ "Netherlands Astronomy Conference to be organized by our colleagues from SRON"
+#~ " moved by the Secretary"
+#~ msgstr ""
+#~ "Motie om de vergadering te sluiten en te verdagen tot mei 2026 tijdens de "
+#~ "Nederlandse Astronomie Conferentie die zal worden georganiseerd door onze "
+#~ "collega's van SRON ingediend door de secretaris"
+
+#~ msgid ""
+#~ "Executive Committee of the Board: Marijke Haverkorn (Chair), Jake Noel-Storr"
+#~ " (Secretary), Steven Rieder (Treasurer)"
+#~ msgstr ""
+#~ "Uitvoerend Comité van het Bestuur: Marijke Haverkorn (voorzitter), Jake "
+#~ "Noel-Storr (secretaris), Steven Rieder (penningmeester)"
+
+#~ msgid "Peter Barthel (Former Chair), Ralph Wijers (Co-Treasurer)"
+#~ msgstr ""
+#~ "Peter Barthel (voormalig voorzitter), Ralph Wijers (co-penningmeester)"
+
+#~ msgid "KvK: 40047819"
+#~ msgstr "KvK: 40047819"
+
+#~ msgid "www.kna-rnas.nl"
+#~ msgstr "www.kna-rnas.nl"
+
+#~ msgid "10.2."
+#~ msgstr "10.2."
+
+#~ msgid "10.3."
+#~ msgstr "10.3."
+
+#~ msgid "Meeting adjourned at 16:00h"
+#~ msgstr "Vergadering geschorst om 16:00u"

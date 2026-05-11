@@ -21,48 +21,40 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 
 #: ../../source/governing-docs/kvk-registration.rst:2
-#, fuzzy
 msgid "KNA-RNAS Registration with the Dutch Chamber of Commerce (KvK)"
-msgstr "KNA-RNAS Inschrijving bij de Nederlandse Kamer van Koophandel (KVK)"
+msgstr "KNA-RNAS Inschrijving bij de Nederlandse Kamer van Koophandel (KvK)"
 
 #: ../../source/governing-docs/kvk-registration.rst:11
-#, fuzzy
 msgid ""
 "This document provides information about the registration of the KNA-RNAS "
 "Library with the Dutch Chamber of Commerce (KvK)."
 msgstr ""
 "Dit document geeft informatie over de inschrijving van de KNA-RNAS "
-"Bibliotheek bij de Nederlandse Kamer van Koophandel (KVK)."
+"Bibliotheek bij de Nederlandse Kamer van Koophandel (KvK)."
 
 #: ../../source/governing-docs/kvk-registration.rst:13
-#, fuzzy
 msgid "**KvK Registration Details:**"
-msgstr "**KVK Registratiegegevens:**"
+msgstr "**KvK Registratiegegevens:**"
 
 #: ../../source/governing-docs/kvk-registration.rst:15
-#, fuzzy
 msgid "**Chamber of Commerce Number:** 72839401 (Example)"
-msgstr "**Nummer Kamer van Koophandel:** [KVK-nummer hier invoegen]"
+msgstr "**Kamer van Koophandel nummer:** 72839401 (Voorbeeld)"
 
 #: ../../source/governing-docs/kvk-registration.rst:16
-#, fuzzy
 msgid "**Date of Registration:** 2023-05-10"
-msgstr "**Doel van de registratie:**"
+msgstr "**Datum van registratie:** 2023-05-10"
 
 #: ../../source/governing-docs/kvk-registration.rst:17
-#, fuzzy
 msgid "**Registered Address:** Amsterdam, Netherlands"
-msgstr "**Geregistreerd adres:** [Voeg hier adres in]"
+msgstr "**Geregistreerd adres:** Amsterdam, Nederland"
 
 #: ../../source/governing-docs/kvk-registration.rst:18
-#, fuzzy
 msgid "**Contact Information:** secretary@kna-rnas.nl"
-msgstr "**Contactinformatie:** [Voeg hier contactgegevens in]"
+msgstr "**Contactgegevens:** secretary@kna-rnas.nl"
 
 #: ../../source/governing-docs/kvk-registration.rst:20
-#, fuzzy
 msgid "**Purpose of Registration:** Public Astronomy Society"
-msgstr "**Doel van de registratie:**"
+msgstr "**Doel van Registratie:** Publieke Sterrenkundevereniging"
 
 #: ../../source/governing-docs/kvk-registration.rst:23
 msgid "**Registered Board Members:**"
@@ -73,9 +65,8 @@ msgid "Jacob Noel-Storr, President"
 msgstr "Jacob Noel-Storr, Voorzitter"
 
 #: ../../source/governing-docs/kvk-registration.rst:23
-#, fuzzy
 msgid "[Name 2, Secretary]"
-msgstr "[Naam 2, Positie]"
+msgstr "[Naam 2, Secretaris]"
 
 #: ../../source/governing-docs/kvk-registration.rst:24
 msgid "[Name 3, Treasurer]"
@@ -93,9 +84,8 @@ msgid "**Banking and Financial Information:**"
 msgstr "**Bancaire en financiële informatie:**"
 
 #: ../../source/governing-docs/kvk-registration.rst:29
-#, fuzzy
 msgid "**Bank Name:** Rabobank"
-msgstr "**Banknaam:** [Banknaam hier invoegen]"
+msgstr "**Banknaam:** Rabobank"
 
 #: ../../source/governing-docs/kvk-registration.rst:30
 msgid "**IBAN:** NL00 RABC 0123 4567 89"
@@ -114,12 +104,11 @@ msgid "**Audit Committee:** Appointed annually by the General Assembly."
 msgstr "**Auditcommissie:** Jaarlijks benoemd door de Algemene Vergadering."
 
 #: ../../source/governing-docs/kvk-registration.rst:35
-#, fuzzy
 msgid ""
 "For any inquiries regarding the KvK registration, please contact the "
 "treasurer at treasurer@kna-rnas.nl."
 msgstr ""
-"Voor vragen over de KVK inschrijving kun je contact opnemen met de "
+"Voor vragen over de KvK-registratie kun je contact opnemen met de "
 "penningmeester via treasurer@kna-rnas.nl."
 
 #~ msgid "**Date of Registration:** [Insert Date Here]"

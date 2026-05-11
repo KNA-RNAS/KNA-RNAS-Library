@@ -40,8 +40,8 @@ for po_file in po_files:
     po = polib.pofile(str(po_file))
     
     modified = False
-    # We include both untranslated and fuzzy entries with empty msgstr
-    to_translate = [e for e in po if not e.msgstr or (e.fuzzy and not e.msgstr)]
+    # We include untranslated entries and all fuzzy entries (which Sphinx ignores)
+    to_translate = [e for e in po if not e.msgstr or e.fuzzy]
     
     if not to_translate:
         continue
@@ -61,6 +61,7 @@ for po_file in po_files:
                 preserve_formatting=True
             )
             entry.msgstr = result.text
+            entry.fuzzy = False
             modified = True
             total_translated += 1
             print(f"  ✓ {entry.msgid[:40].replace(chr(10), ' ')}... -> {entry.msgstr[:40].replace(chr(10), ' ')}...")

@@ -4,7 +4,6 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
@@ -36,7 +35,7 @@ msgstr "Jaarlijkse ledenvergadering mei 2025"
 msgid ""
 "**Minutes**: :doc:`Minutes RNAS Meeting 2025 <Minutes_RNAS_Meeting_2025>`"
 msgstr ""
-"**Minulen**: :doc:`Minulen RNAS vergadering 2025 "
+"**Notulen**: :doc:`Notulen RNAS vergadering 2025 "
 "<Minutes_RNAS_Meeting_2025>`"
 
 #: ../../source/minutes/meeting-minutes.rst:13

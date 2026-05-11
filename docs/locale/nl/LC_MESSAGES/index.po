@@ -49,9 +49,8 @@ msgid "Bibliotheek KNA-RNAS Library"
 msgstr "Bibliotheek KNA-RNAS"
 
 #: ../../source/index.rst:-1
-#, fuzzy
 msgid "KNA-RNAS Library Banner"
-msgstr "Bibliotheek KNA-RNAS"
+msgstr "KNA-RNAS Bibliotheek Banner"
 
 #: ../../source/index.rst:10
 msgid ""
@@ -76,9 +75,8 @@ msgstr ""
 "librarian@kna-rnas.nl"
 
 #: ../../source/index.rst:20
-#, fuzzy
 msgid "🏛️ Governing Documents"
-msgstr "Bestuurlijke documenten"
+msgstr "🏛️ Bestuursdocumenten"
 
 #: ../../source/index.rst:23
 msgid "Official statutes, bylaws, and mission statement of the KNA-RNAS."
@@ -111,9 +109,8 @@ msgid ":doc:`Qualification <governing-docs/qualification>`"
 msgstr ":doc:`Kwalificatie <governing-docs/qualification>`"
 
 #: ../../source/index.rst:33
-#, fuzzy
 msgid "📚 Publications"
-msgstr "Publicaties"
+msgstr "publicaties"
 
 #: ../../source/index.rst:36
 msgid "Periodicals and official publications distributed by the society."
@@ -128,9 +125,8 @@ msgid ":doc:`Proceedings <publications/proceedings>`"
 msgstr ":doc:`Proceedings <publications/proceedings>`"
 
 #: ../../source/index.rst:42
-#, fuzzy
 msgid "📝 Minutes"
-msgstr "Notulen"
+msgstr "minuten"
 
 #: ../../source/index.rst:45
 msgid "Records of society meetings and board gatherings."
@@ -145,9 +141,8 @@ msgid ":doc:`Board Minutes <minutes/board-minutes>`"
 msgstr ":doc:`Bestuursnotulen <minutes/board-minutes>`"
 
 #: ../../source/index.rst:51
-#, fuzzy
 msgid "🕰️ Historical Documents"
-msgstr "Historische documenten"
+msgstr "🕰️ Historische documenten"
 
 #: ../../source/index.rst:54
 msgid "Archival materials marking key moments in the history of the KNA-RNAS."
@@ -164,16 +159,14 @@ msgid ":doc:`80 Jaar Vrijheid <historical-docs/80-jaar-vrijheid>`"
 msgstr ":doc:`80 Jaar Vrijheid <historical-docs/80-jaar-vrijheid>`"
 
 #: ../../source/index.rst:60
-#, fuzzy
 msgid "📢 Official Communication"
-msgstr "Officiële mededeling"
+msgstr "📢 Officiële mededeling"
 
 #: ../../source/index.rst:63
 msgid "Public announcements and official correspondence records."
 msgstr "Openbare aankondigingen en officiële correspondentie."
 
 #: ../../source/index.rst:66
-#, fuzzy
 msgid ":doc:`2026 Communications <communication/official-communication-2026>`"
 msgstr ":doc:`2026 Communicatie <communication/official-communication-2026>`"
 

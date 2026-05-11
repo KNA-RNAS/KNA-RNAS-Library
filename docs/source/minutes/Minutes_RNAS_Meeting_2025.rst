@@ -69,11 +69,17 @@ The society wants to be THE platform for professional and former astronomers, it
    4.12. Updates mid-2025
 
       4.12.1. Membership as of today is at 558 Members (noting that Lost Members and Members without status still contribute somewhat to this figure)
+
       4.12.2. Registration for the NAC this year was 241 participants
+
       4.12.3. Membership database migration in good shape, billing and other handling underway
+
       4.12.4. Website member areas will be developed (working groups; communities; blogs) Inputs welcomed
+
       4.12.5. Next Generation Astronomers – Social Media Takeover for 2 weeks; plus a featured page on the website introducing you to the community
+
       4.12.6. Make the website a community space for Dutch Astronomy
+
       4.12.7. Electronic Documents when approved will be archived in Zenodo (CERN)
 
    4.13. Motion to approve the report and updates moved by the Secretary
@@ -87,11 +93,17 @@ The society wants to be THE platform for professional and former astronomers, it
       5.1.1. Comments:
 
          5.1.1.1. Net loss equal to bank change, so okay and understood
+
          5.1.1.2. Expenses normal, income reduced due to no fee collection
+
          5.1.1.3. Higher web site expenses, but much better system
+
          5.1.1.4. New admin and financial system almost complete, doing last bits to get everything going and receive 2025 membership fees
+
          5.1.1.5. Large member increase and auto-pay increase: GOOD  (55% of members have direct debit setup, saving 10% each)
+
          5.1.1.6. Audit committee (Icke & Pijpers) discussed and informally
+
          5.1.1.7. New budget equilibrium will need to be found: more income, but also more expense
 
    5.2. Report of the financial audit committee
@@ -122,18 +134,29 @@ Cost Description Executive Office 3500 Incudes website, administration fees, EAS
 Income Description Membership fees 6000 Reflecting new rate Interest on saving 250 TOTAL 6250
 
    6.3. Significant uncertainty, e.g., Olympiad unlikely this year, membership has significant error bar (but not overly optimistic). Some expenses are one-off due to extra changeover work. Prediction: at most small loss, but good thinking about new equilibrium will be needed
+
    6.4. Negative balance not anticipated
+
    6.5. Discussion
 
       6.5.1. Secr.: The meeting registrations of non members is now also an additional income
+
       6.5.2. Member: Olympiad Support? LOCNOC may have comments and thoughts
+
       6.5.3. Co-Treas: controversy over the Olympiad; school numbers are small to participate, which has made removal.
+
       6.5.4. Incoming-Chair: Will coordinate with LOCNOC about what is really happening, maybe include NAEIC about inclusion
+
       6.5.5. Member: New NWO curriculum includes astronomy in physics
+
       6.5.6. Treas.: We welcome input from members
+
       6.5.7. Member: NNV could also advertise it
+
       6.5.8. Incoming-Chair: Discussion has been not to just abolish, so should be rekindled, and maybe have new directions.
+
       6.5.9. Member: asks and BM-SDeR replies there is still a Belgian astronomy Olympiad
+
       6.5.10. Member: What are the costs of the Exec office, treas. Replies these are structural
 
    6.6. Motion to approve the budget of 2025 moved by the Treasurer
@@ -149,10 +172,13 @@ Income Description Membership fees 6000 Reflecting new rate Interest on saving 2
 | Pending remain:
 
       7.1.1. More relevance of the society, e.g. working groups
+
       7.1.2. Responsible persons in all institutes
+
       7.1.3. More responsibilities for NAC
 
    7.2. The society should take more responsibility and connection for NAC organisation, ensure close connection every year.
+
    7.3. Working Groups proposed and discussed for Art and Creativity, and Education and Outreach.
 
 8. Transfer of Chair
@@ -176,7 +202,9 @@ Haverkorn will become the 27th Chair of the Society officially from now.
    9.1. RJW Welcome any input on how to organize the NAC
 
       9.1.1. Secr. will go to SRON in two weeks to help then transfer to the indico server, NAC email addresses, etc.
+
       9.1.2. Member: NAC is very connected to NOVA, maybe other things that the society can do.
+
       9.1.3. Co-Treasurer will Contact NOVA
 
    9.2. Member: EAS expects input in the area of science, but also in other community areas. We should contribute.
@@ -184,6 +212,7 @@ Haverkorn will become the 27th Chair of the Society officially from now.
 10. Closure
 
    10.1. Motion to close the meeting and adjourn until May 2026 during the
+
    10.2. Passed without objection
    10.3. Meeting adjourned at 16:00h
 

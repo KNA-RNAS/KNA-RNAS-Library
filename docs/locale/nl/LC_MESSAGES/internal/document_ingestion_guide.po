@@ -247,18 +247,16 @@ msgstr ""
 "bestand indien nodig."
 
 #: ../../source/internal/document_ingestion_guide.rst:79
-#, fuzzy
 msgid "Step 5: Verify Build"
-msgstr "Stap 5: Verifiëren en vastleggen"
+msgstr "Stap 5: Build verifiëren"
 
 #: ../../source/internal/document_ingestion_guide.rst:81
-#, fuzzy
 msgid ""
 "Build the documentation locally to ensure the text extraction was "
 "successful:"
 msgstr ""
-"Bouw de documentatie lokaal om er zeker van te zijn dat alles er correct "
-"uitziet:"
+"Bouw de documentatie lokaal op om er zeker van te zijn dat de tekstextractie"
+" succesvol was:"
 
 #: ../../source/internal/document_ingestion_guide.rst:89
 msgid "Step 6: Update Category Index"

@@ -42,11 +42,15 @@ Annual General Meeting 13 May 2026, 09:00 CEST
 
 
 1. Opening of the meeting
+
 2. Adoption of the Agenda
+
 3. Board Announcements
 
    a. Board Membership and approval of new board members
+
    b. Board Meetings
+
    c. Other Announcements of the Board
 
 4. Approval of Minutes
@@ -58,8 +62,11 @@ Annual General Meeting 13 May 2026, 09:00 CEST
    a. Secretary’s Report
 
       i. Report and membership data
+
       ii. Report from the EAS
+
       iii. Report from (or on behalf of) the Archives
+
       iv. Process for termination of membership
 
    b. Executive Office Report
@@ -84,8 +91,11 @@ Annual General Meeting 13 May 2026, 09:00 CEST
    d. Election of the 2026 Financial Audit Committee
 
 7. 2025 Annual Report of the Chair
+
 8. Any Other Business (Rondvraag)
+
 9. Announcements
+
 10. Closing of the Meeting
 
 | Respectfully submitted / Hoogachtend,,

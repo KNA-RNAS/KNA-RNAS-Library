@@ -25,7 +25,10 @@ SOCIETY_STRINGS = [
 
 def get_list_indent(text):
     text_lower = text.strip().lower()
-    if re.match(r'^\d+\.', text_lower): return ""
+    match = re.match(r'^(\d+(?:\.\d+)*)\.', text_lower)
+    if match:
+        depth = len(match.group(1).split('.'))
+        return "   " * (depth - 1)
     if re.match(r'^[ivx]+\.', text_lower): return "      "
     if re.match(r'^[a-z]\.', text_lower): return "   "
     return None
@@ -40,8 +43,8 @@ def extract_premium_text(pdf_path):
 
     for i, page in enumerate(doc):
         page_height = page.rect.height
-        HEADER_MARGIN = 115
-        FOOTER_MARGIN = 105
+        HEADER_MARGIN = 150
+        FOOTER_MARGIN = 150
         
         blocks_data = page.get_text("dict")["blocks"]
         for b in blocks_data:
@@ -55,9 +58,6 @@ def extract_premium_text(pdf_path):
             
             if i == 0:
                 if y0 > (page_height - FOOTER_MARGIN): continue
-            elif i == num_pages - 1:
-                # On the last page, we MUST strip the header if it exists
-                if y1 < HEADER_MARGIN or (is_society and y1 < page_height / 2): continue
             else:
                 if y1 < HEADER_MARGIN or y0 > (page_height - FOOTER_MARGIN): continue
                 if is_society and len(block_text) < 200: continue
@@ -67,14 +67,14 @@ def extract_premium_text(pdf_path):
                 if line_text:
                     all_lines.append(line_text)
 
-    # 1. Fix detached list markers (e.g. "1." on its own line)
+    # 1. Fix detached list markers
     fixed_lines = []
     skip_next = False
     for i, line in enumerate(all_lines):
         if skip_next:
             skip_next = False
             continue
-        if re.match(r'^(\d+\.|[a-z]\.|[ivx]+\.)$', line.lower()) and i + 1 < len(all_lines):
+        if re.match(r'^(\d+(?:\.\d+)*\.|[a-z]\.|[ivx]+\.)$', line.lower()) and i + 1 < len(all_lines):
             fixed_lines.append(line + " " + all_lines[i+1])
             skip_next = True
         else:
@@ -86,7 +86,7 @@ def extract_premium_text(pdf_path):
     
     for line in fixed_lines:
         is_list = is_list_item(line)
-        is_header = len(line) < 80 and any(k in line for k in ["Agenda", "Annual General Meeting", "Meeting"])
+        is_header = len(line) < 80 and not line.endswith(('.', ':', ',', ';', 'h')) and any(k in line for k in ["Agenda", "Annual General Meeting", "Minutes"]) and not is_list
         is_society = any(s in line for s in SOCIETY_STRINGS)
         is_signature = any(k in line for k in ["Respectfully", "Hoogachtend", "secretary@", "On behalf", "Dr."])
         is_date_loc = re.match(r'^\d+\s(?:January|February|March|April|May|June|July|August|September|October|November|December)\s\d{4},', line)
@@ -98,7 +98,7 @@ def extract_premium_text(pdf_path):
             start_new = True
         else:
             prev_line = current_para[-1]
-            if prev_line.endswith(('.', ':', '!', '?')):
+            if prev_line.endswith(('.', ':', '!', '?')) and line and line[0].isupper():
                 start_new = True
             elif any(k in prev_line for k in ["Respectfully", "Hoogachtend", "secretary@", "On behalf", "Dr."]):
                 start_new = True
@@ -117,7 +117,6 @@ def extract_premium_text(pdf_path):
     # 3. Format paragraphs into RST
     rst_lines = []
     
-    # Find indices for horizontal rules
     first_content_idx = 0
     for i, p in enumerate(paragraphs):
         if not any(s in p for s in SOCIETY_STRINGS):
@@ -161,7 +160,8 @@ def extract_premium_text(pdf_path):
             prev_indent = indent
             continue
             
-        is_header = len(p) < 80 and any(k in p for k in ["Agenda", "Annual General Meeting", "Meeting"])
+        is_list = get_list_indent(p) is not None
+        is_header = len(p) < 80 and not p.endswith(('.', ':', ',', ';', 'h')) and any(k in p for k in ["Agenda", "Annual General Meeting", "Minutes"]) and not is_list
         if is_header:
             rst_lines.append("")
             if "Agenda" in p:
@@ -177,7 +177,6 @@ def extract_premium_text(pdf_path):
             prev_type = "header"
             continue
             
-        # Address blocks or dates
         if len(p) < 100 and ("April" in p or "May" in p or "Netherlands" in p) and not p.endswith('.'):
             if prev_type:
                 rst_lines.append("")
@@ -185,7 +184,6 @@ def extract_premium_text(pdf_path):
             prev_type = "paragraph"
             continue
             
-        # Short signature lines
         if len(p) < 60 and not p.endswith('.'):
             if prev_type and prev_type != "line_block":
                 rst_lines.append("")
@@ -193,7 +191,6 @@ def extract_premium_text(pdf_path):
             prev_type = "line_block"
             continue
             
-        # Normal paragraph
         if prev_type:
             rst_lines.append("")
         rst_lines.append(p)
@@ -201,6 +198,7 @@ def extract_premium_text(pdf_path):
 
     final_rst = "\n".join(rst_lines)
     return final_rst.strip()
+
 
 def ingest_pdf(pdf_path, category, original_lang='en', title=None, description=None, publish=False, deposition_id=None):
     pdf_path = Path(pdf_path)

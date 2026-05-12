@@ -446,11 +446,8 @@ msgid "Members volunteering: Frank Pijpers, Reynier Peletier"
 msgstr "Vrijwillige leden: Frank Pijpers, Reynier Peletier"
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:209
-#, fuzzy
 msgid "**Motion to approve the 2025 audit committee moved by the"
-msgstr ""
-"5.5. Voorstel tot goedkeuring van de auditcommissie 2025, ingediend door de "
-"penningmeester"
+msgstr "**Motie om de auditcommissie 2025 goed te keuren, ingediend door de"
 
 #: ../../source/minutes/Minutes_RNAS_Meeting_2025.rst:213
 msgid "Motion Passed without Objection"

@@ -25,47 +25,55 @@ SOCIETY_STRINGS = [
     "Please visit the website"
 ]
 
+def slugify(text):
+    """Converts a string to a lowercase-kebab-case slug."""
+    path = Path(text)
+    stem = path.stem
+    stem = stem.lower()
+    stem = re.sub(r'[^a-z0-9]+', '-', stem)
+    return stem.strip('-')
+
+def clean_rst(text):
+    """Post-processes Pandoc RST to fix split list items and formatting issues."""
+    lines = text.split('\n')
+    cleaned_lines = []
+    
+    for line in lines:
+        if not cleaned_lines:
+            cleaned_lines.append(line)
+            continue
+        
+        last_line = cleaned_lines[-1]
+        
+        # If current line starts with space(s) and previous line was also a list item...
+        if re.match(r'^\s+\S', line) and re.match(r'^\s*[\-\*\d\.]', last_line):
+             # It's a continuation of a list item
+             cleaned_lines[-1] = last_line.rstrip() + " " + line.lstrip()
+        else:
+            cleaned_lines.append(line)
+            
+    return '\n'.join(cleaned_lines)
+
 def extract_structural_text(doc_path):
     """Uses Pandoc to extract structural RST from Word/ODT files."""
     print(f"Running Pandoc on {doc_path}...")
     try:
         # Convert to rst
+        # Using --wrap=none to ensure long lines (especially links) are not split
         result = subprocess.run(
-            ["pandoc", str(doc_path), "--from", "docx" if doc_path.suffix == ".docx" else "odt", "--to", "rst"],
+            ["pandoc", str(doc_path), "--from", "docx" if doc_path.suffix == ".docx" else "odt", "--to", "rst", "--wrap=none"],
             capture_output=True, text=True, check=True
         )
         text = result.stdout
         
         # Post-process Pandoc output for our specific needs
-        # 1. Ensure blank lines between list items for translation isolation
-        # Pandoc often groups list items together. We want to force space.
-        lines = text.splitlines()
-        processed_lines = []
-        for i, line in enumerate(lines):
-            processed_lines.append(line)
-            # If line starts with a list marker and next line exists and is not empty, add a blank line
-            # This is a bit naive but works for simple lists
-            if re.match(r'^\d+\.', line.strip()) and i + 1 < len(lines) and lines[i+1].strip():
-                processed_lines.append("")
-        
-        return "\n".join(processed_lines)
+        # --wrap=none should handle most of the isolation needs.
+        return clean_rst(text)
     except Exception as e:
         print(f"Pandoc conversion failed: {e}")
         return None
 
-def generate_pdf_from_doc(doc_path, output_dir):
-    """Uses LibreOffice to generate a PDF version of the document."""
-    print(f"Generating PDF via LibreOffice...")
-    try:
-        subprocess.run(
-            ["libreoffice", "--headless", "--convert-to", "pdf", str(doc_path), "--outdir", str(output_dir)],
-            check=True
-        )
-        pdf_path = output_dir / f"{doc_path.stem}.pdf"
-        return pdf_path
-    except Exception as e:
-        print(f"PDF generation failed: {e}")
-        return None
+
 
 def extract_premium_text_from_pdf(pdf_path):
     """Legacy coordinate-based PDF extractor (Fallback)."""
@@ -163,7 +171,7 @@ def extract_premium_text_from_pdf(pdf_path):
             
     return "\n".join(rst_lines).strip()
 
-def ingest_document(file_path, category, original_lang='en', title=None, description=None, publish=False, deposition_id=None):
+def ingest_document(file_path, category, original_lang='en', title=None, description=None, publish=False, deposition_id=None, pdf_path=None):
     file_path = Path(file_path)
     if not file_path.exists():
         print(f"Error: File not found {file_path}")
@@ -171,7 +179,7 @@ def ingest_document(file_path, category, original_lang='en', title=None, descrip
 
     if not title: title = file_path.stem.replace("-", " ").replace("_", " ").title()
     
-    file_stem = file_path.stem
+    file_stem = slugify(title)
     target_dir = Path(f"docs/source/{category}")
     target_dir.mkdir(parents=True, exist_ok=True)
     rst_path = target_dir / f"{file_stem}.rst"
@@ -179,8 +187,14 @@ def ingest_document(file_path, category, original_lang='en', title=None, descrip
     # 1. Determine Source & Extract Text
     if file_path.suffix.lower() in ['.docx', '.odt']:
         text = extract_structural_text(file_path)
-        # Generate PDF for archive
-        pdf_path = generate_pdf_from_doc(file_path, Path("docs/source/_static/archive"))
+        if pdf_path:
+            pdf_path = Path(pdf_path)
+            if not pdf_path.exists():
+                print(f"Error: Provided PDF path does not exist: {pdf_path}.")
+                return
+        else:
+            print("Error: No PDF provided. You must provide a PDF using --pdf.")
+            return
     elif file_path.suffix.lower() == '.pdf':
         print(f"Using legacy PDF extraction for {file_path}...")
         text = extract_premium_text_from_pdf(file_path)
@@ -204,11 +218,13 @@ def ingest_document(file_path, category, original_lang='en', title=None, descrip
     # 3. Ensure PDF is in static archive
     downloads_dir = Path("docs/source/_static/archive")
     downloads_dir.mkdir(parents=True, exist_ok=True)
-    target_pdf_abs = (downloads_dir / pdf_path.name).resolve()
+    # Ensure standard filename in archive
+    target_pdf_name = f"{file_stem}.pdf"
+    target_pdf_abs = (downloads_dir / target_pdf_name).resolve()
     if pdf_path.resolve() != target_pdf_abs:
         shutil.copy(pdf_path, target_pdf_abs)
 
-    rel_path_to_static = "../" * len(category.split('/')) + "_static/archive/" + pdf_path.name
+    rel_path_to_static = "../" * len(category.split('/')) + "_static/archive/" + target_pdf_name
 
     rst_content = f"""{title}
 {"=" * len(title)}
@@ -256,5 +272,6 @@ if __name__ == "__main__":
     parser.add_argument("--title")
     parser.add_argument("--publish", action="store_true")
     parser.add_argument("--deposition-id", help="Zenodo deposition ID to update (instead of creating new)")
+    parser.add_argument("--pdf", help="Path to the original PDF (document of record)")
     args = parser.parse_args()
-    ingest_document(args.file_path, args.category, args.lang, args.title, publish=args.publish, deposition_id=args.deposition_id)
+    ingest_document(args.file_path, args.category, args.lang, args.title, publish=args.publish, deposition_id=args.deposition_id, pdf_path=args.pdf)

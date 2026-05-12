@@ -6,7 +6,7 @@
 
 .. note::
 
-   **Archived DOI**: Draft ID: 20136160
+   **Archived DOI**: Draft ID: 20136529
 
    .. button-link:: ../_static/archive/2025-annual-meeting-minutes.pdf
       :color: primary
@@ -271,7 +271,9 @@ Closure
 
 41. Meeting adjourned at 16:00h
 
-.. |image1| image:: /media/image.jpg :width: 6.01042in :height: 3.39583in
+.. |image1| image:: /_static/images/2025-annual-meeting-minutes/8ae10103e743568f2997e2f0bf1bdb2a07de2175.jpg
+   :width: 6.01042in
+   :height: 3.39583in
 
 
 .. document-status::

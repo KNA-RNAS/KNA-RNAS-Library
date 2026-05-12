@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KNA-RNAS Library 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 16:03+0200\n"
+"POT-Creation-Date: 2026-05-12 13:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -33,10 +33,11 @@ msgstr "Jaarlijkse ledenvergadering mei 2025"
 
 #: ../../source/minutes/meeting-minutes.rst:12
 msgid ""
-"**Minutes**: :doc:`Minutes RNAS Meeting 2025 <Minutes_RNAS_Meeting_2025>`"
+"**Minutes**: :doc:`2025 Annual Meeting Minutes <2025-annual-meeting-"
+"minutes>`"
 msgstr ""
-"**Notulen**: :doc:`Notulen RNAS vergadering 2025 "
-"<Minutes_RNAS_Meeting_2025>`"
+"**Notulen**: :doc:`2025 notulen jaarvergadering <2025-annual-meeting-"
+"minutes>`"
 
 #: ../../source/minutes/meeting-minutes.rst:13
 msgid "Date: 14 May 2025"

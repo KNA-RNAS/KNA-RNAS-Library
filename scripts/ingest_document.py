@@ -61,20 +61,41 @@ def clean_rst(text):
             
     return '\n'.join(cleaned_lines)
 
-def extract_structural_text(doc_path):
+def extract_structural_text(doc_path, media_dir=None):
     """Uses Pandoc to extract structural RST from Word/ODT files."""
     print(f"Extracting structural text from {doc_path} using Pandoc...")
     try:
         # Convert to rst
         # Using --wrap=none to ensure long lines (especially links) are not split
+        cmd = ["pandoc", str(doc_path), "--from", "docx" if doc_path.suffix == ".docx" else "odt", "--to", "rst", "--wrap=none"]
+        if media_dir:
+            media_dir.mkdir(parents=True, exist_ok=True)
+            cmd.append(f"--extract-media={media_dir}")
+
         result = subprocess.run(
-            ["pandoc", str(doc_path), "--from", "docx" if doc_path.suffix == ".docx" else "odt", "--to", "rst", "--wrap=none"],
+            cmd,
             capture_output=True, text=True, check=True
         )
         text = result.stdout
         
         # Post-process Pandoc output for our specific needs
-        return clean_rst(text)
+        text = clean_rst(text)
+
+        # Fix image paths if media was extracted
+        if media_dir:
+            # Pandoc output often contains the full path to the extracted media.
+            # We want to convert this to a Sphinx-relative path starting with /
+            # Sphinx considers / to be the root of the source directory (docs/source).
+            text = re.sub(r'image:: \.?docs/source', 'image:: ', text)
+            
+            # Fix attributes on the same line (Pandoc sometimes puts these on one line)
+            # Sphinx requires them on new lines with indentation.
+            text = re.sub(r'image:: ([^\s]+) :width: ([^\s]+) :height: ([^\s]+)', r'image:: \1\n   :width: \2\n   :height: \3', text)
+            # Also handle single attributes just in case
+            text = re.sub(r'image:: ([^\s]+) :width: ([^\s]+)(?!\s+:height:)', r'image:: \1\n   :width: \2', text)
+            text = re.sub(r'image:: ([^\s]+) :height: ([^\s]+)', r'image:: \1\n   :height: \2', text)
+            
+        return text
     except Exception as e:
         print(f"Pandoc conversion failed: {e}")
         return None
@@ -192,7 +213,8 @@ def ingest_document(file_path, category, original_lang='en', title=None, descrip
 
     # 1. Determine Source & Extract Text
     if file_path.suffix.lower() in ['.docx', '.odt']:
-        text = extract_structural_text(file_path)
+        media_dir = Path(f"docs/source/_static/images/{file_stem}")
+        text = extract_structural_text(file_path, media_dir=media_dir)
         if pdf_path:
             pdf_path = Path(pdf_path)
             if not pdf_path.exists():

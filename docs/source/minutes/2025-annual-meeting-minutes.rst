@@ -1,14 +1,14 @@
-Minutes 2025
-============
+2025 Annual Meeting Minutes
+===========================
 
 .. document-of-record::
    :original-lang: en
 
 .. note::
 
-   **Archived DOI**: Draft ID: 20135687
+   **Archived DOI**: Draft ID: 20136160
 
-   .. button-link:: ../_static/archive/minutes-2025.pdf
+   .. button-link:: ../_static/archive/2025-annual-meeting-minutes.pdf
       :color: primary
       :outline:
       :shadow:

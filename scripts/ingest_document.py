@@ -43,20 +43,27 @@ def clean_rst(text):
             cleaned_lines.append(line)
             continue
         
-        last_line = cleaned_lines[-1]
-        
-        # If current line starts with space(s) and previous line was also a list item...
-        if re.match(r'^\s+\S', line) and re.match(r'^\s*[\-\*\d\.]', last_line):
-             # It's a continuation of a list item
-             cleaned_lines[-1] = last_line.rstrip() + " " + line.lstrip()
-        else:
-            cleaned_lines.append(line)
+        # If current line starts with space(s) and isn't a new list marker
+        if re.match(r'^\s+\S', line) and not re.match(r'^\s*[\-\*\d\.]+\s', line):
+            # Look back for the last non-empty line to see if we should join
+            idx = len(cleaned_lines) - 1
+            while idx >= 0 and not cleaned_lines[idx].strip():
+                idx -= 1
+            
+            if idx >= 0:
+                last_non_empty = cleaned_lines[idx]
+                # Join if the last line doesn't end with terminal punctuation
+                if not last_non_empty.strip().endswith(('.', ':', '!', '?', '"')):
+                    cleaned_lines[idx] = last_non_empty.rstrip('\\ ').rstrip() + " " + line.lstrip()
+                    continue
+
+        cleaned_lines.append(line)
             
     return '\n'.join(cleaned_lines)
 
 def extract_structural_text(doc_path):
     """Uses Pandoc to extract structural RST from Word/ODT files."""
-    print(f"Running Pandoc on {doc_path}...")
+    print(f"Extracting structural text from {doc_path} using Pandoc...")
     try:
         # Convert to rst
         # Using --wrap=none to ensure long lines (especially links) are not split
@@ -67,7 +74,6 @@ def extract_structural_text(doc_path):
         text = result.stdout
         
         # Post-process Pandoc output for our specific needs
-        # --wrap=none should handle most of the isolation needs.
         return clean_rst(text)
     except Exception as e:
         print(f"Pandoc conversion failed: {e}")

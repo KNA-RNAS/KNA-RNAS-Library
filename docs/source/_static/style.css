@@ -21,6 +21,18 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1a2a6b !important; /* Header Blue */
 }
 
+.wy-side-nav-search > a:after {
+    content: "Logo design by V. Icke";
+    display: block;
+    font-size: 0.75em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
 .wy-menu-vertical a {
     color: #1a2a6b !important;
     font-weight: 500;
@@ -125,6 +137,18 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.document-status-box a {
+    color: #1a2a6b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.document-status-box a:hover {
+    color: #d4a96a;
+    text-decoration-style: solid;
 }
 
 /* Premium Language Toggle */

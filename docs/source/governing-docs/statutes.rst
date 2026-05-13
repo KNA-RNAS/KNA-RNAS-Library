@@ -5,8 +5,8 @@ KNA-RNAS Statutes
 
 .. document-status::
    :approved: true
-   :approved_in: General Assembly 2023
-   :notary_stamp: 2023-05-10
+   :approved_in: Annual General Meeting 2025
+   :notary_stamp: Pending
 
 .. contents:: Table of Contents
    :depth: 2

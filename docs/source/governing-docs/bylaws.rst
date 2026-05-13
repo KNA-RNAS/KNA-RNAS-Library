@@ -5,7 +5,7 @@ KNA-RNAS Bylaws
 
 .. document-status::
    :approved: true
-   :approved_in: General Assembly 2023
+   :approved_in: Special General Meeting 2024
    :notary_stamp: Pending
 
 .. contents:: Table of Contents

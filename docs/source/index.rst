@@ -1,31 +1,128 @@
-KNA-RNAS Library Maintenance
-===========================
+Bibliotheek KNA-RNAS Library
+============================
 
-.. image:: _static/maintenance_banner.png
-   :alt: KNA-RNAS Library Maintenance Banner
+.. image:: _static/banner_final.png
+   :alt: KNA-RNAS Library Banner
    :width: 100%
    :align: center
    :class: landing-banner
 
-.. grid:: 1
+.. raw:: html
+
+   <p style="text-align: center; font-style: italic; font-size: 0.85em; color: #666; margin-top: -15px;">
+   (Image Credit: J. Noel-Storr / Gemini (Nano Banana 2))
+   </p>
+
+**The KNA-RNAS Library** is the official Library of the Royal Netherlands Astronomical Society (Koninklijke Nederlandse Astronomen Club). The archive of physical documents is housed in xxxx. Approved electronic documents are given a DOI-number via Zenodo (CERN, Geneva, CH); Recurrent publications may be issued an ISSN by the National Library of the Netherlands.
+
+.. note::
+
+   This library is under active development, direct comments to librarian@kna-rnas.nl
+
+.. grid:: 1 2 2 2
    :gutter: 3
    :margin: 4
 
-   .. grid-item-card:: 🛠️ Temporary Maintenance
+   .. grid-item-card:: 🏛️ Governing Documents
       :shadow: md
-      :class-header: bg-light text-center
-      :class-body: text-center
 
-      **The KNA-RNAS Library is currently offline for scheduled maintenance.**
-
-      We are performing essential updates to our digital archives and improving the ingestion pipeline to better serve our members.
-
-      +++
-      **Estimated Completion:** Today, May 13th
+      Official statutes, bylaws, and mission statement of the KNA-RNAS.
       
-      For urgent inquiries or document requests, please contact:
-      `librarian@kna-rnas.nl <mailto:librarian@kna-rnas.nl>`_
+      +++
+      - :doc:`Statutes <governing-docs/statutes>`
+      - :doc:`Bylaws <governing-docs/bylaws>`
+      - :doc:`Mission <governing-docs/mission>`
+      - :doc:`KvK Registration <governing-docs/kvk-registration>`
+      - :doc:`Fee Structure <governing-docs/membership-fee-structure>`
+      - :doc:`Qualification <governing-docs/qualification>`
 
-.. note::
-   
-   Direct access to individual documents via Zenodo or their respective DOIs remains unaffected during this maintenance period.
+   .. grid-item-card:: 📚 Publications
+      :shadow: md
+
+      Periodicals and official publications distributed by the society.
+      
+      +++
+      - :doc:`Newsletters <publications/newsletters>`
+      - :doc:`Proceedings <publications/proceedings>`
+
+   .. grid-item-card:: 📝 Minutes
+      :shadow: md
+
+      Records of society meetings and board gatherings.
+      
+      +++
+      - :doc:`Meeting Minutes <minutes/meeting-minutes>`
+      - :doc:`Board Minutes <minutes/board-minutes>`
+
+   .. grid-item-card:: 🕰️ Historical Documents
+      :shadow: md
+
+      Archival materials marking key moments in the history of the KNA-RNAS.
+      
+      +++
+      - :doc:`Royal Designation <historical-docs/royal-designation>`
+      - :doc:`80 Jaar Vrijheid <historical-docs/80-jaar-vrijheid>`
+
+   .. grid-item-card:: 📢 Official Communication
+      :shadow: md
+
+      Public announcements and official correspondence records.
+      
+      +++
+      - :doc:`2026 Communications <communication/official-communication-2026>`
+      - :doc:`2025 Communications <communication/official-communication-2025>`
+      - :doc:`2024 Communications <communication/official-communication-2024>`
+
+   .. grid-item-card:: 🛠️ Administration
+      :shadow: md
+
+      Internal guides and tools for library maintenance.
+      
+      +++
+      - :doc:`Document Ingestion Guide <internal/document_ingestion_guide>`
+
+.. toctree::
+   :hidden:
+   :caption: Governing Documents
+
+   governing-docs/statutes
+   governing-docs/bylaws
+   governing-docs/mission
+   governing-docs/kvk-registration
+   governing-docs/membership-fee-structure
+   governing-docs/qualification
+
+.. toctree::
+   :hidden:
+   :caption: Publications
+
+   publications/newsletters
+   publications/proceedings
+
+.. toctree::
+   :hidden:
+   :caption: Minutes
+
+   minutes/meeting-minutes
+   minutes/board-minutes
+
+.. toctree::
+   :hidden:
+   :caption: Historical Documents
+
+   historical-docs/royal-designation
+   historical-docs/80-jaar-vrijheid
+
+.. toctree::
+   :hidden:
+   :caption: Official Communication
+
+   communication/official-communication-2026
+   communication/official-communication-2025
+   communication/official-communication-2024
+.. toctree::
+   :hidden:
+   :caption: Administration
+
+   internal/document_ingestion_guide
+   api

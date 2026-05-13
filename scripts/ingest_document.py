@@ -274,7 +274,7 @@ def ingest_document(file_path, category, original_lang='en', title=None, descrip
 {text}
 
 .. document-status::
-   :approved: true
+   :approved: false
    :approved_in: Automated Ingestion
 """
 

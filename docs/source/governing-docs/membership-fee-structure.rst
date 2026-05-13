@@ -1,6 +1,12 @@
 Membership Fee Structure
 =========================
 
+.. document-of-record::
+
+.. document-status::
+   :approved: true
+   :approved_in: Annual General Meeting 2025 (Extended by Annual General Meeting 2026)
+   
 This document outlines the current structure of membership fees for the KNA-RNAS. The fees may be modified by a vote of the Annual Members Meeting.
 
 Membership Categories
@@ -8,34 +14,34 @@ Membership Categories
 
 1. **General Membership**
 
-   - Annual Fee (regular): €XX
-   - Annual Fee (with SEPA mandate): €XX
+   - Annual Fee (regular): €30
+   - Annual Fee (with SEPA mandate): €25
 
 2. **Flemish Membership**
 
-   - Annual Fee (regular): €XX
-   - Annual Fee (with SEPA mandate) €XX
+   - Annual Fee (regular): €30
+   - Annual Fee (with SEPA mandate) €25
  
 3. **Overseas Membership**
 
-   - Annual Fee (regular): €XX
-   - Annual Fee (with SEPA mandate) €XX
-   - Annual Fee (from countries outside the SEPA region): €XX
+   - Annual Fee (regular): €15.00
+   - Annual Fee (with SEPA mandate) €12.50
+   - Annual Fee (from countries outside the SEPA region): €12.50
 
 4. **Student Membership**
 
-   - Annual Fee (regular): €XX
-   - Annual Fee (with SEPA mandate) €XX
+   - Annual Fee (regular): €15.00
+   - Annual Fee (with SEPA mandate) €12.50
 
 5. **Emeritus Membership**
 
-   - Annual Fee (regular): €XX
-   - Annual Fee (with SEPA mandate) €xxxx
+   - Annual Fee (regular): €30.00
+   - Annual Fee (with SEPA mandate) €25.00
 
 6. **Life Membership**
 
-   - One-time Fee (regular; 20x general membership): €XXXX
-   - Reduced Fee (for emeritus members): €XXXX
+   - One-time Fee (regular; 20x general membership): €500
+   - Reduced Fee (for emeritus members): €250
 
 
 Payment Methods

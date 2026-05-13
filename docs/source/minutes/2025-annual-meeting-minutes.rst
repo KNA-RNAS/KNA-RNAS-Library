@@ -76,7 +76,7 @@ Annual report 2024 of the secretary
 9.  The planned RNAS/NOVA Teacher’s Day had to be postponed.
 
 10. A standardized website for the annual NACs was designed and installed.
-
+General Assembly
 11. The 79th Netherlands Astronomers Conference in Egmond aan Zee was a great success. Well attended: ~250 participants. The first Kees de Jager (education) prize was awarded to Alex de Koter.
 
 12. A small rise in membership fees was discussed at the NAC Business Meeting, and later accepted during an on-line extra-ordinary member meeting.
@@ -277,5 +277,5 @@ Closure
 
 
 .. document-status::
-   :approved: true
-   :approved_in: Automated Ingestion
+   :approved: True
+   :approved_in: Annual General Meeting 2026

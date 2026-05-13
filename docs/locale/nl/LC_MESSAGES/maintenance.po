@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-present Koninklijke Nederlandse Astronomenclub
+# This file is distributed under the same license as the KNA-RNAS Library
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: KNA-RNAS Library 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 10:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: nl <LL@li.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/maintenance.rst:2
+msgid "KNA-RNAS Library Maintenance"
+msgstr "Onderhoud KNA-RNAS Bibliotheek"
+
+#: ../../source/maintenance.rst:-1
+msgid "KNA-RNAS Library Maintenance Banner"
+msgstr "KNA-RNAS Bibliotheek Onderhoud Banner"
+
+#: ../../source/maintenance.rst:14
+msgid "🛠️ Temporary Maintenance"
+msgstr "🛠️ Tijdelijk onderhoud"
+
+#: ../../source/maintenance.rst:19
+msgid ""
+"**The KNA-RNAS Library is currently offline for scheduled maintenance.**"
+msgstr ""
+"**De KNA-RNAS-bibliotheek is momenteel offline voor gepland onderhoud.**"
+
+#: ../../source/maintenance.rst:21
+msgid ""
+"We are performing essential updates to our digital archives and improving "
+"the ingestion pipeline to better serve our members."
+msgstr ""
+"We voeren essentiële updates uit voor onze digitale archieven en verbeteren "
+"de invoerpijplijn om onze leden beter van dienst te kunnen zijn."
+
+#: ../../source/maintenance.rst:24
+msgid "**Estimated Completion:** Today, May 13th"
+msgstr "**Geschatte voltooiing:** Vandaag, 13 mei"
+
+#: ../../source/maintenance.rst:26
+msgid ""
+"For urgent inquiries or document requests, please contact: `librarian@kna-"
+"rnas.nl <mailto:librarian@kna-rnas.nl>`_"
+msgstr ""
+"Voor dringende vragen of verzoeken om documenten kunt u contact opnemen met:"
+" librarian@kna-rnas.nl <mailto:librarian@kna-rnas.nl>`_"
+
+#: ../../source/maintenance.rst:31
+msgid ""
+"Direct access to individual documents via Zenodo or their respective DOIs "
+"remains unaffected during this maintenance period."
+msgstr ""
+"Directe toegang tot individuele documenten via Zenodo of hun "
+"respectievelijke DOI's blijft tijdens deze onderhoudsperiode onaangetast."

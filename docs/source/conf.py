@@ -45,7 +45,7 @@ html_theme_options = {
     'style_nav_header_background': '#1a2a6b', # Society Dark Blue
 }
 
-html_logo = "_static/logo_white.svg"
+html_logo = "_static/logo_white.png"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
@@ -133,12 +133,14 @@ class DocumentStatusDirective(Directive):
     option_spec = {
         'approved': directives.unchanged,
         'approved_in': directives.unchanged,
+        'signatory': directives.unchanged,
         'notary_stamp': directives.unchanged,
     }
 
     def run(self):
         approved = self.options.get('approved', None)
         approved_in = self.options.get('approved_in', None)
+        signatory = self.options.get('signatory', None)
         notary_stamp = self.options.get('notary_stamp', None)
 
         container = nodes.container(classes=['document-status-box'])
@@ -156,6 +158,14 @@ class DocumentStatusDirective(Directive):
                 if approved_in:
                     p.append(nodes.Text(" - Approved in: "))
                     inliner, messages = self.state.inline_text(approved_in, self.lineno)
+                    p.extend(inliner)
+                
+                if signatory:
+                    p.append(nodes.Text(" | "))
+                    icon_pen = nodes.raw('', '<i class="fa fa-pen-fancy" style="color: #1a2a6b;"></i> ', format='html')
+                    p.append(icon_pen)
+                    p.append(nodes.Text("Signed by: "))
+                    inliner, messages = self.state.inline_text(signatory, self.lineno)
                     p.extend(inliner)
             else:
                 icon_html = nodes.raw('', '<i class="fa fa-exclamation-triangle" style="color: #d4a96a;"></i> ', format='html')
